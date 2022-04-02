@@ -1,290 +1,2150 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
-<graph edgedefault="undirected"><node id="Docker"/>
-<node id="Git"/>
-<node id="Yarn"/>
-<node id="Kubernetes"/>
-<node id="Terraform"/>
-<node id="Unity 3D"/>
-<node id="Flow"/>
-<node id="Unreal Engine"/>
-<node id="Ansible"/>
-<node id="Deno"/>
-<node id="Puppet"/>
-<node id="Xamarin"/>
-<node id="Chef"/>
-<node id="Pulumi"/>
-<edge source="Docker" target="Git">
-  <data key="d0">33439</data>
+<graph edgedefault="undirected"><node id="C++"/>
+<node id="HTML/CSS"/>
+<node id="JavaScript"/>
+<node id="Objective-C"/>
+<node id="PHP"/>
+<node id="Swift"/>
+<node id="Python"/>
+<node id="Assembly"/>
+<node id="C"/>
+<node id="R"/>
+<node id="Rust"/>
+<node id="TypeScript"/>
+<node id="Bash/Shell"/>
+<node id="SQL"/>
+<node id="C#"/>
+<node id="Java"/>
+<node id="Node.js"/>
+<node id="PowerShell"/>
+<node id="Ruby"/>
+<node id="Perl"/>
+<node id="Matlab"/>
+<node id="Kotlin"/>
+<node id="Julia"/>
+<node id="Haskell"/>
+<node id="Delphi"/>
+<node id="Go"/>
+<node id="Scala"/>
+<node id="Dart"/>
+<node id="VBA"/>
+<node id="Groovy"/>
+<node id="Clojure"/>
+<node id="APL"/>
+<node id="LISP"/>
+<node id="F#"/>
+<node id="Elixir"/>
+<node id="Erlang"/>
+<node id="Crystal"/>
+<node id="COBOL"/>
+<edge source="C++" target="HTML/CSS">
+  <data key="d0">11385</data>
 </edge>
-<edge source="Docker" target="Yarn">
-  <data key="d0">8530</data>
+<edge source="C++" target="JavaScript">
+  <data key="d0">12326</data>
 </edge>
-<edge source="Docker" target="Kubernetes">
-  <data key="d0">11080</data>
+<edge source="C++" target="Objective-C">
+  <data key="d0">1014</data>
 </edge>
-<edge source="Docker" target="Terraform">
-  <data key="d0">4823</data>
+<edge source="C++" target="PHP">
+  <data key="d0">5125</data>
 </edge>
-<edge source="Docker" target="Unity 3D">
-  <data key="d0">2653</data>
+<edge source="C++" target="Swift">
+  <data key="d0">1259</data>
 </edge>
-<edge source="Docker" target="Unreal Engine">
-  <data key="d0">1003</data>
+<edge source="C++" target="C">
+  <data key="d0">11818</data>
 </edge>
-<edge source="Docker" target="Deno">
-  <data key="d0">717</data>
+<edge source="C++" target="C#">
+  <data key="d0">7100</data>
 </edge>
-<edge source="Docker" target="Puppet">
-  <data key="d0">1027</data>
+<edge source="C++" target="Java">
+  <data key="d0">9538</data>
 </edge>
-<edge source="Docker" target="Ansible">
-  <data key="d0">4665</data>
+<edge source="C++" target="Node.js">
+  <data key="d0">7057</data>
 </edge>
-<edge source="Docker" target="Xamarin">
-  <data key="d0">1268</data>
+<edge source="C++" target="PowerShell">
+  <data key="d0">2817</data>
 </edge>
-<edge source="Docker" target="Chef">
-  <data key="d0">782</data>
+<edge source="C++" target="Python">
+  <data key="d0">13543</data>
 </edge>
-<edge source="Docker" target="Flow">
-  <data key="d0">552</data>
+<edge source="C++" target="SQL">
+  <data key="d0">9317</data>
 </edge>
-<edge source="Docker" target="Pulumi">
-  <data key="d0">316</data>
+<edge source="C++" target="Perl">
+  <data key="d0">907</data>
 </edge>
-<edge source="Git" target="Yarn">
-  <data key="d0">12401</data>
+<edge source="C++" target="Ruby">
+  <data key="d0">1156</data>
 </edge>
-<edge source="Git" target="Kubernetes">
-  <data key="d0">11268</data>
+<edge source="C++" target="R">
+  <data key="d0">1570</data>
 </edge>
-<edge source="Git" target="Terraform">
-  <data key="d0">5101</data>
+<edge source="C++" target="Matlab">
+  <data key="d0">2349</data>
 </edge>
-<edge source="Git" target="Unity 3D">
-  <data key="d0">6028</data>
+<edge source="C++" target="TypeScript">
+  <data key="d0">4952</data>
 </edge>
-<edge source="Git" target="Unreal Engine">
-  <data key="d0">1974</data>
+<edge source="C++" target="Kotlin">
+  <data key="d0">2049</data>
 </edge>
-<edge source="Git" target="Ansible">
-  <data key="d0">5158</data>
+<edge source="C++" target="Assembly">
+  <data key="d0">3291</data>
 </edge>
-<edge source="Git" target="Deno">
-  <data key="d0">959</data>
+<edge source="C++" target="Bash/Shell">
+  <data key="d0">7255</data>
 </edge>
-<edge source="Git" target="Puppet">
-  <data key="d0">1214</data>
+<edge source="C++" target="Rust">
+  <data key="d0">2398</data>
 </edge>
-<edge source="Git" target="Xamarin">
-  <data key="d0">2433</data>
+<edge source="C++" target="Scala">
+  <data key="d0">562</data>
 </edge>
-<edge source="Git" target="Chef">
-  <data key="d0">890</data>
+<edge source="C++" target="Groovy">
+  <data key="d0">613</data>
 </edge>
-<edge source="Git" target="Flow">
-  <data key="d0">814</data>
+<edge source="C++" target="Go">
+  <data key="d0">2372</data>
 </edge>
-<edge source="Git" target="Pulumi">
-  <data key="d0">328</data>
+<edge source="C++" target="Dart">
+  <data key="d0">1639</data>
 </edge>
-<edge source="Yarn" target="Kubernetes">
-  <data key="d0">2963</data>
+<edge source="C++" target="Delphi">
+  <data key="d0">636</data>
 </edge>
-<edge source="Yarn" target="Ansible">
-  <data key="d0">1273</data>
+<edge source="C++" target="VBA">
+  <data key="d0">1331</data>
 </edge>
-<edge source="Yarn" target="Terraform">
-  <data key="d0">1433</data>
+<edge source="C++" target="Haskell">
+  <data key="d0">840</data>
 </edge>
-<edge source="Yarn" target="Deno">
-  <data key="d0">491</data>
-</edge>
-<edge source="Yarn" target="Xamarin">
-  <data key="d0">502</data>
-</edge>
-<edge source="Yarn" target="Chef">
-  <data key="d0">282</data>
-</edge>
-<edge source="Yarn" target="Unity 3D">
-  <data key="d0">1114</data>
-</edge>
-<edge source="Yarn" target="Flow">
-  <data key="d0">374</data>
-</edge>
-<edge source="Yarn" target="Puppet">
-  <data key="d0">416</data>
-</edge>
-<edge source="Yarn" target="Unreal Engine">
-  <data key="d0">420</data>
-</edge>
-<edge source="Yarn" target="Pulumi">
-  <data key="d0">147</data>
-</edge>
-<edge source="Kubernetes" target="Terraform">
-  <data key="d0">3091</data>
-</edge>
-<edge source="Kubernetes" target="Unity 3D">
-  <data key="d0">846</data>
-</edge>
-<edge source="Kubernetes" target="Unreal Engine">
-  <data key="d0">382</data>
-</edge>
-<edge source="Kubernetes" target="Puppet">
-  <data key="d0">601</data>
-</edge>
-<edge source="Kubernetes" target="Deno">
-  <data key="d0">337</data>
-</edge>
-<edge source="Kubernetes" target="Ansible">
-  <data key="d0">2419</data>
-</edge>
-<edge source="Kubernetes" target="Xamarin">
-  <data key="d0">505</data>
-</edge>
-<edge source="Kubernetes" target="Flow">
-  <data key="d0">252</data>
-</edge>
-<edge source="Kubernetes" target="Chef">
+<edge source="C++" target="Julia">
   <data key="d0">482</data>
 </edge>
-<edge source="Kubernetes" target="Pulumi">
-  <data key="d0">223</data>
+<edge source="C++" target="Elixir">
+  <data key="d0">284</data>
 </edge>
-<edge source="Terraform" target="Ansible">
-  <data key="d0">1695</data>
+<edge source="C++" target="LISP">
+  <data key="d0">525</data>
 </edge>
-<edge source="Terraform" target="Unity 3D">
-  <data key="d0">324</data>
+<edge source="C++" target="Clojure">
+  <data key="d0">246</data>
 </edge>
-<edge source="Terraform" target="Puppet">
-  <data key="d0">429</data>
+<edge source="C++" target="Erlang">
+  <data key="d0">241</data>
 </edge>
-<edge source="Terraform" target="Xamarin">
-  <data key="d0">182</data>
+<edge source="C++" target="F#">
+  <data key="d0">290</data>
 </edge>
-<edge source="Terraform" target="Chef">
-  <data key="d0">429</data>
+<edge source="C++" target="Crystal">
+  <data key="d0">153</data>
 </edge>
-<edge source="Terraform" target="Pulumi">
-  <data key="d0">195</data>
+<edge source="C++" target="APL">
+  <data key="d0">160</data>
 </edge>
-<edge source="Terraform" target="Flow">
-  <data key="d0">142</data>
+<edge source="C++" target="COBOL">
+  <data key="d0">232</data>
 </edge>
-<edge source="Terraform" target="Deno">
-  <data key="d0">155</data>
+<edge source="HTML/CSS" target="JavaScript">
+  <data key="d0">40818</data>
 </edge>
-<edge source="Terraform" target="Unreal Engine">
-  <data key="d0">174</data>
+<edge source="HTML/CSS" target="Objective-C">
+  <data key="d0">1358</data>
 </edge>
-<edge source="Unity 3D" target="Flow">
-  <data key="d0">168</data>
+<edge source="HTML/CSS" target="PHP">
+  <data key="d0">14704</data>
 </edge>
-<edge source="Unity 3D" target="Unreal Engine">
-  <data key="d0">1611</data>
+<edge source="HTML/CSS" target="Swift">
+  <data key="d0">2339</data>
 </edge>
-<edge source="Unity 3D" target="Puppet">
-  <data key="d0">161</data>
+<edge source="HTML/CSS" target="Bash/Shell">
+  <data key="d0">13968</data>
 </edge>
-<edge source="Unity 3D" target="Ansible">
-  <data key="d0">335</data>
+<edge source="HTML/CSS" target="Python">
+  <data key="d0">22361</data>
 </edge>
-<edge source="Unity 3D" target="Chef">
-  <data key="d0">119</data>
+<edge source="HTML/CSS" target="SQL">
+  <data key="d0">27005</data>
 </edge>
-<edge source="Unity 3D" target="Xamarin">
-  <data key="d0">716</data>
+<edge source="HTML/CSS" target="C">
+  <data key="d0">10171</data>
 </edge>
-<edge source="Unity 3D" target="Deno">
-  <data key="d0">210</data>
+<edge source="HTML/CSS" target="C#">
+  <data key="d0">14833</data>
 </edge>
-<edge source="Unity 3D" target="Pulumi">
-  <data key="d0">63</data>
+<edge source="HTML/CSS" target="Java">
+  <data key="d0">17354</data>
 </edge>
-<edge source="Flow" target="Ansible">
-  <data key="d0">135</data>
+<edge source="HTML/CSS" target="Node.js">
+  <data key="d0">21795</data>
 </edge>
-<edge source="Flow" target="Deno">
-  <data key="d0">90</data>
+<edge source="HTML/CSS" target="PowerShell">
+  <data key="d0">6406</data>
 </edge>
-<edge source="Flow" target="Xamarin">
-  <data key="d0">116</data>
+<edge source="HTML/CSS" target="Ruby">
+  <data key="d0">3590</data>
 </edge>
-<edge source="Flow" target="Puppet">
-  <data key="d0">101</data>
+<edge source="HTML/CSS" target="TypeScript">
+  <data key="d0">18681</data>
 </edge>
-<edge source="Flow" target="Unreal Engine">
-  <data key="d0">103</data>
+<edge source="HTML/CSS" target="Matlab">
+  <data key="d0">2330</data>
 </edge>
-<edge source="Flow" target="Chef">
-  <data key="d0">89</data>
+<edge source="HTML/CSS" target="Kotlin">
+  <data key="d0">3706</data>
 </edge>
-<edge source="Flow" target="Pulumi">
-  <data key="d0">53</data>
+<edge source="HTML/CSS" target="Julia">
+  <data key="d0">427</data>
 </edge>
-<edge source="Unreal Engine" target="Deno">
-  <data key="d0">128</data>
+<edge source="HTML/CSS" target="R">
+  <data key="d0">2176</data>
 </edge>
-<edge source="Unreal Engine" target="Ansible">
-  <data key="d0">180</data>
+<edge source="HTML/CSS" target="Assembly">
+  <data key="d0">2946</data>
 </edge>
-<edge source="Unreal Engine" target="Puppet">
-  <data key="d0">116</data>
+<edge source="HTML/CSS" target="Dart">
+  <data key="d0">3204</data>
 </edge>
-<edge source="Unreal Engine" target="Xamarin">
-  <data key="d0">289</data>
+<edge source="HTML/CSS" target="Rust">
+  <data key="d0">2892</data>
 </edge>
-<edge source="Unreal Engine" target="Chef">
-  <data key="d0">86</data>
+<edge source="HTML/CSS" target="Scala">
+  <data key="d0">937</data>
 </edge>
-<edge source="Unreal Engine" target="Pulumi">
-  <data key="d0">57</data>
+<edge source="HTML/CSS" target="VBA">
+  <data key="d0">2621</data>
 </edge>
-<edge source="Ansible" target="Xamarin">
-  <data key="d0">179</data>
+<edge source="HTML/CSS" target="Go">
+  <data key="d0">4320</data>
 </edge>
-<edge source="Ansible" target="Chef">
-  <data key="d0">455</data>
+<edge source="HTML/CSS" target="Delphi">
+  <data key="d0">898</data>
 </edge>
-<edge source="Ansible" target="Puppet">
-  <data key="d0">472</data>
+<edge source="HTML/CSS" target="Groovy">
+  <data key="d0">1404</data>
 </edge>
-<edge source="Ansible" target="Deno">
-  <data key="d0">159</data>
+<edge source="HTML/CSS" target="APL">
+  <data key="d0">234</data>
 </edge>
-<edge source="Ansible" target="Pulumi">
-  <data key="d0">126</data>
+<edge source="HTML/CSS" target="LISP">
+  <data key="d0">655</data>
 </edge>
-<edge source="Deno" target="Puppet">
-  <data key="d0">97</data>
+<edge source="HTML/CSS" target="Perl">
+  <data key="d0">1288</data>
 </edge>
-<edge source="Deno" target="Xamarin">
-  <data key="d0">115</data>
+<edge source="HTML/CSS" target="Haskell">
+  <data key="d0">1038</data>
 </edge>
-<edge source="Deno" target="Chef">
-  <data key="d0">84</data>
+<edge source="HTML/CSS" target="Elixir">
+  <data key="d0">813</data>
 </edge>
-<edge source="Deno" target="Pulumi">
+<edge source="HTML/CSS" target="Erlang">
+  <data key="d0">379</data>
+</edge>
+<edge source="HTML/CSS" target="F#">
+  <data key="d0">458</data>
+</edge>
+<edge source="HTML/CSS" target="Crystal">
+  <data key="d0">308</data>
+</edge>
+<edge source="HTML/CSS" target="Clojure">
+  <data key="d0">639</data>
+</edge>
+<edge source="HTML/CSS" target="COBOL">
+  <data key="d0">302</data>
+</edge>
+<edge source="JavaScript" target="Objective-C">
+  <data key="d0">1605</data>
+</edge>
+<edge source="JavaScript" target="PHP">
+  <data key="d0">15965</data>
+</edge>
+<edge source="JavaScript" target="Swift">
+  <data key="d0">2789</data>
+</edge>
+<edge source="JavaScript" target="Python">
+  <data key="d0">24974</data>
+</edge>
+<edge source="JavaScript" target="TypeScript">
+  <data key="d0">22542</data>
+</edge>
+<edge source="JavaScript" target="C">
+  <data key="d0">10845</data>
+</edge>
+<edge source="JavaScript" target="C#">
+  <data key="d0">16624</data>
+</edge>
+<edge source="JavaScript" target="Java">
+  <data key="d0">20378</data>
+</edge>
+<edge source="JavaScript" target="Node.js">
+  <data key="d0">26262</data>
+</edge>
+<edge source="JavaScript" target="PowerShell">
+  <data key="d0">6944</data>
+</edge>
+<edge source="JavaScript" target="SQL">
+  <data key="d0">29709</data>
+</edge>
+<edge source="JavaScript" target="Ruby">
+  <data key="d0">4393</data>
+</edge>
+<edge source="JavaScript" target="Bash/Shell">
+  <data key="d0">15460</data>
+</edge>
+<edge source="JavaScript" target="R">
+  <data key="d0">2273</data>
+</edge>
+<edge source="JavaScript" target="Matlab">
+  <data key="d0">2327</data>
+</edge>
+<edge source="JavaScript" target="Kotlin">
+  <data key="d0">4482</data>
+</edge>
+<edge source="JavaScript" target="Haskell">
+  <data key="d0">1173</data>
+</edge>
+<edge source="JavaScript" target="Assembly">
+  <data key="d0">3112</data>
+</edge>
+<edge source="JavaScript" target="Dart">
+  <data key="d0">3646</data>
+</edge>
+<edge source="JavaScript" target="Rust">
+  <data key="d0">3599</data>
+</edge>
+<edge source="JavaScript" target="Scala">
+  <data key="d0">1261</data>
+</edge>
+<edge source="JavaScript" target="VBA">
+  <data key="d0">2687</data>
+</edge>
+<edge source="JavaScript" target="Go">
+  <data key="d0">5595</data>
+</edge>
+<edge source="JavaScript" target="Delphi">
+  <data key="d0">959</data>
+</edge>
+<edge source="JavaScript" target="Groovy">
+  <data key="d0">1714</data>
+</edge>
+<edge source="JavaScript" target="Clojure">
+  <data key="d0">878</data>
+</edge>
+<edge source="JavaScript" target="APL">
+  <data key="d0">265</data>
+</edge>
+<edge source="JavaScript" target="LISP">
+  <data key="d0">698</data>
+</edge>
+<edge source="JavaScript" target="Perl">
+  <data key="d0">1400</data>
+</edge>
+<edge source="JavaScript" target="Julia">
+  <data key="d0">473</data>
+</edge>
+<edge source="JavaScript" target="Elixir">
+  <data key="d0">1082</data>
+</edge>
+<edge source="JavaScript" target="Crystal">
+  <data key="d0">355</data>
+</edge>
+<edge source="JavaScript" target="Erlang">
+  <data key="d0">463</data>
+</edge>
+<edge source="JavaScript" target="F#">
+  <data key="d0">568</data>
+</edge>
+<edge source="JavaScript" target="COBOL">
+  <data key="d0">319</data>
+</edge>
+<edge source="Objective-C" target="PHP">
+  <data key="d0">837</data>
+</edge>
+<edge source="Objective-C" target="Swift">
+  <data key="d0">1445</data>
+</edge>
+<edge source="Objective-C" target="Bash/Shell">
+  <data key="d0">831</data>
+</edge>
+<edge source="Objective-C" target="C#">
+  <data key="d0">859</data>
+</edge>
+<edge source="Objective-C" target="Dart">
+  <data key="d0">321</data>
+</edge>
+<edge source="Objective-C" target="Delphi">
+  <data key="d0">139</data>
+</edge>
+<edge source="Objective-C" target="Go">
+  <data key="d0">337</data>
+</edge>
+<edge source="Objective-C" target="Java">
+  <data key="d0">1247</data>
+</edge>
+<edge source="Objective-C" target="Kotlin">
+  <data key="d0">592</data>
+</edge>
+<edge source="Objective-C" target="Node.js">
+  <data key="d0">1048</data>
+</edge>
+<edge source="Objective-C" target="PowerShell">
+  <data key="d0">361</data>
+</edge>
+<edge source="Objective-C" target="Python">
+  <data key="d0">1068</data>
+</edge>
+<edge source="Objective-C" target="SQL">
+  <data key="d0">1126</data>
+</edge>
+<edge source="Objective-C" target="TypeScript">
+  <data key="d0">864</data>
+</edge>
+<edge source="Objective-C" target="C">
+  <data key="d0">976</data>
+</edge>
+<edge source="Objective-C" target="Ruby">
+  <data key="d0">377</data>
+</edge>
+<edge source="Objective-C" target="R">
+  <data key="d0">194</data>
+</edge>
+<edge source="Objective-C" target="VBA">
+  <data key="d0">242</data>
+</edge>
+<edge source="Objective-C" target="Assembly">
+  <data key="d0">333</data>
+</edge>
+<edge source="Objective-C" target="Matlab">
+  <data key="d0">231</data>
+</edge>
+<edge source="Objective-C" target="Perl">
+  <data key="d0">198</data>
+</edge>
+<edge source="Objective-C" target="Rust">
+  <data key="d0">201</data>
+</edge>
+<edge source="Objective-C" target="Scala">
+  <data key="d0">113</data>
+</edge>
+<edge source="Objective-C" target="APL">
   <data key="d0">65</data>
 </edge>
-<edge source="Puppet" target="Xamarin">
-  <data key="d0">128</data>
+<edge source="Objective-C" target="LISP">
+  <data key="d0">110</data>
 </edge>
-<edge source="Puppet" target="Chef">
-  <data key="d0">250</data>
+<edge source="Objective-C" target="Julia">
+  <data key="d0">73</data>
 </edge>
-<edge source="Puppet" target="Pulumi">
-  <data key="d0">72</data>
+<edge source="Objective-C" target="F#">
+  <data key="d0">83</data>
 </edge>
-<edge source="Xamarin" target="Chef">
+<edge source="Objective-C" target="Clojure">
+  <data key="d0">84</data>
+</edge>
+<edge source="Objective-C" target="Crystal">
+  <data key="d0">70</data>
+</edge>
+<edge source="Objective-C" target="Elixir">
+  <data key="d0">110</data>
+</edge>
+<edge source="Objective-C" target="Erlang">
+  <data key="d0">81</data>
+</edge>
+<edge source="Objective-C" target="Groovy">
+  <data key="d0">149</data>
+</edge>
+<edge source="Objective-C" target="Haskell">
+  <data key="d0">109</data>
+</edge>
+<edge source="Objective-C" target="COBOL">
+  <data key="d0">76</data>
+</edge>
+<edge source="PHP" target="Swift">
+  <data key="d0">1161</data>
+</edge>
+<edge source="PHP" target="Ruby">
+  <data key="d0">1311</data>
+</edge>
+<edge source="PHP" target="SQL">
+  <data key="d0">12884</data>
+</edge>
+<edge source="PHP" target="TypeScript">
+  <data key="d0">6265</data>
+</edge>
+<edge source="PHP" target="Bash/Shell">
+  <data key="d0">5499</data>
+</edge>
+<edge source="PHP" target="C">
+  <data key="d0">4685</data>
+</edge>
+<edge source="PHP" target="Matlab">
+  <data key="d0">1061</data>
+</edge>
+<edge source="PHP" target="Node.js">
+  <data key="d0">8743</data>
+</edge>
+<edge source="PHP" target="Python">
+  <data key="d0">8540</data>
+</edge>
+<edge source="PHP" target="C#">
+  <data key="d0">5415</data>
+</edge>
+<edge source="PHP" target="Java">
+  <data key="d0">7495</data>
+</edge>
+<edge source="PHP" target="Kotlin">
+  <data key="d0">1717</data>
+</edge>
+<edge source="PHP" target="Rust">
+  <data key="d0">912</data>
+</edge>
+<edge source="PHP" target="Scala">
+  <data key="d0">372</data>
+</edge>
+<edge source="PHP" target="Assembly">
+  <data key="d0">1469</data>
+</edge>
+<edge source="PHP" target="PowerShell">
+  <data key="d0">2537</data>
+</edge>
+<edge source="PHP" target="Dart">
+  <data key="d0">1576</data>
+</edge>
+<edge source="PHP" target="Delphi">
+  <data key="d0">633</data>
+</edge>
+<edge source="PHP" target="Go">
+  <data key="d0">1885</data>
+</edge>
+<edge source="PHP" target="Groovy">
+  <data key="d0">511</data>
+</edge>
+<edge source="PHP" target="VBA">
+  <data key="d0">1456</data>
+</edge>
+<edge source="PHP" target="Perl">
+  <data key="d0">895</data>
+</edge>
+<edge source="PHP" target="R">
+  <data key="d0">940</data>
+</edge>
+<edge source="PHP" target="LISP">
+  <data key="d0">296</data>
+</edge>
+<edge source="PHP" target="Crystal">
+  <data key="d0">153</data>
+</edge>
+<edge source="PHP" target="F#">
+  <data key="d0">166</data>
+</edge>
+<edge source="PHP" target="Haskell">
+  <data key="d0">413</data>
+</edge>
+<edge source="PHP" target="Julia">
+  <data key="d0">176</data>
+</edge>
+<edge source="PHP" target="Elixir">
+  <data key="d0">286</data>
+</edge>
+<edge source="PHP" target="Erlang">
+  <data key="d0">195</data>
+</edge>
+<edge source="PHP" target="APL">
+  <data key="d0">120</data>
+</edge>
+<edge source="PHP" target="Clojure">
+  <data key="d0">176</data>
+</edge>
+<edge source="PHP" target="COBOL">
+  <data key="d0">198</data>
+</edge>
+<edge source="Swift" target="C">
+  <data key="d0">1176</data>
+</edge>
+<edge source="Swift" target="C#">
+  <data key="d0">1207</data>
+</edge>
+<edge source="Swift" target="Java">
+  <data key="d0">1972</data>
+</edge>
+<edge source="Swift" target="Node.js">
+  <data key="d0">1795</data>
+</edge>
+<edge source="Swift" target="PowerShell">
+  <data key="d0">463</data>
+</edge>
+<edge source="Swift" target="Python">
+  <data key="d0">1896</data>
+</edge>
+<edge source="Swift" target="SQL">
+  <data key="d0">1794</data>
+</edge>
+<edge source="Swift" target="Kotlin">
+  <data key="d0">1215</data>
+</edge>
+<edge source="Swift" target="Bash/Shell">
+  <data key="d0">1242</data>
+</edge>
+<edge source="Swift" target="Dart">
+  <data key="d0">658</data>
+</edge>
+<edge source="Swift" target="Delphi">
+  <data key="d0">129</data>
+</edge>
+<edge source="Swift" target="Go">
+  <data key="d0">551</data>
+</edge>
+<edge source="Swift" target="TypeScript">
+  <data key="d0">1571</data>
+</edge>
+<edge source="Swift" target="Ruby">
+  <data key="d0">537</data>
+</edge>
+<edge source="Swift" target="Groovy">
+  <data key="d0">208</data>
+</edge>
+<edge source="Swift" target="Assembly">
+  <data key="d0">388</data>
+</edge>
+<edge source="Swift" target="VBA">
+  <data key="d0">251</data>
+</edge>
+<edge source="Swift" target="Clojure">
+  <data key="d0">111</data>
+</edge>
+<edge source="Swift" target="Perl">
+  <data key="d0">180</data>
+</edge>
+<edge source="Swift" target="Scala">
+  <data key="d0">163</data>
+</edge>
+<edge source="Swift" target="Rust">
+  <data key="d0">405</data>
+</edge>
+<edge source="Swift" target="Matlab">
+  <data key="d0">268</data>
+</edge>
+<edge source="Swift" target="Crystal">
+  <data key="d0">85</data>
+</edge>
+<edge source="Swift" target="LISP">
+  <data key="d0">116</data>
+</edge>
+<edge source="Swift" target="R">
+  <data key="d0">273</data>
+</edge>
+<edge source="Swift" target="F#">
+  <data key="d0">107</data>
+</edge>
+<edge source="Swift" target="Haskell">
+  <data key="d0">157</data>
+</edge>
+<edge source="Swift" target="Julia">
   <data key="d0">95</data>
 </edge>
-<edge source="Xamarin" target="Pulumi">
+<edge source="Swift" target="Elixir">
+  <data key="d0">157</data>
+</edge>
+<edge source="Swift" target="Erlang">
+  <data key="d0">104</data>
+</edge>
+<edge source="Swift" target="APL">
+  <data key="d0">78</data>
+</edge>
+<edge source="Swift" target="COBOL">
+  <data key="d0">81</data>
+</edge>
+<edge source="Python" target="Assembly">
+  <data key="d0">3351</data>
+</edge>
+<edge source="Python" target="C">
+  <data key="d0">11960</data>
+</edge>
+<edge source="Python" target="R">
+  <data key="d0">3389</data>
+</edge>
+<edge source="Python" target="Rust">
+  <data key="d0">3806</data>
+</edge>
+<edge source="Python" target="Bash/Shell">
+  <data key="d0">14577</data>
+</edge>
+<edge source="Python" target="SQL">
+  <data key="d0">19651</data>
+</edge>
+<edge source="Python" target="C#">
+  <data key="d0">9697</data>
+</edge>
+<edge source="Python" target="Java">
+  <data key="d0">15599</data>
+</edge>
+<edge source="Python" target="Node.js">
+  <data key="d0">14126</data>
+</edge>
+<edge source="Python" target="PowerShell">
+  <data key="d0">5041</data>
+</edge>
+<edge source="Python" target="Matlab">
+  <data key="d0">3171</data>
+</edge>
+<edge source="Python" target="TypeScript">
+  <data key="d0">10451</data>
+</edge>
+<edge source="Python" target="Julia">
+  <data key="d0">856</data>
+</edge>
+<edge source="Python" target="Go">
+  <data key="d0">4975</data>
+</edge>
+<edge source="Python" target="Scala">
+  <data key="d0">1400</data>
+</edge>
+<edge source="Python" target="Kotlin">
+  <data key="d0">3413</data>
+</edge>
+<edge source="Python" target="VBA">
+  <data key="d0">2071</data>
+</edge>
+<edge source="Python" target="Dart">
+  <data key="d0">2726</data>
+</edge>
+<edge source="Python" target="Delphi">
+  <data key="d0">573</data>
+</edge>
+<edge source="Python" target="Groovy">
+  <data key="d0">1412</data>
+</edge>
+<edge source="Python" target="Clojure">
+  <data key="d0">633</data>
+</edge>
+<edge source="Python" target="Haskell">
+  <data key="d0">1258</data>
+</edge>
+<edge source="Python" target="Perl">
+  <data key="d0">1366</data>
+</edge>
+<edge source="Python" target="Ruby">
+  <data key="d0">2543</data>
+</edge>
+<edge source="Python" target="LISP">
+  <data key="d0">756</data>
+</edge>
+<edge source="Python" target="APL">
+  <data key="d0">211</data>
+</edge>
+<edge source="Python" target="Erlang">
+  <data key="d0">382</data>
+</edge>
+<edge source="Python" target="Crystal">
+  <data key="d0">215</data>
+</edge>
+<edge source="Python" target="F#">
+  <data key="d0">394</data>
+</edge>
+<edge source="Python" target="Elixir">
+  <data key="d0">660</data>
+</edge>
+<edge source="Python" target="COBOL">
+  <data key="d0">221</data>
+</edge>
+<edge source="Assembly" target="C">
+  <data key="d0">3712</data>
+</edge>
+<edge source="Assembly" target="R">
+  <data key="d0">529</data>
+</edge>
+<edge source="Assembly" target="Rust">
+  <data key="d0">855</data>
+</edge>
+<edge source="Assembly" target="C#">
+  <data key="d0">1761</data>
+</edge>
+<edge source="Assembly" target="Java">
+  <data key="d0">2634</data>
+</edge>
+<edge source="Assembly" target="Matlab">
+  <data key="d0">890</data>
+</edge>
+<edge source="Assembly" target="Node.js">
+  <data key="d0">1846</data>
+</edge>
+<edge source="Assembly" target="SQL">
+  <data key="d0">2540</data>
+</edge>
+<edge source="Assembly" target="Kotlin">
+  <data key="d0">580</data>
+</edge>
+<edge source="Assembly" target="Bash/Shell">
+  <data key="d0">2738</data>
+</edge>
+<edge source="Assembly" target="PowerShell">
+  <data key="d0">950</data>
+</edge>
+<edge source="Assembly" target="Go">
+  <data key="d0">749</data>
+</edge>
+<edge source="Assembly" target="TypeScript">
+  <data key="d0">1256</data>
+</edge>
+<edge source="Assembly" target="Perl">
+  <data key="d0">394</data>
+</edge>
+<edge source="Assembly" target="Haskell">
+  <data key="d0">446</data>
+</edge>
+<edge source="Assembly" target="VBA">
+  <data key="d0">496</data>
+</edge>
+<edge source="Assembly" target="Dart">
+  <data key="d0">415</data>
+</edge>
+<edge source="Assembly" target="Delphi">
+  <data key="d0">321</data>
+</edge>
+<edge source="Assembly" target="Erlang">
+  <data key="d0">150</data>
+</edge>
+<edge source="Assembly" target="Groovy">
+  <data key="d0">194</data>
+</edge>
+<edge source="Assembly" target="LISP">
+  <data key="d0">333</data>
+</edge>
+<edge source="Assembly" target="Ruby">
+  <data key="d0">426</data>
+</edge>
+<edge source="Assembly" target="F#">
+  <data key="d0">134</data>
+</edge>
+<edge source="Assembly" target="Scala">
+  <data key="d0">220</data>
+</edge>
+<edge source="Assembly" target="APL">
+  <data key="d0">135</data>
+</edge>
+<edge source="Assembly" target="Clojure">
+  <data key="d0">122</data>
+</edge>
+<edge source="Assembly" target="Crystal">
+  <data key="d0">104</data>
+</edge>
+<edge source="Assembly" target="Elixir">
+  <data key="d0">140</data>
+</edge>
+<edge source="Assembly" target="Julia">
+  <data key="d0">181</data>
+</edge>
+<edge source="Assembly" target="COBOL">
+  <data key="d0">172</data>
+</edge>
+<edge source="C" target="R">
+  <data key="d0">1461</data>
+</edge>
+<edge source="C" target="Rust">
+  <data key="d0">2366</data>
+</edge>
+<edge source="C" target="C#">
+  <data key="d0">5575</data>
+</edge>
+<edge source="C" target="Java">
+  <data key="d0">8776</data>
+</edge>
+<edge source="C" target="Node.js">
+  <data key="d0">6160</data>
+</edge>
+<edge source="C" target="PowerShell">
+  <data key="d0">2332</data>
+</edge>
+<edge source="C" target="SQL">
+  <data key="d0">8447</data>
+</edge>
+<edge source="C" target="Perl">
+  <data key="d0">1018</data>
+</edge>
+<edge source="C" target="Ruby">
+  <data key="d0">1223</data>
+</edge>
+<edge source="C" target="Matlab">
+  <data key="d0">2227</data>
+</edge>
+<edge source="C" target="TypeScript">
+  <data key="d0">4178</data>
+</edge>
+<edge source="C" target="Bash/Shell">
+  <data key="d0">7113</data>
+</edge>
+<edge source="C" target="Kotlin">
+  <data key="d0">1865</data>
+</edge>
+<edge source="C" target="Scala">
+  <data key="d0">545</data>
+</edge>
+<edge source="C" target="Go">
+  <data key="d0">2335</data>
+</edge>
+<edge source="C" target="Groovy">
+  <data key="d0">592</data>
+</edge>
+<edge source="C" target="Dart">
+  <data key="d0">1490</data>
+</edge>
+<edge source="C" target="APL">
+  <data key="d0">175</data>
+</edge>
+<edge source="C" target="LISP">
+  <data key="d0">619</data>
+</edge>
+<edge source="C" target="Delphi">
+  <data key="d0">567</data>
+</edge>
+<edge source="C" target="VBA">
+  <data key="d0">1134</data>
+</edge>
+<edge source="C" target="Haskell">
+  <data key="d0">925</data>
+</edge>
+<edge source="C" target="Julia">
+  <data key="d0">436</data>
+</edge>
+<edge source="C" target="Crystal">
+  <data key="d0">161</data>
+</edge>
+<edge source="C" target="Erlang">
+  <data key="d0">273</data>
+</edge>
+<edge source="C" target="F#">
+  <data key="d0">258</data>
+</edge>
+<edge source="C" target="Elixir">
+  <data key="d0">310</data>
+</edge>
+<edge source="C" target="Clojure">
+  <data key="d0">262</data>
+</edge>
+<edge source="C" target="COBOL">
+  <data key="d0">246</data>
+</edge>
+<edge source="R" target="Rust">
+  <data key="d0">381</data>
+</edge>
+<edge source="R" target="SQL">
+  <data key="d0">2597</data>
+</edge>
+<edge source="R" target="Julia">
+  <data key="d0">341</data>
+</edge>
+<edge source="R" target="Node.js">
+  <data key="d0">1266</data>
+</edge>
+<edge source="R" target="TypeScript">
+  <data key="d0">885</data>
+</edge>
+<edge source="R" target="VBA">
+  <data key="d0">468</data>
+</edge>
+<edge source="R" target="Java">
+  <data key="d0">1681</data>
+</edge>
+<edge source="R" target="Matlab">
+  <data key="d0">837</data>
+</edge>
+<edge source="R" target="Scala">
+  <data key="d0">290</data>
+</edge>
+<edge source="R" target="Delphi">
+  <data key="d0">118</data>
+</edge>
+<edge source="R" target="Go">
+  <data key="d0">468</data>
+</edge>
+<edge source="R" target="Perl">
+  <data key="d0">279</data>
+</edge>
+<edge source="R" target="Ruby">
+  <data key="d0">382</data>
+</edge>
+<edge source="R" target="C#">
+  <data key="d0">958</data>
+</edge>
+<edge source="R" target="Bash/Shell">
+  <data key="d0">1586</data>
+</edge>
+<edge source="R" target="Dart">
+  <data key="d0">282</data>
+</edge>
+<edge source="R" target="Kotlin">
+  <data key="d0">374</data>
+</edge>
+<edge source="R" target="LISP">
+  <data key="d0">191</data>
+</edge>
+<edge source="R" target="PowerShell">
+  <data key="d0">670</data>
+</edge>
+<edge source="R" target="Erlang">
+  <data key="d0">106</data>
+</edge>
+<edge source="R" target="Haskell">
+  <data key="d0">257</data>
+</edge>
+<edge source="R" target="Clojure">
+  <data key="d0">124</data>
+</edge>
+<edge source="R" target="F#">
+  <data key="d0">114</data>
+</edge>
+<edge source="R" target="Groovy">
+  <data key="d0">160</data>
+</edge>
+<edge source="R" target="Elixir">
+  <data key="d0">104</data>
+</edge>
+<edge source="R" target="APL">
+  <data key="d0">83</data>
+</edge>
+<edge source="R" target="Crystal">
+  <data key="d0">80</data>
+</edge>
+<edge source="R" target="COBOL">
+  <data key="d0">84</data>
+</edge>
+<edge source="Rust" target="Java">
+  <data key="d0">2105</data>
+</edge>
+<edge source="Rust" target="Kotlin">
+  <data key="d0">791</data>
+</edge>
+<edge source="Rust" target="Bash/Shell">
+  <data key="d0">2659</data>
+</edge>
+<edge source="Rust" target="C#">
+  <data key="d0">1475</data>
+</edge>
+<edge source="Rust" target="Node.js">
+  <data key="d0">2340</data>
+</edge>
+<edge source="Rust" target="Scala">
+  <data key="d0">359</data>
+</edge>
+<edge source="Rust" target="TypeScript">
+  <data key="d0">2381</data>
+</edge>
+<edge source="Rust" target="Groovy">
+  <data key="d0">218</data>
+</edge>
+<edge source="Rust" target="SQL">
+  <data key="d0">2259</data>
+</edge>
+<edge source="Rust" target="Perl">
+  <data key="d0">241</data>
+</edge>
+<edge source="Rust" target="PowerShell">
+  <data key="d0">710</data>
+</edge>
+<edge source="Rust" target="Delphi">
+  <data key="d0">103</data>
+</edge>
+<edge source="Rust" target="Go">
+  <data key="d0">1621</data>
+</edge>
+<edge source="Rust" target="Ruby">
+  <data key="d0">647</data>
+</edge>
+<edge source="Rust" target="Haskell">
+  <data key="d0">560</data>
+</edge>
+<edge source="Rust" target="Elixir">
+  <data key="d0">338</data>
+</edge>
+<edge source="Rust" target="Matlab">
+  <data key="d0">355</data>
+</edge>
+<edge source="Rust" target="Julia">
+  <data key="d0">240</data>
+</edge>
+<edge source="Rust" target="LISP">
+  <data key="d0">281</data>
+</edge>
+<edge source="Rust" target="Dart">
+  <data key="d0">549</data>
+</edge>
+<edge source="Rust" target="VBA">
+  <data key="d0">183</data>
+</edge>
+<edge source="Rust" target="Erlang">
+  <data key="d0">186</data>
+</edge>
+<edge source="Rust" target="Clojure">
+  <data key="d0">225</data>
+</edge>
+<edge source="Rust" target="Crystal">
+  <data key="d0">120</data>
+</edge>
+<edge source="Rust" target="F#">
+  <data key="d0">189</data>
+</edge>
+<edge source="Rust" target="APL">
+  <data key="d0">81</data>
+</edge>
+<edge source="Rust" target="COBOL">
+  <data key="d0">70</data>
+</edge>
+<edge source="TypeScript" target="Ruby">
+  <data key="d0">1893</data>
+</edge>
+<edge source="TypeScript" target="SQL">
+  <data key="d0">13775</data>
+</edge>
+<edge source="TypeScript" target="C#">
+  <data key="d0">8990</data>
+</edge>
+<edge source="TypeScript" target="Bash/Shell">
+  <data key="d0">7463</data>
+</edge>
+<edge source="TypeScript" target="Node.js">
+  <data key="d0">15629</data>
+</edge>
+<edge source="TypeScript" target="Matlab">
+  <data key="d0">893</data>
+</edge>
+<edge source="TypeScript" target="Java">
+  <data key="d0">9356</data>
+</edge>
+<edge source="TypeScript" target="Kotlin">
+  <data key="d0">2655</data>
+</edge>
+<edge source="TypeScript" target="Haskell">
+  <data key="d0">655</data>
+</edge>
+<edge source="TypeScript" target="Dart">
+  <data key="d0">2054</data>
+</edge>
+<edge source="TypeScript" target="Scala">
+  <data key="d0">805</data>
+</edge>
+<edge source="TypeScript" target="PowerShell">
+  <data key="d0">3884</data>
+</edge>
+<edge source="TypeScript" target="VBA">
+  <data key="d0">1148</data>
+</edge>
+<edge source="TypeScript" target="Delphi">
+  <data key="d0">452</data>
+</edge>
+<edge source="TypeScript" target="Go">
+  <data key="d0">3278</data>
+</edge>
+<edge source="TypeScript" target="Groovy">
+  <data key="d0">976</data>
+</edge>
+<edge source="TypeScript" target="Perl">
+  <data key="d0">522</data>
+</edge>
+<edge source="TypeScript" target="Julia">
+  <data key="d0">223</data>
+</edge>
+<edge source="TypeScript" target="Clojure">
+  <data key="d0">393</data>
+</edge>
+<edge source="TypeScript" target="Erlang">
+  <data key="d0">246</data>
+</edge>
+<edge source="TypeScript" target="F#">
+  <data key="d0">428</data>
+</edge>
+<edge source="TypeScript" target="Crystal">
+  <data key="d0">180</data>
+</edge>
+<edge source="TypeScript" target="LISP">
+  <data key="d0">345</data>
+</edge>
+<edge source="TypeScript" target="Elixir">
+  <data key="d0">605</data>
+</edge>
+<edge source="TypeScript" target="APL">
+  <data key="d0">144</data>
+</edge>
+<edge source="TypeScript" target="COBOL">
+  <data key="d0">174</data>
+</edge>
+<edge source="Bash/Shell" target="SQL">
+  <data key="d0">12661</data>
+</edge>
+<edge source="Bash/Shell" target="Node.js">
+  <data key="d0">9436</data>
+</edge>
+<edge source="Bash/Shell" target="Ruby">
+  <data key="d0">2282</data>
+</edge>
+<edge source="Bash/Shell" target="Haskell">
+  <data key="d0">908</data>
+</edge>
+<edge source="Bash/Shell" target="Go">
+  <data key="d0">3788</data>
+</edge>
+<edge source="Bash/Shell" target="Java">
+  <data key="d0">9280</data>
+</edge>
+<edge source="Bash/Shell" target="Scala">
+  <data key="d0">992</data>
+</edge>
+<edge source="Bash/Shell" target="C#">
+  <data key="d0">5650</data>
+</edge>
+<edge source="Bash/Shell" target="Dart">
+  <data key="d0">1255</data>
+</edge>
+<edge source="Bash/Shell" target="Kotlin">
+  <data key="d0">2147</data>
+</edge>
+<edge source="Bash/Shell" target="Matlab">
+  <data key="d0">1487</data>
+</edge>
+<edge source="Bash/Shell" target="PowerShell">
+  <data key="d0">4453</data>
+</edge>
+<edge source="Bash/Shell" target="Delphi">
+  <data key="d0">455</data>
+</edge>
+<edge source="Bash/Shell" target="Julia">
+  <data key="d0">470</data>
+</edge>
+<edge source="Bash/Shell" target="Clojure">
+  <data key="d0">645</data>
+</edge>
+<edge source="Bash/Shell" target="VBA">
+  <data key="d0">1223</data>
+</edge>
+<edge source="Bash/Shell" target="Perl">
+  <data key="d0">1331</data>
+</edge>
+<edge source="Bash/Shell" target="Groovy">
+  <data key="d0">1391</data>
+</edge>
+<edge source="Bash/Shell" target="LISP">
+  <data key="d0">668</data>
+</edge>
+<edge source="Bash/Shell" target="Erlang">
+  <data key="d0">363</data>
+</edge>
+<edge source="Bash/Shell" target="F#">
+  <data key="d0">329</data>
+</edge>
+<edge source="Bash/Shell" target="Elixir">
+  <data key="d0">576</data>
+</edge>
+<edge source="Bash/Shell" target="Crystal">
+  <data key="d0">223</data>
+</edge>
+<edge source="Bash/Shell" target="APL">
+  <data key="d0">173</data>
+</edge>
+<edge source="Bash/Shell" target="COBOL">
+  <data key="d0">221</data>
+</edge>
+<edge source="SQL" target="C#">
+  <data key="d0">14186</data>
+</edge>
+<edge source="SQL" target="Java">
+  <data key="d0">16293</data>
+</edge>
+<edge source="SQL" target="Node.js">
+  <data key="d0">15713</data>
+</edge>
+<edge source="SQL" target="PowerShell">
+  <data key="d0">6253</data>
+</edge>
+<edge source="SQL" target="Ruby">
+  <data key="d0">3084</data>
+</edge>
+<edge source="SQL" target="Matlab">
+  <data key="d0">2086</data>
+</edge>
+<edge source="SQL" target="Julia">
+  <data key="d0">409</data>
+</edge>
+<edge source="SQL" target="Haskell">
+  <data key="d0">834</data>
+</edge>
+<edge source="SQL" target="Delphi">
+  <data key="d0">1155</data>
+</edge>
+<edge source="SQL" target="Go">
+  <data key="d0">4148</data>
+</edge>
+<edge source="SQL" target="Scala">
+  <data key="d0">1255</data>
+</edge>
+<edge source="SQL" target="Kotlin">
+  <data key="d0">3448</data>
+</edge>
+<edge source="SQL" target="VBA">
+  <data key="d0">2872</data>
+</edge>
+<edge source="SQL" target="Dart">
+  <data key="d0">2507</data>
+</edge>
+<edge source="SQL" target="Groovy">
+  <data key="d0">1523</data>
+</edge>
+<edge source="SQL" target="Clojure">
+  <data key="d0">656</data>
+</edge>
+<edge source="SQL" target="F#">
+  <data key="d0">480</data>
+</edge>
+<edge source="SQL" target="Perl">
+  <data key="d0">1298</data>
+</edge>
+<edge source="SQL" target="LISP">
+  <data key="d0">568</data>
+</edge>
+<edge source="SQL" target="Crystal">
+  <data key="d0">298</data>
+</edge>
+<edge source="SQL" target="Erlang">
+  <data key="d0">358</data>
+</edge>
+<edge source="SQL" target="Elixir">
+  <data key="d0">728</data>
+</edge>
+<edge source="SQL" target="APL">
+  <data key="d0">216</data>
+</edge>
+<edge source="SQL" target="COBOL">
+  <data key="d0">315</data>
+</edge>
+<edge source="C#" target="Java">
+  <data key="d0">8218</data>
+</edge>
+<edge source="C#" target="Node.js">
+  <data key="d0">8535</data>
+</edge>
+<edge source="C#" target="PowerShell">
+  <data key="d0">5333</data>
+</edge>
+<edge source="C#" target="Matlab">
+  <data key="d0">1187</data>
+</edge>
+<edge source="C#" target="Dart">
+  <data key="d0">1563</data>
+</edge>
+<edge source="C#" target="Kotlin">
+  <data key="d0">2003</data>
+</edge>
+<edge source="C#" target="Scala">
+  <data key="d0">452</data>
+</edge>
+<edge source="C#" target="VBA">
+  <data key="d0">2066</data>
+</edge>
+<edge source="C#" target="Delphi">
+  <data key="d0">766</data>
+</edge>
+<edge source="C#" target="Go">
+  <data key="d0">1961</data>
+</edge>
+<edge source="C#" target="Julia">
+  <data key="d0">213</data>
+</edge>
+<edge source="C#" target="Clojure">
+  <data key="d0">227</data>
+</edge>
+<edge source="C#" target="F#">
+  <data key="d0">639</data>
+</edge>
+<edge source="C#" target="Groovy">
+  <data key="d0">600</data>
+</edge>
+<edge source="C#" target="Ruby">
+  <data key="d0">1077</data>
+</edge>
+<edge source="C#" target="Perl">
+  <data key="d0">562</data>
+</edge>
+<edge source="C#" target="Crystal">
+  <data key="d0">209</data>
+</edge>
+<edge source="C#" target="Erlang">
+  <data key="d0">197</data>
+</edge>
+<edge source="C#" target="Haskell">
+  <data key="d0">546</data>
+</edge>
+<edge source="C#" target="Elixir">
+  <data key="d0">300</data>
+</edge>
+<edge source="C#" target="LISP">
+  <data key="d0">301</data>
+</edge>
+<edge source="C#" target="APL">
+  <data key="d0">137</data>
+</edge>
+<edge source="C#" target="COBOL">
+  <data key="d0">236</data>
+</edge>
+<edge source="Java" target="Node.js">
+  <data key="d0">11324</data>
+</edge>
+<edge source="Java" target="PowerShell">
+  <data key="d0">3457</data>
+</edge>
+<edge source="Java" target="Perl">
+  <data key="d0">963</data>
+</edge>
+<edge source="Java" target="Ruby">
+  <data key="d0">1769</data>
+</edge>
+<edge source="Java" target="Kotlin">
+  <data key="d0">5206</data>
+</edge>
+<edge source="Java" target="Delphi">
+  <data key="d0">596</data>
+</edge>
+<edge source="Java" target="Go">
+  <data key="d0">3314</data>
+</edge>
+<edge source="Java" target="Scala">
+  <data key="d0">1419</data>
+</edge>
+<edge source="Java" target="Matlab">
+  <data key="d0">1945</data>
+</edge>
+<edge source="Java" target="Dart">
+  <data key="d0">2540</data>
+</edge>
+<edge source="Java" target="Groovy">
+  <data key="d0">1922</data>
+</edge>
+<edge source="Java" target="Clojure">
+  <data key="d0">642</data>
+</edge>
+<edge source="Java" target="Haskell">
+  <data key="d0">919</data>
+</edge>
+<edge source="Java" target="VBA">
+  <data key="d0">1636</data>
+</edge>
+<edge source="Java" target="Julia">
+  <data key="d0">324</data>
+</edge>
+<edge source="Java" target="LISP">
+  <data key="d0">527</data>
+</edge>
+<edge source="Java" target="Erlang">
+  <data key="d0">276</data>
+</edge>
+<edge source="Java" target="F#">
+  <data key="d0">280</data>
+</edge>
+<edge source="Java" target="Crystal">
+  <data key="d0">159</data>
+</edge>
+<edge source="Java" target="Elixir">
+  <data key="d0">362</data>
+</edge>
+<edge source="Java" target="APL">
+  <data key="d0">169</data>
+</edge>
+<edge source="Java" target="COBOL">
+  <data key="d0">273</data>
+</edge>
+<edge source="Node.js" target="PowerShell">
+  <data key="d0">4218</data>
+</edge>
+<edge source="Node.js" target="Matlab">
+  <data key="d0">1401</data>
+</edge>
+<edge source="Node.js" target="Kotlin">
+  <data key="d0">2969</data>
+</edge>
+<edge source="Node.js" target="Go">
+  <data key="d0">3773</data>
+</edge>
+<edge source="Node.js" target="Scala">
+  <data key="d0">766</data>
+</edge>
+<edge source="Node.js" target="VBA">
+  <data key="d0">1354</data>
+</edge>
+<edge source="Node.js" target="Dart">
+  <data key="d0">2477</data>
+</edge>
+<edge source="Node.js" target="Delphi">
+  <data key="d0">461</data>
+</edge>
+<edge source="Node.js" target="Groovy">
+  <data key="d0">1079</data>
+</edge>
+<edge source="Node.js" target="Perl">
+  <data key="d0">774</data>
+</edge>
+<edge source="Node.js" target="Ruby">
+  <data key="d0">2322</data>
+</edge>
+<edge source="Node.js" target="Haskell">
+  <data key="d0">739</data>
+</edge>
+<edge source="Node.js" target="Julia">
+  <data key="d0">280</data>
+</edge>
+<edge source="Node.js" target="Clojure">
+  <data key="d0">458</data>
+</edge>
+<edge source="Node.js" target="Erlang">
+  <data key="d0">314</data>
+</edge>
+<edge source="Node.js" target="F#">
+  <data key="d0">337</data>
+</edge>
+<edge source="Node.js" target="Crystal">
+  <data key="d0">186</data>
+</edge>
+<edge source="Node.js" target="LISP">
+  <data key="d0">420</data>
+</edge>
+<edge source="Node.js" target="Elixir">
+  <data key="d0">628</data>
+</edge>
+<edge source="Node.js" target="APL">
+  <data key="d0">135</data>
+</edge>
+<edge source="Node.js" target="COBOL">
+  <data key="d0">186</data>
+</edge>
+<edge source="PowerShell" target="VBA">
+  <data key="d0">1168</data>
+</edge>
+<edge source="PowerShell" target="Matlab">
+  <data key="d0">712</data>
+</edge>
+<edge source="PowerShell" target="Dart">
+  <data key="d0">572</data>
+</edge>
+<edge source="PowerShell" target="Delphi">
+  <data key="d0">340</data>
+</edge>
+<edge source="PowerShell" target="Go">
+  <data key="d0">1081</data>
+</edge>
+<edge source="PowerShell" target="Kotlin">
+  <data key="d0">806</data>
+</edge>
+<edge source="PowerShell" target="Perl">
+  <data key="d0">481</data>
+</edge>
+<edge source="PowerShell" target="Groovy">
+  <data key="d0">520</data>
+</edge>
+<edge source="PowerShell" target="Ruby">
+  <data key="d0">598</data>
+</edge>
+<edge source="PowerShell" target="Crystal">
+  <data key="d0">113</data>
+</edge>
+<edge source="PowerShell" target="Erlang">
+  <data key="d0">131</data>
+</edge>
+<edge source="PowerShell" target="F#">
+  <data key="d0">304</data>
+</edge>
+<edge source="PowerShell" target="Haskell">
+  <data key="d0">273</data>
+</edge>
+<edge source="PowerShell" target="Clojure">
+  <data key="d0">134</data>
+</edge>
+<edge source="PowerShell" target="Scala">
+  <data key="d0">286</data>
+</edge>
+<edge source="PowerShell" target="APL">
+  <data key="d0">95</data>
+</edge>
+<edge source="PowerShell" target="LISP">
+  <data key="d0">182</data>
+</edge>
+<edge source="PowerShell" target="Julia">
+  <data key="d0">152</data>
+</edge>
+<edge source="PowerShell" target="Elixir">
+  <data key="d0">162</data>
+</edge>
+<edge source="PowerShell" target="COBOL">
+  <data key="d0">139</data>
+</edge>
+<edge source="Ruby" target="Perl">
+  <data key="d0">378</data>
+</edge>
+<edge source="Ruby" target="Groovy">
+  <data key="d0">314</data>
+</edge>
+<edge source="Ruby" target="Delphi">
+  <data key="d0">151</data>
+</edge>
+<edge source="Ruby" target="Go">
+  <data key="d0">1143</data>
+</edge>
+<edge source="Ruby" target="Kotlin">
+  <data key="d0">587</data>
+</edge>
+<edge source="Ruby" target="VBA">
+  <data key="d0">285</data>
+</edge>
+<edge source="Ruby" target="Matlab">
+  <data key="d0">282</data>
+</edge>
+<edge source="Ruby" target="Dart">
+  <data key="d0">385</data>
+</edge>
+<edge source="Ruby" target="Elixir">
+  <data key="d0">560</data>
+</edge>
+<edge source="Ruby" target="LISP">
+  <data key="d0">211</data>
+</edge>
+<edge source="Ruby" target="Clojure">
+  <data key="d0">227</data>
+</edge>
+<edge source="Ruby" target="F#">
+  <data key="d0">112</data>
+</edge>
+<edge source="Ruby" target="Scala">
+  <data key="d0">288</data>
+</edge>
+<edge source="Ruby" target="Crystal">
+  <data key="d0">233</data>
+</edge>
+<edge source="Ruby" target="Julia">
+  <data key="d0">125</data>
+</edge>
+<edge source="Ruby" target="APL">
+  <data key="d0">77</data>
+</edge>
+<edge source="Ruby" target="Haskell">
+  <data key="d0">256</data>
+</edge>
+<edge source="Ruby" target="Erlang">
+  <data key="d0">217</data>
+</edge>
+<edge source="Ruby" target="COBOL">
+  <data key="d0">91</data>
+</edge>
+<edge source="Perl" target="Delphi">
+  <data key="d0">163</data>
+</edge>
+<edge source="Perl" target="Go">
+  <data key="d0">431</data>
+</edge>
+<edge source="Perl" target="Matlab">
+  <data key="d0">236</data>
+</edge>
+<edge source="Perl" target="Kotlin">
+  <data key="d0">224</data>
+</edge>
+<edge source="Perl" target="VBA">
+  <data key="d0">296</data>
+</edge>
+<edge source="Perl" target="Clojure">
+  <data key="d0">99</data>
+</edge>
+<edge source="Perl" target="Scala">
+  <data key="d0">146</data>
+</edge>
+<edge source="Perl" target="Erlang">
+  <data key="d0">103</data>
+</edge>
+<edge source="Perl" target="F#">
+  <data key="d0">83</data>
+</edge>
+<edge source="Perl" target="Haskell">
+  <data key="d0">141</data>
+</edge>
+<edge source="Perl" target="LISP">
+  <data key="d0">168</data>
+</edge>
+<edge source="Perl" target="Dart">
+  <data key="d0">120</data>
+</edge>
+<edge source="Perl" target="Julia">
+  <data key="d0">99</data>
+</edge>
+<edge source="Perl" target="APL">
+  <data key="d0">65</data>
+</edge>
+<edge source="Perl" target="Groovy">
+  <data key="d0">182</data>
+</edge>
+<edge source="Perl" target="Crystal">
+  <data key="d0">72</data>
+</edge>
+<edge source="Perl" target="Elixir">
+  <data key="d0">92</data>
+</edge>
+<edge source="Perl" target="COBOL">
+  <data key="d0">99</data>
+</edge>
+<edge source="Matlab" target="Scala">
+  <data key="d0">183</data>
+</edge>
+<edge source="Matlab" target="Julia">
+  <data key="d0">279</data>
+</edge>
+<edge source="Matlab" target="Go">
+  <data key="d0">360</data>
+</edge>
+<edge source="Matlab" target="Groovy">
+  <data key="d0">149</data>
+</edge>
+<edge source="Matlab" target="Dart">
+  <data key="d0">338</data>
+</edge>
+<edge source="Matlab" target="VBA">
+  <data key="d0">456</data>
+</edge>
+<edge source="Matlab" target="Kotlin">
+  <data key="d0">420</data>
+</edge>
+<edge source="Matlab" target="LISP">
+  <data key="d0">189</data>
+</edge>
+<edge source="Matlab" target="Haskell">
+  <data key="d0">234</data>
+</edge>
+<edge source="Matlab" target="F#">
+  <data key="d0">99</data>
+</edge>
+<edge source="Matlab" target="Delphi">
+  <data key="d0">158</data>
+</edge>
+<edge source="Matlab" target="Clojure">
+  <data key="d0">74</data>
+</edge>
+<edge source="Matlab" target="Crystal">
+  <data key="d0">63</data>
+</edge>
+<edge source="Matlab" target="Elixir">
+  <data key="d0">77</data>
+</edge>
+<edge source="Matlab" target="Erlang">
+  <data key="d0">81</data>
+</edge>
+<edge source="Matlab" target="APL">
+  <data key="d0">88</data>
+</edge>
+<edge source="Matlab" target="COBOL">
+  <data key="d0">84</data>
+</edge>
+<edge source="Kotlin" target="Scala">
+  <data key="d0">401</data>
+</edge>
+<edge source="Kotlin" target="Dart">
+  <data key="d0">1312</data>
+</edge>
+<edge source="Kotlin" target="Delphi">
+  <data key="d0">160</data>
+</edge>
+<edge source="Kotlin" target="Go">
+  <data key="d0">1095</data>
+</edge>
+<edge source="Kotlin" target="Groovy">
+  <data key="d0">683</data>
+</edge>
+<edge source="Kotlin" target="Clojure">
+  <data key="d0">201</data>
+</edge>
+<edge source="Kotlin" target="Haskell">
+  <data key="d0">313</data>
+</edge>
+<edge source="Kotlin" target="VBA">
+  <data key="d0">313</data>
+</edge>
+<edge source="Kotlin" target="Erlang">
+  <data key="d0">133</data>
+</edge>
+<edge source="Kotlin" target="LISP">
+  <data key="d0">164</data>
+</edge>
+<edge source="Kotlin" target="F#">
+  <data key="d0">139</data>
+</edge>
+<edge source="Kotlin" target="Crystal">
+  <data key="d0">89</data>
+</edge>
+<edge source="Kotlin" target="APL">
+  <data key="d0">77</data>
+</edge>
+<edge source="Kotlin" target="Julia">
+  <data key="d0">138</data>
+</edge>
+<edge source="Kotlin" target="Elixir">
+  <data key="d0">197</data>
+</edge>
+<edge source="Kotlin" target="COBOL">
+  <data key="d0">88</data>
+</edge>
+<edge source="Julia" target="LISP">
+  <data key="d0">112</data>
+</edge>
+<edge source="Julia" target="Dart">
+  <data key="d0">111</data>
+</edge>
+<edge source="Julia" target="Groovy">
+  <data key="d0">61</data>
+</edge>
+<edge source="Julia" target="Go">
+  <data key="d0">183</data>
+</edge>
+<edge source="Julia" target="Elixir">
+  <data key="d0">89</data>
+</edge>
+<edge source="Julia" target="Erlang">
+  <data key="d0">75</data>
+</edge>
+<edge source="Julia" target="Haskell">
+  <data key="d0">141</data>
+</edge>
+<edge source="Julia" target="Clojure">
+  <data key="d0">94</data>
+</edge>
+<edge source="Julia" target="Delphi">
+  <data key="d0">70</data>
+</edge>
+<edge source="Julia" target="VBA">
+  <data key="d0">99</data>
+</edge>
+<edge source="Julia" target="Scala">
+  <data key="d0">107</data>
+</edge>
+<edge source="Julia" target="Crystal">
+  <data key="d0">63</data>
+</edge>
+<edge source="Julia" target="F#">
+  <data key="d0">73</data>
+</edge>
+<edge source="Julia" target="APL">
+  <data key="d0">64</data>
+</edge>
+<edge source="Julia" target="COBOL">
   <data key="d0">60</data>
 </edge>
-<edge source="Chef" target="Pulumi">
+<edge source="Haskell" target="Clojure">
+  <data key="d0">164</data>
+</edge>
+<edge source="Haskell" target="Scala">
+  <data key="d0">216</data>
+</edge>
+<edge source="Haskell" target="VBA">
+  <data key="d0">121</data>
+</edge>
+<edge source="Haskell" target="F#">
+  <data key="d0">142</data>
+</edge>
+<edge source="Haskell" target="LISP">
+  <data key="d0">222</data>
+</edge>
+<edge source="Haskell" target="Dart">
+  <data key="d0">180</data>
+</edge>
+<edge source="Haskell" target="Erlang">
+  <data key="d0">152</data>
+</edge>
+<edge source="Haskell" target="Elixir">
+  <data key="d0">174</data>
+</edge>
+<edge source="Haskell" target="APL">
+  <data key="d0">81</data>
+</edge>
+<edge source="Haskell" target="Delphi">
+  <data key="d0">84</data>
+</edge>
+<edge source="Haskell" target="Go">
+  <data key="d0">414</data>
+</edge>
+<edge source="Haskell" target="Groovy">
+  <data key="d0">119</data>
+</edge>
+<edge source="Haskell" target="Crystal">
+  <data key="d0">72</data>
+</edge>
+<edge source="Haskell" target="COBOL">
+  <data key="d0">65</data>
+</edge>
+<edge source="Delphi" target="Dart">
+  <data key="d0">147</data>
+</edge>
+<edge source="Delphi" target="Go">
+  <data key="d0">181</data>
+</edge>
+<edge source="Delphi" target="Erlang">
+  <data key="d0">71</data>
+</edge>
+<edge source="Delphi" target="VBA">
+  <data key="d0">334</data>
+</edge>
+<edge source="Delphi" target="LISP">
+  <data key="d0">95</data>
+</edge>
+<edge source="Delphi" target="Scala">
+  <data key="d0">89</data>
+</edge>
+<edge source="Delphi" target="Groovy">
+  <data key="d0">104</data>
+</edge>
+<edge source="Delphi" target="F#">
+  <data key="d0">77</data>
+</edge>
+<edge source="Delphi" target="Elixir">
+  <data key="d0">74</data>
+</edge>
+<edge source="Delphi" target="APL">
+  <data key="d0">83</data>
+</edge>
+<edge source="Delphi" target="Clojure">
+  <data key="d0">68</data>
+</edge>
+<edge source="Delphi" target="Crystal">
+  <data key="d0">84</data>
+</edge>
+<edge source="Delphi" target="COBOL">
+  <data key="d0">121</data>
+</edge>
+<edge source="Go" target="Scala">
+  <data key="d0">484</data>
+</edge>
+<edge source="Go" target="Dart">
+  <data key="d0">905</data>
+</edge>
+<edge source="Go" target="Clojure">
+  <data key="d0">298</data>
+</edge>
+<edge source="Go" target="VBA">
+  <data key="d0">294</data>
+</edge>
+<edge source="Go" target="Groovy">
+  <data key="d0">541</data>
+</edge>
+<edge source="Go" target="APL">
+  <data key="d0">74</data>
+</edge>
+<edge source="Go" target="Erlang">
+  <data key="d0">238</data>
+</edge>
+<edge source="Go" target="LISP">
+  <data key="d0">246</data>
+</edge>
+<edge source="Go" target="Elixir">
+  <data key="d0">452</data>
+</edge>
+<edge source="Go" target="F#">
+  <data key="d0">188</data>
+</edge>
+<edge source="Go" target="Crystal">
+  <data key="d0">145</data>
+</edge>
+<edge source="Go" target="COBOL">
+  <data key="d0">86</data>
+</edge>
+<edge source="Scala" target="VBA">
+  <data key="d0">151</data>
+</edge>
+<edge source="Scala" target="LISP">
+  <data key="d0">132</data>
+</edge>
+<edge source="Scala" target="Groovy">
+  <data key="d0">259</data>
+</edge>
+<edge source="Scala" target="Clojure">
+  <data key="d0">177</data>
+</edge>
+<edge source="Scala" target="F#">
+  <data key="d0">98</data>
+</edge>
+<edge source="Scala" target="Dart">
+  <data key="d0">154</data>
+</edge>
+<edge source="Scala" target="Erlang">
+  <data key="d0">107</data>
+</edge>
+<edge source="Scala" target="Elixir">
+  <data key="d0">122</data>
+</edge>
+<edge source="Scala" target="Crystal">
+  <data key="d0">64</data>
+</edge>
+<edge source="Scala" target="APL">
+  <data key="d0">63</data>
+</edge>
+<edge source="Scala" target="COBOL">
+  <data key="d0">73</data>
+</edge>
+<edge source="Dart" target="Groovy">
+  <data key="d0">214</data>
+</edge>
+<edge source="Dart" target="LISP">
+  <data key="d0">102</data>
+</edge>
+<edge source="Dart" target="Erlang">
+  <data key="d0">106</data>
+</edge>
+<edge source="Dart" target="VBA">
+  <data key="d0">242</data>
+</edge>
+<edge source="Dart" target="Elixir">
+  <data key="d0">182</data>
+</edge>
+<edge source="Dart" target="Clojure">
+  <data key="d0">114</data>
+</edge>
+<edge source="Dart" target="Crystal">
+  <data key="d0">86</data>
+</edge>
+<edge source="Dart" target="APL">
+  <data key="d0">71</data>
+</edge>
+<edge source="Dart" target="F#">
+  <data key="d0">102</data>
+</edge>
+<edge source="Dart" target="COBOL">
+  <data key="d0">71</data>
+</edge>
+<edge source="VBA" target="Crystal">
+  <data key="d0">108</data>
+</edge>
+<edge source="VBA" target="Erlang">
+  <data key="d0">79</data>
+</edge>
+<edge source="VBA" target="F#">
+  <data key="d0">125</data>
+</edge>
+<edge source="VBA" target="Groovy">
+  <data key="d0">179</data>
+</edge>
+<edge source="VBA" target="Clojure">
+  <data key="d0">69</data>
+</edge>
+<edge source="VBA" target="LISP">
+  <data key="d0">141</data>
+</edge>
+<edge source="VBA" target="APL">
+  <data key="d0">79</data>
+</edge>
+<edge source="VBA" target="Elixir">
+  <data key="d0">73</data>
+</edge>
+<edge source="VBA" target="COBOL">
+  <data key="d0">149</data>
+</edge>
+<edge source="Groovy" target="LISP">
+  <data key="d0">98</data>
+</edge>
+<edge source="Groovy" target="Clojure">
+  <data key="d0">123</data>
+</edge>
+<edge source="Groovy" target="Erlang">
+  <data key="d0">89</data>
+</edge>
+<edge source="Groovy" target="F#">
+  <data key="d0">69</data>
+</edge>
+<edge source="Groovy" target="Elixir">
+  <data key="d0">80</data>
+</edge>
+<edge source="Groovy" target="APL">
+  <data key="d0">59</data>
+</edge>
+<edge source="Groovy" target="Crystal">
+  <data key="d0">60</data>
+</edge>
+<edge source="Groovy" target="COBOL">
+  <data key="d0">77</data>
+</edge>
+<edge source="Clojure" target="LISP">
+  <data key="d0">236</data>
+</edge>
+<edge source="Clojure" target="Erlang">
+  <data key="d0">105</data>
+</edge>
+<edge source="Clojure" target="Crystal">
   <data key="d0">67</data>
+</edge>
+<edge source="Clojure" target="Elixir">
+  <data key="d0">139</data>
+</edge>
+<edge source="Clojure" target="F#">
+  <data key="d0">89</data>
+</edge>
+<edge source="Clojure" target="APL">
+  <data key="d0">73</data>
+</edge>
+<edge source="Clojure" target="COBOL">
+  <data key="d0">67</data>
+</edge>
+<edge source="APL" target="LISP">
+  <data key="d0">83</data>
+</edge>
+<edge source="APL" target="Erlang">
+  <data key="d0">65</data>
+</edge>
+<edge source="APL" target="Elixir">
+  <data key="d0">66</data>
+</edge>
+<edge source="APL" target="Crystal">
+  <data key="d0">64</data>
+</edge>
+<edge source="APL" target="F#">
+  <data key="d0">61</data>
+</edge>
+<edge source="APL" target="COBOL">
+  <data key="d0">69</data>
+</edge>
+<edge source="LISP" target="F#">
+  <data key="d0">95</data>
+</edge>
+<edge source="LISP" target="Elixir">
+  <data key="d0">112</data>
+</edge>
+<edge source="LISP" target="Erlang">
+  <data key="d0">109</data>
+</edge>
+<edge source="LISP" target="Crystal">
+  <data key="d0">59</data>
+</edge>
+<edge source="LISP" target="COBOL">
+  <data key="d0">74</data>
+</edge>
+<edge source="F#" target="Elixir">
+  <data key="d0">102</data>
+</edge>
+<edge source="F#" target="Erlang">
+  <data key="d0">89</data>
+</edge>
+<edge source="F#" target="Crystal">
+  <data key="d0">61</data>
+</edge>
+<edge source="F#" target="COBOL">
+  <data key="d0">65</data>
+</edge>
+<edge source="Elixir" target="Erlang">
+  <data key="d0">405</data>
+</edge>
+<edge source="Elixir" target="Crystal">
+  <data key="d0">116</data>
+</edge>
+<edge source="Elixir" target="COBOL">
+  <data key="d0">57</data>
+</edge>
+<edge source="Erlang" target="Crystal">
+  <data key="d0">70</data>
+</edge>
+<edge source="Erlang" target="COBOL">
+  <data key="d0">62</data>
+</edge>
+<edge source="Crystal" target="COBOL">
+  <data key="d0">69</data>
 </edge>
 </graph></graphml>
