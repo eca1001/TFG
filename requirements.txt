@@ -1,1 +1,7 @@
-
+voila
+scipy
+math
+bokeh
+matplotlib
+pandas
+numpy
