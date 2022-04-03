@@ -6,3 +6,6 @@ pandas
 numpy
 networkx
 community
+python
+numpydoc
+python-louvain
