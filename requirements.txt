@@ -12,7 +12,6 @@ python-louvain
 jupyterlab
 requests
 textblob
-nltk
 plotly-express
 pytest
 ipyvuetify
