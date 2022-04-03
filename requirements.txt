@@ -6,4 +6,3 @@ pandas
 numpy
 networkx
 community
-itertools
