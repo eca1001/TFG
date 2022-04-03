@@ -4,3 +4,7 @@ bokeh
 matplotlib
 pandas
 numpy
+networkx
+webbrowser
+community
+itertools
