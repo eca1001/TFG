@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+#nav {
+    background-color: black;
+    color: white;
+}
+
+#nav ul {
+    padding-inline-start: 0;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0.5em;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer {
+    font-size: small;
+}
+
+#page-content {
+    margin: 10pt;
+}
+
+#page-content li:nth-child(even){
+    background-color:  #ddd;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.rojo {
+    color: red;
+}
+
+#nav a:hover {
+    color: yellow;
+}

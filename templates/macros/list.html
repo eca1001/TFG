@@ -1,0 +1,16 @@
+{% from "macros/list_item.html" import list_item %}}
+{% macro list(ordered, items) %}
+    {%- if ordered -%}
+        <ol>
+        {%- else -%}
+        <ul>
+    {%- endif -%}
+        {%- for item in items -%}
+            {{ list_item(item) }}
+        {%- endfor -%}
+    {%- if ordered -%}
+        </ol>
+    {%- else -%}
+        </ul>
+    {%- endif -%}
+{% endmacro %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "macros/list.html" import list %}
+{% block title %}Trabajo de Fin de Grado{% endblock %}
+{% block pagecontent %}
+    <p>
+        <p>{{ name }}</p>
+        <p>Autor:
+            {{ list(True, autor) }}
+        </p>
+        <p>Profesores:
+            {{ list(False, profesores) }}
+        </p>
+    </p>
+{% endblock %}

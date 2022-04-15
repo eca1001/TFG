@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Elección de umbral{% endblock %}
+{% block pagecontent %}
+
+<p>Introduzca valor del umbral</p>
+
+<form action="" method="post"> 
+    <input type="text" placeholder="Umbral" name="user_umbral" />
+    <input type="submit" value="Enviar" />
+    <input type="reset" value="Limpiar" />
+</form>
+
+<p>
+    Pasos:
+    <ul>
+        <li>Escriba el umbral deseado</li>
+        <li>Pinche en enviar</li>
+        <li>Para ver los cambios vuelva a la página 'Inicio'</li>
+    </ul>
+</p>
+{% endblock %}
