@@ -14,7 +14,7 @@ def not_found(error):
 @app.route('/', methods=["GET"])
 def index():
     if "user_umbral" not in session:
-        session["user_umbral"] = 40
+        session["user_umbral"] = 30
     
     ejecutar(session["user_umbral"])
     return render_template("principal.html", name=session["user_umbral"])

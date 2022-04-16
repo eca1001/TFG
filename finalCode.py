@@ -278,7 +278,7 @@ def vecinos(G, umbral):
     hoja.write(0, 0, "Nodo")
     
     while i <= ma:
-        hoja.write(0, i, "Lengauje"+" "+str(i))
+        hoja.write(0, i, "Lenguaje"+" "+str(i))
         i+=1
     
     #Cerramos el libro
@@ -308,30 +308,5 @@ def ejecutar(umbral):
     propiedadesRed(H,umbral)
     grafoInteractivo(H, umbral)
     vecinos(H, umbral)
-
-
-"""
-ejecutar(0)
-ejecutar(5)
-ejecutar(10)
-ejecutar(15)
-ejecutar(20)
-ejecutar(25)
-ejecutar(30)
-ejecutar(35)
-ejecutar(40)
-ejecutar(45)
-ejecutar(50)
-ejecutar(55)
-ejecutar(60)
-ejecutar(65)
-ejecutar(70)
-ejecutar(75)
-ejecutar(80)
-ejecutar(85)
-ejecutar(90)
-ejecutar(95)
-ejecutar(100)
-"""
 
 
