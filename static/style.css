@@ -1,11 +1,11 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
+    margin: 10pt;
 }
 
 #nav {
-    background-color: black;
-    color: white;
+    background-color: rgb(2, 1, 71);
+    margin: 0pt;
 }
 
 #nav ul {
@@ -23,25 +23,21 @@ body {
 }
 
 #footer {
+    margin: 0pt;
     font-size: small;
+    color: white;
+    background-color: rgb(2, 1, 71);
 }
 
 #page-content {
-    margin: 10pt;
+    margin: 0pt;
+    background-color: rgb(241, 255, 255);
 }
 
 #page-content li:nth-child(even){
-    background-color:  #ddd;
-}
-
-.tachado {
-    text-decoration: line-through;
-}
-
-.rojo {
-    color: red;
+    background-color:  rgb(220, 252, 252);
 }
 
 #nav a:hover {
-    color: yellow;
+    color: rgb(113, 190, 241);
 }

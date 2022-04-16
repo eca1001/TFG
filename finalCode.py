@@ -80,7 +80,7 @@ def gradosNodos(G, umbral):
         lista.append(d[1])
     fig=plt.figure(figsize=(7,7))
     plt.pie(lista, labels=G.nodes(), autopct='%1.1f%%')
-    plt.title('Grados \n', fontsize = 20)
+    plt.title('Porcentaje de uso del lenguaje \n', fontsize = 20)
     plt.axis("equal")
     plt.savefig("static/images/graficosSectores/GraficoSectores"+str(umbral)+".jpg")
 
@@ -188,20 +188,20 @@ def grafoInteractivo(G, umbral):
     color_by_this_attribute = 'modularity_color'
 
     #Choose a title!
-    title = 'Languages That I worked With Network'
+    title = 'Red de Relación de Lenguajes '
 
     #Establish which categories will appear when hovering over each node
     HOVER_TOOLTIPS = [
-        ("Character", "@index"),
-        ("Edges", "@edge"),
-        ("Modularity", "@modularity"),
-        ("Pagerank", "@pagerank"),
-        ("Degree", "@degree"),
+        ("Lenguaje", "@index"),
+        ("Enlaces", "@edge"),
+        ("Modularidad", "@modularity"),
+        ("Influencia", "@pagerank"),
+        ("Grado", "@degree"),
         ("Betweenness", "@betweenness"),
         ("Closeness", "@closeness"),
         ("Eigenvector", "@eigenvector"),
-        ("CommunityNumber", "@communityNumber"),
-        ("Modularity Color", "$color[swatch]:modularity_color"),
+        ("Número Comunidad", "@communityNumber"),
+        ("Color Modularidad", "$color[swatch]:modularity_color"),
     ]
 
     #Crear grafo 
@@ -246,6 +246,7 @@ def vecinos(G, umbral):
     libro = xlsxwriter.Workbook('vecinos.xlsx')
     hoja = libro.add_worksheet()
     lista = {}
+
     for d in G.degree():
         lista[d[0]] = d[1]
     
@@ -286,7 +287,7 @@ def vecinos(G, umbral):
     
     df = pd.read_excel("vecinos.xlsx")
     df.fillna('', inplace=True)
-    df.to_html('static/images/tablas/tablaVecinos'+str(umbral)+'.html')
+    df.to_html('static/images/tablas/tablaVecinos'+str(umbral)+'.html', justify='center', col_space=100)
     
 
 def ejecutar(umbral):
