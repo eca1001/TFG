@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import webbrowser
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -82,7 +83,7 @@ def gradosNodos(G, umbral):
     plt.pie(lista, labels=G.nodes(), autopct='%1.1f%%')
     plt.title('Porcentaje de uso del lenguaje \n', fontsize = 20)
     plt.axis("equal")
-    plt.savefig("static/images/graficosSectores/GraficoSectores"+str(umbral)+".jpg")
+    plt.savefig("static/images/graficosSectores/GraficoSectores.jpg")
 
 
 
@@ -96,7 +97,7 @@ def propiedadesRed(G, umbral):
     for i in range(len(eje_x)):
         plt.annotate(eje_y[i], (-0.1 + i, eje_y[i] + j))
     
-    plt.savefig("static/images/histogramas/histograma"+str(umbral)+".jpg")
+    plt.savefig("static/images/histogramas/histograma.jpg")
 
 
 
@@ -188,7 +189,7 @@ def grafoInteractivo(G, umbral):
     color_by_this_attribute = 'modularity_color'
 
     #Choose a title!
-    title = 'Red de Relación de Lenguajes '
+    title = 'Red de Relación de Lenguajes'
 
     #Establish which categories will appear when hovering over each node
     HOVER_TOOLTIPS = [
@@ -239,7 +240,7 @@ def grafoInteractivo(G, umbral):
 
     #Mostrar grafo
     #show(grafo)
-    save(grafo, filename=f"static/images/grafos/{title}"+str(umbral)+".html")
+    save(grafo, filename=f"static/images/grafos/{title}.html")
     
 
 def vecinos(G, umbral):
@@ -287,8 +288,91 @@ def vecinos(G, umbral):
     
     df = pd.read_excel("vecinos.xlsx")
     df.fillna('', inplace=True)
-    df.to_html('static/images/tablas/tablaVecinos'+str(umbral)+'.html', justify='center', col_space=100)
-    
+    df.to_html('static/images/tablas/tablaVecinos.html', justify='center', col_space=100, table_id="myTable")
+
+def crearTablaFiltro():
+    a = open('static/images/tablas/tablaVecinos.html','r')
+    f = open('static/images/tablaFiltro/tablaConFiltro.html','w')
+    mensaje1="""
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    }
+
+    #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    }
+
+    #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+    min-width: 120px;
+    }
+
+    #myTable tr {
+    border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+    }
+    </style>
+    </head>
+    <body>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por nodo..." title="Type in a name">
+    """
+    f.write(mensaje1)
+
+    for g in a:
+        f.write(g)
+
+    a.close()
+
+    mensaje2="""
+    <script>
+    function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }
+        }      
+    }
+    }
+    </script>
+
+    </body>
+    </html>
+    """
+    f.write(mensaje2)
+    f.close()
 
 def ejecutar(umbral):
 
@@ -309,5 +393,6 @@ def ejecutar(umbral):
     propiedadesRed(H,umbral)
     grafoInteractivo(H, umbral)
     vecinos(H, umbral)
+    crearTablaFiltro()
 
 
