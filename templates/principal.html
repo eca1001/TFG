@@ -1,9 +1,15 @@
 {% extends "base.html" %}
 {% block pagecontent %}
 
-<p align="Middle">
-    <b>Umbral: {{ name }}</b>
-</p>
+<div>
+    Introduzca valor del umbral (entero entre 0 y 100) 
+    <div style="float: right;"><b>Umbral actual: {{ name }}</b></div>
+</div>
+
+<form action="" method="post"> 
+    <input type="number" name="user_umbral" placeholder={{ name }} step="1", min="0", max="100.0" />
+    <input type="submit" value="Enviar" />
+</form>
 
 <p>   
     <table width="100%" border: None>

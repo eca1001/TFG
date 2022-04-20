@@ -303,7 +303,6 @@ def crearTablaFiltro():
     }
 
     #myInput {
-    background-image: url('/css/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     width: 100%;
@@ -322,8 +321,17 @@ def crearTablaFiltro():
 
     #myTable th, #myTable td {
     text-align: left;
+    background-color: #CEE4FF;
     padding: 12px;
     min-width: 120px;
+    }
+
+    #myTable th, #myTable td:first-child {
+    text-align: center;
+    background-color: #63A7F9;
+    padding: 12px;
+    min-width: 8px;
+    max-width: 8px;
     }
 
     #myTable tr {
