@@ -49,7 +49,6 @@ def leerGrafo():
 
 def poda(G, umbral):
     H = nx.Graph()
-    porc = G.number_of_edges()
     for e in itertools.combinations(G.nodes(),2): # e es una tupla de dos lenguajes
         peso = G.edges[e[0],e[1]]['weight']
         if peso >= umbral:
@@ -81,23 +80,22 @@ def gradosNodos(G, umbral):
         lista.append(d[1])
     fig=plt.figure(figsize=(7,7))
     plt.pie(lista, labels=G.nodes(), autopct='%1.1f%%')
-    plt.title('Porcentaje de uso del lenguaje \n', fontsize = 20)
+    plt.title('Porcentaje de relación del lenguaje \n', fontsize = 20)
     plt.axis("equal")
-    plt.savefig("static/images/graficosSectores/GraficoSectores.jpg")
+    plt.savefig("static/images/graficosSectores/GraficoSectoresLeng.jpg")
 
 
 
 def propiedadesRed(G, umbral):
-    eje_x = ['Densidad', 'Transitividad', 'Clustering promedio']
-    eje_y = [round(nx.density(G),5), round(nx.transitivity(G),5), round(nx.average_clustering(G),5)]
+    eje_x = ['Densidad', 'Transitividad', 'Promedio de agrupación']
+    eje_y = [round(nx.density(G)*100,2), round(nx.transitivity(G)*100,2), round(nx.average_clustering(G)*100,2)]
     fig=plt.figure()
     plt.title('Propiedades de la red', fontsize = 20)
     plt.bar(eje_x, eje_y)
-    j = 0.007
-    for i in range(len(eje_x)):
-        plt.annotate(eje_y[i], (-0.1 + i, eje_y[i] + j))
+    for i in range(len(eje_y)):
+        plt.annotate(eje_y[i], (i, eje_y[i]+1))
     
-    plt.savefig("static/images/histogramas/histograma.jpg")
+    plt.savefig("static/images/histogramas/histogramaLeng.jpg")
 
 
 
@@ -153,7 +151,7 @@ def grafoInteractivo(G, umbral):
 
     # Create empty dictionaries
     communityNumber = {}
-    modularity_color = {}
+    community_color = {}
     modularity = {}
     
     pagerank = nx.pagerank(G)
@@ -167,7 +165,7 @@ def grafoInteractivo(G, umbral):
         #For each member of the community, add their community number and a distinct color
         for name in community: 
             communityNumber[name] = community_number
-            modularity_color[name] = Spectral8[community_number]
+            community_color[name] = Spectral8[community_number]
             modularity[name] = calculaModularidad(G,[{name}])
         
 
@@ -182,11 +180,11 @@ def grafoInteractivo(G, umbral):
     nx.set_node_attributes(G, closeness, 'closeness')
     nx.set_node_attributes(G, eigenvector, 'eigenvector')
     nx.set_node_attributes(G, communityNumber, 'communityNumber')
-    nx.set_node_attributes(G, modularity_color, 'modularity_color')
+    nx.set_node_attributes(G, community_color, 'community_color')
 
     #Choose attributes from G network to size and color by — setting manual size (e.g. 10) or color (e.g. 'skyblue') also allowed
     size_by_this_attribute = 'adjusted_node_size'
-    color_by_this_attribute = 'modularity_color'
+    color_by_this_attribute = 'community_color'
 
     #Choose a title!
     title = 'Red de Relación de Lenguajes'
@@ -198,11 +196,11 @@ def grafoInteractivo(G, umbral):
         ("Modularidad", "@modularity"),
         ("Influencia", "@pagerank"),
         ("Grado", "@degree"),
-        ("Betweenness", "@betweenness"),
-        ("Closeness", "@closeness"),
-        ("Eigenvector", "@eigenvector"),
+        ("Intermediación", "@betweenness"),
+        ("Importancia", "@closeness"),
+        ("Prestigio", "@eigenvector"),
         ("Número Comunidad", "@communityNumber"),
-        ("Color Modularidad", "$color[swatch]:modularity_color"),
+        ("Color Comunidad", "$color[swatch]:community_color"),
     ]
 
     #Crear grafo 
@@ -218,7 +216,7 @@ def grafoInteractivo(G, umbral):
     network_graph.node_renderer.hover_glyph = Circle(size=size_by_this_attribute, fill_color=node_highlight_color, line_width=2)
     network_graph.node_renderer.selection_glyph = Circle(size=size_by_this_attribute, fill_color=node_highlight_color, line_width=2)
 
-    #Opacidad de los enlaces
+    #Tamaño y Opacidad de los enlaces
     network_graph.edge_renderer.glyph = MultiLine(line_alpha=0.3, line_width=1)
 
     #Resaltar enlaces conectados sobre nodo seleccionado
@@ -269,7 +267,7 @@ def vecinos(G, umbral):
         hoja.write(row, col, k)
         for sp in v:
             col+=1
-            hoja.write(row, col, (sp[0]+" "+str(sp[1])+"%"))
+            hoja.write(row, col, sp[0])
         if col>ma:
             ma=col
         row+=1
@@ -277,22 +275,30 @@ def vecinos(G, umbral):
     
     i=1
     
-    hoja.write(0, 0, "Nodo")
+    hoja.write(0, 0, "Lenguaje")
+    
+    if ma > 3:
+        ma = 3
     
     while i <= ma:
-        hoja.write(0, i, "Lenguaje"+" "+str(i))
+        hoja.write(0, i, "Recomendado"+" "+str(i))
         i+=1
     
     #Cerramos el libro
     libro.close()
-    
-    df = pd.read_excel("vecinos.xlsx")
+    if ma==3:
+        df = pd.read_excel("vecinos.xlsx", usecols=("A:D"))
+    elif ma==2:
+        df = pd.read_excel("vecinos.xlsx", usecols=("A:C"))
+    else:
+        df = pd.read_excel("vecinos.xlsx", usecols=("A:B"))
+
     df.fillna('', inplace=True)
-    df.to_html('static/images/tablas/tablaVecinos.html', justify='center', col_space=100, table_id="myTable")
+    df.to_html('static/images/tablas/tablaVecinosLeng.html', justify='center', col_space=100, table_id="myTable")
 
 def crearTablaFiltro():
-    a = open('static/images/tablas/tablaVecinos.html','r')
-    f = open('static/images/tablaFiltro/tablaConFiltro.html','w')
+    a = open('static/images/tablas/tablaVecinosLeng.html','r')
+    f = open('static/images/tablaFiltro/tablaConFiltroLeng.html','w')
     mensaje1="""
     <html>
     <head>
@@ -323,7 +329,7 @@ def crearTablaFiltro():
     text-align: left;
     background-color: #CEE4FF;
     padding: 12px;
-    min-width: 120px;
+    min-width: 150px;
     }
 
     #myTable th, #myTable td:first-child {
@@ -345,7 +351,9 @@ def crearTablaFiltro():
     </head>
     <body>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por nodo..." title="Type in a name">
+    <h2><b><center>RECOMENDADOR DE LENGUAJES</center></b></h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por lenguaje..." title="Type in a name">
     """
     f.write(mensaje1)
 
@@ -382,6 +390,117 @@ def crearTablaFiltro():
     f.write(mensaje2)
     f.close()
 
+
+def nodosRestantes(G, H):
+    nF = G.nodes()-H.nodes()
+    libro = xlsxwriter.Workbook('faltantes.xlsx')
+    hoja = libro.add_worksheet()
+    
+    row = 1
+    col = 0
+    for n in nF:
+        hoja.write(row, col, n)
+        row+=1
+    
+    hoja.write(0, 0, "Lenguajes No Conectados")
+    
+    #Cerramos el libro
+    libro.close()
+    
+    df = pd.read_excel("faltantes.xlsx")
+
+    df.fillna('', inplace=True)
+    df.to_html('static/images/tablas/tablaLengFaltantes.html', justify='center', col_space=100, table_id="myTable")
+
+def crearTablaFiltroRestantes():
+    a = open('static/images/tablas/tablaLengFaltantes.html','r')
+    f = open('static/images/tablaFiltro/tablaConFiltroRestantesLeng.html','w')
+    mensaje1="""
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    #myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    }
+
+    #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    }
+
+    #myTable th, #myTable td {
+    text-align: left;
+    background-color: #CEE4FF;
+    padding: 8px;
+    }
+
+    #myTable th, #myTable td:first-child {
+    text-align: center;
+    background-color: #63A7F9;
+    padding: 8px;
+    }
+
+    #myTable tr {
+    border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+    }
+    </style>
+    </head>
+    <body>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por lenguaje..." title="Type in a name">
+    """
+    f.write(mensaje1)
+
+    for g in a:
+        f.write(g)
+
+    a.close()
+
+    mensaje2="""
+    <script>
+    function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }
+        }      
+    }
+    }
+    </script>
+
+    </body>
+    </html>
+    """
+    f.write(mensaje2)
+    f.close()
+
+
 def ejecutar(umbral):
 
     try:
@@ -402,5 +521,7 @@ def ejecutar(umbral):
     grafoInteractivo(H, umbral)
     vecinos(H, umbral)
     crearTablaFiltro()
+    nodosRestantes(G,H)
+    crearTablaFiltroRestantes()
 
 
