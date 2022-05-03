@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="Heroku"/>
+<node id="Microsoft Azure"/>
+<node id="AWS"/>
+<node id="Google Cloud Platform"/>
+<node id="DigitalOcean"/>
+<node id="Oracle Cloud Infrastructure"/>
+<node id="IBM Cloud or Watson"/>
+<edge source="Heroku" target="Microsoft Azure">
+  <data key="d0">2557</data>
+</edge>
+<edge source="Heroku" target="AWS">
+  <data key="d0">6220</data>
+</edge>
+<edge source="Heroku" target="DigitalOcean">
+  <data key="d0">2966</data>
+</edge>
+<edge source="Heroku" target="Google Cloud Platform">
+  <data key="d0">3925</data>
+</edge>
+<edge source="Heroku" target="Oracle Cloud Infrastructure">
+  <data key="d0">252</data>
+</edge>
+<edge source="Heroku" target="IBM Cloud or Watson">
+  <data key="d0">435</data>
+</edge>
+<edge source="Microsoft Azure" target="AWS">
+  <data key="d0">7046</data>
+</edge>
+<edge source="Microsoft Azure" target="Google Cloud Platform">
+  <data key="d0">4515</data>
+</edge>
+<edge source="Microsoft Azure" target="DigitalOcean">
+  <data key="d0">2275</data>
+</edge>
+<edge source="Microsoft Azure" target="Oracle Cloud Infrastructure">
+  <data key="d0">418</data>
+</edge>
+<edge source="Microsoft Azure" target="IBM Cloud or Watson">
+  <data key="d0">588</data>
+</edge>
+<edge source="AWS" target="Google Cloud Platform">
+  <data key="d0">8533</data>
+</edge>
+<edge source="AWS" target="DigitalOcean">
+  <data key="d0">5461</data>
+</edge>
+<edge source="AWS" target="Oracle Cloud Infrastructure">
+  <data key="d0">504</data>
+</edge>
+<edge source="AWS" target="IBM Cloud or Watson">
+  <data key="d0">755</data>
+</edge>
+<edge source="Google Cloud Platform" target="DigitalOcean">
+  <data key="d0">3338</data>
+</edge>
+<edge source="Google Cloud Platform" target="IBM Cloud or Watson">
+  <data key="d0">685</data>
+</edge>
+<edge source="Google Cloud Platform" target="Oracle Cloud Infrastructure">
+  <data key="d0">449</data>
+</edge>
+<edge source="DigitalOcean" target="Oracle Cloud Infrastructure">
+  <data key="d0">251</data>
+</edge>
+<edge source="DigitalOcean" target="IBM Cloud or Watson">
+  <data key="d0">339</data>
+</edge>
+<edge source="Oracle Cloud Infrastructure" target="IBM Cloud or Watson">
+  <data key="d0">179</data>
+</edge>
+</graph></graphml>

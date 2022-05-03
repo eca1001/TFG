@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="PostgreSQL"/>
+<node id="SQLite"/>
+<node id="Elasticsearch"/>
+<node id="Redis"/>
+<node id="MySQL"/>
+<node id="Microsoft SQL Server"/>
+<node id="Oracle"/>
+<node id="MongoDB"/>
+<node id="MariaDB"/>
+<node id="DynamoDB"/>
+<node id="Couchbase"/>
+<node id="Firebase"/>
+<node id="IBM DB2"/>
+<node id="Cassandra"/>
+<edge source="PostgreSQL" target="SQLite">
+  <data key="d0">10510</data>
+</edge>
+<edge source="PostgreSQL" target="Elasticsearch">
+  <data key="d0">5621</data>
+</edge>
+<edge source="PostgreSQL" target="Redis">
+  <data key="d0">9353</data>
+</edge>
+<edge source="PostgreSQL" target="MySQL">
+  <data key="d0">13391</data>
+</edge>
+<edge source="PostgreSQL" target="Microsoft SQL Server">
+  <data key="d0">6294</data>
+</edge>
+<edge source="PostgreSQL" target="MongoDB">
+  <data key="d0">8869</data>
+</edge>
+<edge source="PostgreSQL" target="DynamoDB">
+  <data key="d0">2883</data>
+</edge>
+<edge source="PostgreSQL" target="Oracle">
+  <data key="d0">3806</data>
+</edge>
+<edge source="PostgreSQL" target="Couchbase">
+  <data key="d0">592</data>
+</edge>
+<edge source="PostgreSQL" target="MariaDB">
+  <data key="d0">5354</data>
+</edge>
+<edge source="PostgreSQL" target="Firebase">
+  <data key="d0">4468</data>
+</edge>
+<edge source="PostgreSQL" target="IBM DB2">
+  <data key="d0">632</data>
+</edge>
+<edge source="PostgreSQL" target="Cassandra">
+  <data key="d0">1146</data>
+</edge>
+<edge source="SQLite" target="MySQL">
+  <data key="d0">13289</data>
+</edge>
+<edge source="SQLite" target="DynamoDB">
+  <data key="d0">1510</data>
+</edge>
+<edge source="SQLite" target="Microsoft SQL Server">
+  <data key="d0">6454</data>
+</edge>
+<edge source="SQLite" target="MongoDB">
+  <data key="d0">6690</data>
+</edge>
+<edge source="SQLite" target="Oracle">
+  <data key="d0">3285</data>
+</edge>
+<edge source="SQLite" target="Couchbase">
+  <data key="d0">505</data>
+</edge>
+<edge source="SQLite" target="MariaDB">
+  <data key="d0">5430</data>
+</edge>
+<edge source="SQLite" target="Redis">
+  <data key="d0">5418</data>
+</edge>
+<edge source="SQLite" target="Elasticsearch">
+  <data key="d0">3133</data>
+</edge>
+<edge source="SQLite" target="Firebase">
+  <data key="d0">4767</data>
+</edge>
+<edge source="SQLite" target="IBM DB2">
+  <data key="d0">531</data>
+</edge>
+<edge source="SQLite" target="Cassandra">
+  <data key="d0">658</data>
+</edge>
+<edge source="Elasticsearch" target="Redis">
+  <data key="d0">4897</data>
+</edge>
+<edge source="Elasticsearch" target="MySQL">
+  <data key="d0">5080</data>
+</edge>
+<edge source="Elasticsearch" target="MariaDB">
+  <data key="d0">2382</data>
+</edge>
+<edge source="Elasticsearch" target="MongoDB">
+  <data key="d0">3758</data>
+</edge>
+<edge source="Elasticsearch" target="Firebase">
+  <data key="d0">1611</data>
+</edge>
+<edge source="Elasticsearch" target="Microsoft SQL Server">
+  <data key="d0">2556</data>
+</edge>
+<edge source="Elasticsearch" target="Couchbase">
+  <data key="d0">435</data>
+</edge>
+<edge source="Elasticsearch" target="DynamoDB">
+  <data key="d0">1812</data>
+</edge>
+<edge source="Elasticsearch" target="Oracle">
+  <data key="d0">1437</data>
+</edge>
+<edge source="Elasticsearch" target="Cassandra">
+  <data key="d0">849</data>
+</edge>
+<edge source="Elasticsearch" target="IBM DB2">
+  <data key="d0">285</data>
+</edge>
+<edge source="Redis" target="MongoDB">
+  <data key="d0">5924</data>
+</edge>
+<edge source="Redis" target="MySQL">
+  <data key="d0">7994</data>
+</edge>
+<edge source="Redis" target="Microsoft SQL Server">
+  <data key="d0">3481</data>
+</edge>
+<edge source="Redis" target="Couchbase">
+  <data key="d0">457</data>
+</edge>
+<edge source="Redis" target="MariaDB">
+  <data key="d0">3635</data>
+</edge>
+<edge source="Redis" target="Firebase">
+  <data key="d0">2453</data>
+</edge>
+<edge source="Redis" target="DynamoDB">
+  <data key="d0">2116</data>
+</edge>
+<edge source="Redis" target="Oracle">
+  <data key="d0">1654</data>
+</edge>
+<edge source="Redis" target="Cassandra">
+  <data key="d0">870</data>
+</edge>
+<edge source="Redis" target="IBM DB2">
+  <data key="d0">292</data>
+</edge>
+<edge source="MySQL" target="MariaDB">
+  <data key="d0">9331</data>
+</edge>
+<edge source="MySQL" target="MongoDB">
+  <data key="d0">11252</data>
+</edge>
+<edge source="MySQL" target="DynamoDB">
+  <data key="d0">2631</data>
+</edge>
+<edge source="MySQL" target="Microsoft SQL Server">
+  <data key="d0">8911</data>
+</edge>
+<edge source="MySQL" target="Oracle">
+  <data key="d0">5444</data>
+</edge>
+<edge source="MySQL" target="Couchbase">
+  <data key="d0">628</data>
+</edge>
+<edge source="MySQL" target="Firebase">
+  <data key="d0">6576</data>
+</edge>
+<edge source="MySQL" target="IBM DB2">
+  <data key="d0">811</data>
+</edge>
+<edge source="MySQL" target="Cassandra">
+  <data key="d0">1052</data>
+</edge>
+<edge source="Microsoft SQL Server" target="Oracle">
+  <data key="d0">3733</data>
+</edge>
+<edge source="Microsoft SQL Server" target="MongoDB">
+  <data key="d0">4747</data>
+</edge>
+<edge source="Microsoft SQL Server" target="DynamoDB">
+  <data key="d0">1219</data>
+</edge>
+<edge source="Microsoft SQL Server" target="Couchbase">
+  <data key="d0">365</data>
+</edge>
+<edge source="Microsoft SQL Server" target="MariaDB">
+  <data key="d0">3289</data>
+</edge>
+<edge source="Microsoft SQL Server" target="Firebase">
+  <data key="d0">2646</data>
+</edge>
+<edge source="Microsoft SQL Server" target="IBM DB2">
+  <data key="d0">761</data>
+</edge>
+<edge source="Microsoft SQL Server" target="Cassandra">
+  <data key="d0">541</data>
+</edge>
+<edge source="Oracle" target="MongoDB">
+  <data key="d0">2758</data>
+</edge>
+<edge source="Oracle" target="DynamoDB">
+  <data key="d0">658</data>
+</edge>
+<edge source="Oracle" target="Firebase">
+  <data key="d0">1457</data>
+</edge>
+<edge source="Oracle" target="MariaDB">
+  <data key="d0">1959</data>
+</edge>
+<edge source="Oracle" target="IBM DB2">
+  <data key="d0">625</data>
+</edge>
+<edge source="Oracle" target="Cassandra">
+  <data key="d0">465</data>
+</edge>
+<edge source="Oracle" target="Couchbase">
+  <data key="d0">263</data>
+</edge>
+<edge source="MongoDB" target="DynamoDB">
+  <data key="d0">2006</data>
+</edge>
+<edge source="MongoDB" target="Couchbase">
+  <data key="d0">553</data>
+</edge>
+<edge source="MongoDB" target="MariaDB">
+  <data key="d0">4363</data>
+</edge>
+<edge source="MongoDB" target="Firebase">
+  <data key="d0">4920</data>
+</edge>
+<edge source="MongoDB" target="Cassandra">
+  <data key="d0">839</data>
+</edge>
+<edge source="MongoDB" target="IBM DB2">
+  <data key="d0">435</data>
+</edge>
+<edge source="MariaDB" target="Couchbase">
+  <data key="d0">356</data>
+</edge>
+<edge source="MariaDB" target="DynamoDB">
+  <data key="d0">959</data>
+</edge>
+<edge source="MariaDB" target="Firebase">
+  <data key="d0">2229</data>
+</edge>
+<edge source="MariaDB" target="IBM DB2">
+  <data key="d0">371</data>
+</edge>
+<edge source="MariaDB" target="Cassandra">
+  <data key="d0">545</data>
+</edge>
+<edge source="DynamoDB" target="Couchbase">
+  <data key="d0">227</data>
+</edge>
+<edge source="DynamoDB" target="Firebase">
+  <data key="d0">1123</data>
+</edge>
+<edge source="DynamoDB" target="IBM DB2">
+  <data key="d0">164</data>
+</edge>
+<edge source="DynamoDB" target="Cassandra">
+  <data key="d0">369</data>
+</edge>
+<edge source="Couchbase" target="Firebase">
+  <data key="d0">318</data>
+</edge>
+<edge source="Couchbase" target="Cassandra">
+  <data key="d0">197</data>
+</edge>
+<edge source="Couchbase" target="IBM DB2">
+  <data key="d0">105</data>
+</edge>
+<edge source="Firebase" target="Cassandra">
+  <data key="d0">370</data>
+</edge>
+<edge source="Firebase" target="IBM DB2">
+  <data key="d0">248</data>
+</edge>
+<edge source="IBM DB2" target="Cassandra">
+  <data key="d0">127</data>
+</edge>
+</graph></graphml>

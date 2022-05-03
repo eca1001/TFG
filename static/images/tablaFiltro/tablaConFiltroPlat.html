@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     width: 100%;
     font-size: 16px;
+    padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
     }
@@ -26,13 +27,16 @@
     #myTable th, #myTable td {
     text-align: left;
     background-color: #CEE4FF;
-    padding: 8px;
+    padding: 12px;
+    min-width: 150px;
     }
 
     #myTable th, #myTable td:first-child {
     text-align: center;
     background-color: #63A7F9;
-    padding: 8px;
+    padding: 12px;
+    min-width: 8px;
+    max-width: 8px;
     }
 
     #myTable tr {
@@ -46,122 +50,54 @@
     </head>
     <body>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por lenguaje..." title="Type in a name">
+    <h2><b><center>RECOMENDADOR DE PLATAFORMAS</center></b></h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por plataforma..." title="Type in a name">
     <table border="1" class="dataframe" id="myTable">
   <thead>
     <tr style="text-align: center;">
       <th style="min-width: 100px;"></th>
-      <th style="min-width: 100px;">Lenguajes No Conectados</th>
+      <th style="min-width: 100px;">Plataforma</th>
+      <th style="min-width: 100px;">Recomendado 1</th>
+      <th style="min-width: 100px;">Recomendado 2</th>
+      <th style="min-width: 100px;">Recomendado 3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>COBOL</td>
+      <td>Heroku</td>
+      <td>AWS</td>
+      <td>Google Cloud Platform</td>
+      <td>DigitalOcean</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Kotlin</td>
+      <td>AWS</td>
+      <td>Google Cloud Platform</td>
+      <td>Heroku</td>
+      <td>DigitalOcean</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Rust</td>
+      <td>Google Cloud Platform</td>
+      <td>AWS</td>
+      <td>Heroku</td>
+      <td>DigitalOcean</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Matlab</td>
+      <td>DigitalOcean</td>
+      <td>AWS</td>
+      <td>Google Cloud Platform</td>
+      <td>Heroku</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Elixir</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>APL</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Objective-C</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Scala</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Delphi</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Ruby</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Erlang</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Crystal</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Clojure</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>LISP</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>VBA</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Dart</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>C</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Assembly</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>R</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Julia</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>PowerShell</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>F#</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Haskell</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Groovy</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Perl</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Go</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Swift</td>
+      <td>Microsoft Azure</td>
+      <td>AWS</td>
+      <td>Google Cloud Platform</td>
+      <td></td>
     </tr>
   </tbody>
 </table>

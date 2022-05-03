@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="NumPy"/>
+<node id="Pandas"/>
+<node id="TensorFlow"/>
+<node id="Torch/PyTorch"/>
+<node id="Apache Spark"/>
+<node id="Hadoop"/>
+<node id="Keras"/>
+<node id=".NET Core / .NET 5"/>
+<node id="Flutter"/>
+<node id=".NET Framework"/>
+<node id="Qt"/>
+<node id="React Native"/>
+<node id="Cordova"/>
+<edge source="NumPy" target="Pandas">
+  <data key="d0">12018</data>
+</edge>
+<edge source="NumPy" target="TensorFlow">
+  <data key="d0">6316</data>
+</edge>
+<edge source="NumPy" target="Torch/PyTorch">
+  <data key="d0">4120</data>
+</edge>
+<edge source="NumPy" target="Apache Spark">
+  <data key="d0">1423</data>
+</edge>
+<edge source="NumPy" target="Hadoop">
+  <data key="d0">1185</data>
+</edge>
+<edge source="NumPy" target="Keras">
+  <data key="d0">4580</data>
+</edge>
+<edge source="NumPy" target=".NET Core / .NET 5">
+  <data key="d0">2088</data>
+</edge>
+<edge source="NumPy" target="Flutter">
+  <data key="d0">1633</data>
+</edge>
+<edge source="NumPy" target=".NET Framework">
+  <data key="d0">2353</data>
+</edge>
+<edge source="NumPy" target="Qt">
+  <data key="d0">2268</data>
+</edge>
+<edge source="NumPy" target="React Native">
+  <data key="d0">1512</data>
+</edge>
+<edge source="NumPy" target="Cordova">
+  <data key="d0">537</data>
+</edge>
+<edge source="Pandas" target="TensorFlow">
+  <data key="d0">5329</data>
+</edge>
+<edge source="Pandas" target="Torch/PyTorch">
+  <data key="d0">3429</data>
+</edge>
+<edge source="Pandas" target="Apache Spark">
+  <data key="d0">1483</data>
+</edge>
+<edge source="Pandas" target="Hadoop">
+  <data key="d0">1204</data>
+</edge>
+<edge source="Pandas" target="Keras">
+  <data key="d0">4023</data>
+</edge>
+<edge source="Pandas" target=".NET Framework">
+  <data key="d0">1750</data>
+</edge>
+<edge source="Pandas" target=".NET Core / .NET 5">
+  <data key="d0">1576</data>
+</edge>
+<edge source="Pandas" target="Qt">
+  <data key="d0">1636</data>
+</edge>
+<edge source="Pandas" target="Flutter">
+  <data key="d0">1402</data>
+</edge>
+<edge source="Pandas" target="React Native">
+  <data key="d0">1253</data>
+</edge>
+<edge source="Pandas" target="Cordova">
+  <data key="d0">458</data>
+</edge>
+<edge source="TensorFlow" target="Torch/PyTorch">
+  <data key="d0">3370</data>
+</edge>
+<edge source="TensorFlow" target="Keras">
+  <data key="d0">4173</data>
+</edge>
+<edge source="TensorFlow" target="Apache Spark">
+  <data key="d0">807</data>
+</edge>
+<edge source="TensorFlow" target=".NET Core / .NET 5">
+  <data key="d0">1217</data>
+</edge>
+<edge source="TensorFlow" target="Qt">
+  <data key="d0">1216</data>
+</edge>
+<edge source="TensorFlow" target=".NET Framework">
+  <data key="d0">1408</data>
+</edge>
+<edge source="TensorFlow" target="Cordova">
+  <data key="d0">426</data>
+</edge>
+<edge source="TensorFlow" target="React Native">
+  <data key="d0">1120</data>
+</edge>
+<edge source="TensorFlow" target="Hadoop">
+  <data key="d0">696</data>
+</edge>
+<edge source="TensorFlow" target="Flutter">
+  <data key="d0">1171</data>
+</edge>
+<edge source="Torch/PyTorch" target="Keras">
+  <data key="d0">2211</data>
+</edge>
+<edge source="Torch/PyTorch" target=".NET Core / .NET 5">
+  <data key="d0">698</data>
+</edge>
+<edge source="Torch/PyTorch" target="Apache Spark">
+  <data key="d0">575</data>
+</edge>
+<edge source="Torch/PyTorch" target="Qt">
+  <data key="d0">770</data>
+</edge>
+<edge source="Torch/PyTorch" target=".NET Framework">
+  <data key="d0">755</data>
+</edge>
+<edge source="Torch/PyTorch" target="Cordova">
+  <data key="d0">234</data>
+</edge>
+<edge source="Torch/PyTorch" target="React Native">
+  <data key="d0">581</data>
+</edge>
+<edge source="Torch/PyTorch" target="Hadoop">
+  <data key="d0">489</data>
+</edge>
+<edge source="Torch/PyTorch" target="Flutter">
+  <data key="d0">577</data>
+</edge>
+<edge source="Apache Spark" target="Hadoop">
+  <data key="d0">1193</data>
+</edge>
+<edge source="Apache Spark" target="Keras">
+  <data key="d0">635</data>
+</edge>
+<edge source="Apache Spark" target=".NET Core / .NET 5">
+  <data key="d0">466</data>
+</edge>
+<edge source="Apache Spark" target=".NET Framework">
+  <data key="d0">521</data>
+</edge>
+<edge source="Apache Spark" target="Flutter">
+  <data key="d0">276</data>
+</edge>
+<edge source="Apache Spark" target="React Native">
+  <data key="d0">299</data>
+</edge>
+<edge source="Apache Spark" target="Qt">
+  <data key="d0">241</data>
+</edge>
+<edge source="Apache Spark" target="Cordova">
+  <data key="d0">211</data>
+</edge>
+<edge source="Hadoop" target="Keras">
+  <data key="d0">597</data>
+</edge>
+<edge source="Hadoop" target="Flutter">
+  <data key="d0">268</data>
+</edge>
+<edge source="Hadoop" target=".NET Framework">
+  <data key="d0">387</data>
+</edge>
+<edge source="Hadoop" target=".NET Core / .NET 5">
+  <data key="d0">332</data>
+</edge>
+<edge source="Hadoop" target="Qt">
+  <data key="d0">240</data>
+</edge>
+<edge source="Hadoop" target="React Native">
+  <data key="d0">264</data>
+</edge>
+<edge source="Hadoop" target="Cordova">
+  <data key="d0">179</data>
+</edge>
+<edge source="Keras" target=".NET Core / .NET 5">
+  <data key="d0">635</data>
+</edge>
+<edge source="Keras" target="Qt">
+  <data key="d0">729</data>
+</edge>
+<edge source="Keras" target=".NET Framework">
+  <data key="d0">700</data>
+</edge>
+<edge source="Keras" target="Flutter">
+  <data key="d0">702</data>
+</edge>
+<edge source="Keras" target="Cordova">
+  <data key="d0">241</data>
+</edge>
+<edge source="Keras" target="React Native">
+  <data key="d0">583</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Flutter">
+  <data key="d0">1202</data>
+</edge>
+<edge source=".NET Core / .NET 5" target=".NET Framework">
+  <data key="d0">11440</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Qt">
+  <data key="d0">964</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="React Native">
+  <data key="d0">1296</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Cordova">
+  <data key="d0">846</data>
+</edge>
+<edge source="Flutter" target=".NET Framework">
+  <data key="d0">1264</data>
+</edge>
+<edge source="Flutter" target="React Native">
+  <data key="d0">1468</data>
+</edge>
+<edge source="Flutter" target="Cordova">
+  <data key="d0">660</data>
+</edge>
+<edge source="Flutter" target="Qt">
+  <data key="d0">567</data>
+</edge>
+<edge source=".NET Framework" target="Qt">
+  <data key="d0">1188</data>
+</edge>
+<edge source=".NET Framework" target="React Native">
+  <data key="d0">1335</data>
+</edge>
+<edge source=".NET Framework" target="Cordova">
+  <data key="d0">994</data>
+</edge>
+<edge source="Qt" target="Cordova">
+  <data key="d0">298</data>
+</edge>
+<edge source="Qt" target="React Native">
+  <data key="d0">529</data>
+</edge>
+<edge source="React Native" target="Cordova">
+  <data key="d0">860</data>
+</edge>
+</graph></graphml>

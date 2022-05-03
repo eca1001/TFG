@@ -1,0 +1,1429 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="Laravel"/>
+<node id="Symfony"/>
+<node id="Angular"/>
+<node id="Flask"/>
+<node id="Vue.js"/>
+<node id="Cordova"/>
+<node id="NumPy"/>
+<node id="Pandas"/>
+<node id="TensorFlow"/>
+<node id="Torch/PyTorch"/>
+<node id="jQuery"/>
+<node id="Apache Spark"/>
+<node id="Hadoop"/>
+<node id="Express"/>
+<node id="React.js"/>
+<node id="Keras"/>
+<node id="Angular.js"/>
+<node id="Ruby on Rails"/>
+<node id="Django"/>
+<node id="FastAPI"/>
+<node id="ASP.NET Core "/>
+<node id=".NET Core / .NET 5"/>
+<node id="Qt"/>
+<node id="Spring"/>
+<node id="Flutter"/>
+<node id="Svelte"/>
+<node id=".NET Framework"/>
+<node id="React Native"/>
+<node id="ASP.NET"/>
+<node id="Gatsby"/>
+<node id="Drupal"/>
+<edge source="Laravel" target="Symfony">
+  <data key="d0">1056</data>
+</edge>
+<edge source="Laravel" target="jQuery">
+  <data key="d0">3919</data>
+</edge>
+<edge source="Laravel" target="Ruby on Rails">
+  <data key="d0">430</data>
+</edge>
+<edge source="Laravel" target="Angular.js">
+  <data key="d0">1196</data>
+</edge>
+<edge source="Laravel" target="Qt">
+  <data key="d0">428</data>
+</edge>
+<edge source="Laravel" target="Svelte">
+  <data key="d0">228</data>
+</edge>
+<edge source="Laravel" target="Vue.js">
+  <data key="d0">3010</data>
+</edge>
+<edge source="Laravel" target="NumPy">
+  <data key="d0">924</data>
+</edge>
+<edge source="Laravel" target="Pandas">
+  <data key="d0">811</data>
+</edge>
+<edge source="Laravel" target="Angular">
+  <data key="d0">1778</data>
+</edge>
+<edge source="Laravel" target="ASP.NET">
+  <data key="d0">827</data>
+</edge>
+<edge source="Laravel" target="ASP.NET Core ">
+  <data key="d0">776</data>
+</edge>
+<edge source="Laravel" target="Django">
+  <data key="d0">1025</data>
+</edge>
+<edge source="Laravel" target="Express">
+  <data key="d0">1938</data>
+</edge>
+<edge source="Laravel" target="Flask">
+  <data key="d0">761</data>
+</edge>
+<edge source="Laravel" target="React.js">
+  <data key="d0">2667</data>
+</edge>
+<edge source="Laravel" target="Spring">
+  <data key="d0">714</data>
+</edge>
+<edge source="Laravel" target=".NET Framework">
+  <data key="d0">1167</data>
+</edge>
+<edge source="Laravel" target=".NET Core / .NET 5">
+  <data key="d0">933</data>
+</edge>
+<edge source="Laravel" target="Apache Spark">
+  <data key="d0">253</data>
+</edge>
+<edge source="Laravel" target="Flutter">
+  <data key="d0">1031</data>
+</edge>
+<edge source="Laravel" target="React Native">
+  <data key="d0">1142</data>
+</edge>
+<edge source="Laravel" target="TensorFlow">
+  <data key="d0">642</data>
+</edge>
+<edge source="Laravel" target="Torch/PyTorch">
+  <data key="d0">324</data>
+</edge>
+<edge source="Laravel" target="Drupal">
+  <data key="d0">510</data>
+</edge>
+<edge source="Laravel" target="Cordova">
+  <data key="d0">792</data>
+</edge>
+<edge source="Laravel" target="Hadoop">
+  <data key="d0">208</data>
+</edge>
+<edge source="Laravel" target="Keras">
+  <data key="d0">337</data>
+</edge>
+<edge source="Laravel" target="Gatsby">
+  <data key="d0">360</data>
+</edge>
+<edge source="Laravel" target="FastAPI">
+  <data key="d0">211</data>
+</edge>
+<edge source="Symfony" target="Angular">
+  <data key="d0">756</data>
+</edge>
+<edge source="Symfony" target="Express">
+  <data key="d0">717</data>
+</edge>
+<edge source="Symfony" target="Vue.js">
+  <data key="d0">1009</data>
+</edge>
+<edge source="Symfony" target="NumPy">
+  <data key="d0">375</data>
+</edge>
+<edge source="Symfony" target="Pandas">
+  <data key="d0">304</data>
+</edge>
+<edge source="Symfony" target="TensorFlow">
+  <data key="d0">276</data>
+</edge>
+<edge source="Symfony" target="jQuery">
+  <data key="d0">1573</data>
+</edge>
+<edge source="Symfony" target="React.js">
+  <data key="d0">1018</data>
+</edge>
+<edge source="Symfony" target="Flutter">
+  <data key="d0">320</data>
+</edge>
+<edge source="Symfony" target="React Native">
+  <data key="d0">445</data>
+</edge>
+<edge source="Symfony" target="Angular.js">
+  <data key="d0">571</data>
+</edge>
+<edge source="Symfony" target="Django">
+  <data key="d0">377</data>
+</edge>
+<edge source="Symfony" target="Ruby on Rails">
+  <data key="d0">214</data>
+</edge>
+<edge source="Symfony" target=".NET Core / .NET 5">
+  <data key="d0">388</data>
+</edge>
+<edge source="Symfony" target="Torch/PyTorch">
+  <data key="d0">170</data>
+</edge>
+<edge source="Symfony" target="Drupal">
+  <data key="d0">430</data>
+</edge>
+<edge source="Symfony" target="Cordova">
+  <data key="d0">350</data>
+</edge>
+<edge source="Symfony" target="Qt">
+  <data key="d0">245</data>
+</edge>
+<edge source="Symfony" target="Spring">
+  <data key="d0">378</data>
+</edge>
+<edge source="Symfony" target="ASP.NET">
+  <data key="d0">359</data>
+</edge>
+<edge source="Symfony" target="ASP.NET Core ">
+  <data key="d0">330</data>
+</edge>
+<edge source="Symfony" target="Flask">
+  <data key="d0">326</data>
+</edge>
+<edge source="Symfony" target=".NET Framework">
+  <data key="d0">477</data>
+</edge>
+<edge source="Symfony" target="Apache Spark">
+  <data key="d0">132</data>
+</edge>
+<edge source="Symfony" target="Hadoop">
+  <data key="d0">119</data>
+</edge>
+<edge source="Symfony" target="Gatsby">
+  <data key="d0">201</data>
+</edge>
+<edge source="Symfony" target="Keras">
+  <data key="d0">144</data>
+</edge>
+<edge source="Symfony" target="Svelte">
+  <data key="d0">125</data>
+</edge>
+<edge source="Symfony" target="FastAPI">
+  <data key="d0">125</data>
+</edge>
+<edge source="Angular" target="Flask">
+  <data key="d0">1654</data>
+</edge>
+<edge source="Angular" target="Vue.js">
+  <data key="d0">2979</data>
+</edge>
+<edge source="Angular" target="Cordova">
+  <data key="d0">2166</data>
+</edge>
+<edge source="Angular" target="jQuery">
+  <data key="d0">5728</data>
+</edge>
+<edge source="Angular" target="ASP.NET Core ">
+  <data key="d0">4106</data>
+</edge>
+<edge source="Angular" target=".NET Core / .NET 5">
+  <data key="d0">4566</data>
+</edge>
+<edge source="Angular" target="Spring">
+  <data key="d0">3299</data>
+</edge>
+<edge source="Angular" target="Flutter">
+  <data key="d0">1646</data>
+</edge>
+<edge source="Angular" target="Express">
+  <data key="d0">4484</data>
+</edge>
+<edge source="Angular" target="React.js">
+  <data key="d0">5460</data>
+</edge>
+<edge source="Angular" target="Svelte">
+  <data key="d0">481</data>
+</edge>
+<edge source="Angular" target="NumPy">
+  <data key="d0">2034</data>
+</edge>
+<edge source="Angular" target="Angular.js">
+  <data key="d0">4454</data>
+</edge>
+<edge source="Angular" target="Apache Spark">
+  <data key="d0">595</data>
+</edge>
+<edge source="Angular" target="Keras">
+  <data key="d0">700</data>
+</edge>
+<edge source="Angular" target="Pandas">
+  <data key="d0">1769</data>
+</edge>
+<edge source="Angular" target="TensorFlow">
+  <data key="d0">1325</data>
+</edge>
+<edge source="Angular" target="ASP.NET">
+  <data key="d0">3406</data>
+</edge>
+<edge source="Angular" target=".NET Framework">
+  <data key="d0">4503</data>
+</edge>
+<edge source="Angular" target="Gatsby">
+  <data key="d0">677</data>
+</edge>
+<edge source="Angular" target="React Native">
+  <data key="d0">1925</data>
+</edge>
+<edge source="Angular" target="Django">
+  <data key="d0">1753</data>
+</edge>
+<edge source="Angular" target="FastAPI">
+  <data key="d0">480</data>
+</edge>
+<edge source="Angular" target="Torch/PyTorch">
+  <data key="d0">672</data>
+</edge>
+<edge source="Angular" target="Ruby on Rails">
+  <data key="d0">747</data>
+</edge>
+<edge source="Angular" target="Drupal">
+  <data key="d0">520</data>
+</edge>
+<edge source="Angular" target="Qt">
+  <data key="d0">677</data>
+</edge>
+<edge source="Angular" target="Hadoop">
+  <data key="d0">493</data>
+</edge>
+<edge source="Flask" target="Vue.js">
+  <data key="d0">1931</data>
+</edge>
+<edge source="Flask" target="Cordova">
+  <data key="d0">474</data>
+</edge>
+<edge source="Flask" target="NumPy">
+  <data key="d0">5282</data>
+</edge>
+<edge source="Flask" target="Pandas">
+  <data key="d0">4779</data>
+</edge>
+<edge source="Flask" target="TensorFlow">
+  <data key="d0">2639</data>
+</edge>
+<edge source="Flask" target="Torch/PyTorch">
+  <data key="d0">1761</data>
+</edge>
+<edge source="Flask" target="Apache Spark">
+  <data key="d0">815</data>
+</edge>
+<edge source="Flask" target="Hadoop">
+  <data key="d0">669</data>
+</edge>
+<edge source="Flask" target="Express">
+  <data key="d0">2545</data>
+</edge>
+<edge source="Flask" target="jQuery">
+  <data key="d0">3063</data>
+</edge>
+<edge source="Flask" target="React.js">
+  <data key="d0">3959</data>
+</edge>
+<edge source="Flask" target="Keras">
+  <data key="d0">1866</data>
+</edge>
+<edge source="Flask" target="Svelte">
+  <data key="d0">379</data>
+</edge>
+<edge source="Flask" target=".NET Core / .NET 5">
+  <data key="d0">1275</data>
+</edge>
+<edge source="Flask" target="Django">
+  <data key="d0">3881</data>
+</edge>
+<edge source="Flask" target="React Native">
+  <data key="d0">1178</data>
+</edge>
+<edge source="Flask" target="Qt">
+  <data key="d0">1259</data>
+</edge>
+<edge source="Flask" target="FastAPI">
+  <data key="d0">1352</data>
+</edge>
+<edge source="Flask" target="Angular.js">
+  <data key="d0">1009</data>
+</edge>
+<edge source="Flask" target="ASP.NET">
+  <data key="d0">760</data>
+</edge>
+<edge source="Flask" target="ASP.NET Core ">
+  <data key="d0">870</data>
+</edge>
+<edge source="Flask" target="Spring">
+  <data key="d0">1249</data>
+</edge>
+<edge source="Flask" target=".NET Framework">
+  <data key="d0">1357</data>
+</edge>
+<edge source="Flask" target="Flutter">
+  <data key="d0">1284</data>
+</edge>
+<edge source="Flask" target="Gatsby">
+  <data key="d0">505</data>
+</edge>
+<edge source="Flask" target="Ruby on Rails">
+  <data key="d0">639</data>
+</edge>
+<edge source="Flask" target="Drupal">
+  <data key="d0">283</data>
+</edge>
+<edge source="Vue.js" target="Cordova">
+  <data key="d0">1090</data>
+</edge>
+<edge source="Vue.js" target="Express">
+  <data key="d0">4073</data>
+</edge>
+<edge source="Vue.js" target="React.js">
+  <data key="d0">5124</data>
+</edge>
+<edge source="Vue.js" target="Svelte">
+  <data key="d0">724</data>
+</edge>
+<edge source="Vue.js" target="Angular.js">
+  <data key="d0">2005</data>
+</edge>
+<edge source="Vue.js" target=".NET Core / .NET 5">
+  <data key="d0">2511</data>
+</edge>
+<edge source="Vue.js" target="Apache Spark">
+  <data key="d0">416</data>
+</edge>
+<edge source="Vue.js" target="Keras">
+  <data key="d0">670</data>
+</edge>
+<edge source="Vue.js" target="NumPy">
+  <data key="d0">2139</data>
+</edge>
+<edge source="Vue.js" target="Pandas">
+  <data key="d0">1741</data>
+</edge>
+<edge source="Vue.js" target="TensorFlow">
+  <data key="d0">1306</data>
+</edge>
+<edge source="Vue.js" target="Django">
+  <data key="d0">1977</data>
+</edge>
+<edge source="Vue.js" target="FastAPI">
+  <data key="d0">642</data>
+</edge>
+<edge source="Vue.js" target="Torch/PyTorch">
+  <data key="d0">752</data>
+</edge>
+<edge source="Vue.js" target="jQuery">
+  <data key="d0">5209</data>
+</edge>
+<edge source="Vue.js" target="Gatsby">
+  <data key="d0">754</data>
+</edge>
+<edge source="Vue.js" target="Spring">
+  <data key="d0">1500</data>
+</edge>
+<edge source="Vue.js" target="React Native">
+  <data key="d0">1682</data>
+</edge>
+<edge source="Vue.js" target="ASP.NET">
+  <data key="d0">1745</data>
+</edge>
+<edge source="Vue.js" target="ASP.NET Core ">
+  <data key="d0">2129</data>
+</edge>
+<edge source="Vue.js" target=".NET Framework">
+  <data key="d0">2473</data>
+</edge>
+<edge source="Vue.js" target="Flutter">
+  <data key="d0">1623</data>
+</edge>
+<edge source="Vue.js" target="Qt">
+  <data key="d0">815</data>
+</edge>
+<edge source="Vue.js" target="Hadoop">
+  <data key="d0">355</data>
+</edge>
+<edge source="Vue.js" target="Ruby on Rails">
+  <data key="d0">1021</data>
+</edge>
+<edge source="Vue.js" target="Drupal">
+  <data key="d0">537</data>
+</edge>
+<edge source="Cordova" target="Express">
+  <data key="d0">1413</data>
+</edge>
+<edge source="Cordova" target="React.js">
+  <data key="d0">1424</data>
+</edge>
+<edge source="Cordova" target="ASP.NET">
+  <data key="d0">747</data>
+</edge>
+<edge source="Cordova" target="ASP.NET Core ">
+  <data key="d0">696</data>
+</edge>
+<edge source="Cordova" target="jQuery">
+  <data key="d0">1920</data>
+</edge>
+<edge source="Cordova" target=".NET Framework">
+  <data key="d0">994</data>
+</edge>
+<edge source="Cordova" target=".NET Core / .NET 5">
+  <data key="d0">846</data>
+</edge>
+<edge source="Cordova" target="React Native">
+  <data key="d0">860</data>
+</edge>
+<edge source="Cordova" target="TensorFlow">
+  <data key="d0">426</data>
+</edge>
+<edge source="Cordova" target="Torch/PyTorch">
+  <data key="d0">234</data>
+</edge>
+<edge source="Cordova" target="Spring">
+  <data key="d0">618</data>
+</edge>
+<edge source="Cordova" target="Flutter">
+  <data key="d0">660</data>
+</edge>
+<edge source="Cordova" target="Gatsby">
+  <data key="d0">220</data>
+</edge>
+<edge source="Cordova" target="Angular.js">
+  <data key="d0">1246</data>
+</edge>
+<edge source="Cordova" target="Drupal">
+  <data key="d0">277</data>
+</edge>
+<edge source="Cordova" target="Qt">
+  <data key="d0">298</data>
+</edge>
+<edge source="Cordova" target="Django">
+  <data key="d0">468</data>
+</edge>
+<edge source="Cordova" target="Keras">
+  <data key="d0">241</data>
+</edge>
+<edge source="Cordova" target="FastAPI">
+  <data key="d0">147</data>
+</edge>
+<edge source="Cordova" target="NumPy">
+  <data key="d0">537</data>
+</edge>
+<edge source="Cordova" target="Pandas">
+  <data key="d0">458</data>
+</edge>
+<edge source="Cordova" target="Apache Spark">
+  <data key="d0">211</data>
+</edge>
+<edge source="Cordova" target="Hadoop">
+  <data key="d0">179</data>
+</edge>
+<edge source="Cordova" target="Ruby on Rails">
+  <data key="d0">254</data>
+</edge>
+<edge source="Cordova" target="Svelte">
+  <data key="d0">180</data>
+</edge>
+<edge source="NumPy" target="Pandas">
+  <data key="d0">12018</data>
+</edge>
+<edge source="NumPy" target="TensorFlow">
+  <data key="d0">6316</data>
+</edge>
+<edge source="NumPy" target="Torch/PyTorch">
+  <data key="d0">4120</data>
+</edge>
+<edge source="NumPy" target="Apache Spark">
+  <data key="d0">1423</data>
+</edge>
+<edge source="NumPy" target="Hadoop">
+  <data key="d0">1185</data>
+</edge>
+<edge source="NumPy" target="Express">
+  <data key="d0">2893</data>
+</edge>
+<edge source="NumPy" target="jQuery">
+  <data key="d0">3854</data>
+</edge>
+<edge source="NumPy" target="React.js">
+  <data key="d0">4745</data>
+</edge>
+<edge source="NumPy" target="Keras">
+  <data key="d0">4580</data>
+</edge>
+<edge source="NumPy" target="Svelte">
+  <data key="d0">371</data>
+</edge>
+<edge source="NumPy" target="Spring">
+  <data key="d0">1572</data>
+</edge>
+<edge source="NumPy" target=".NET Core / .NET 5">
+  <data key="d0">2088</data>
+</edge>
+<edge source="NumPy" target="Django">
+  <data key="d0">4168</data>
+</edge>
+<edge source="NumPy" target="Flutter">
+  <data key="d0">1633</data>
+</edge>
+<edge source="NumPy" target=".NET Framework">
+  <data key="d0">2353</data>
+</edge>
+<edge source="NumPy" target="Qt">
+  <data key="d0">2268</data>
+</edge>
+<edge source="NumPy" target="Angular.js">
+  <data key="d0">1207</data>
+</edge>
+<edge source="NumPy" target="FastAPI">
+  <data key="d0">1276</data>
+</edge>
+<edge source="NumPy" target="React Native">
+  <data key="d0">1512</data>
+</edge>
+<edge source="NumPy" target="Gatsby">
+  <data key="d0">479</data>
+</edge>
+<edge source="NumPy" target="Ruby on Rails">
+  <data key="d0">673</data>
+</edge>
+<edge source="NumPy" target="ASP.NET Core ">
+  <data key="d0">1239</data>
+</edge>
+<edge source="NumPy" target="ASP.NET">
+  <data key="d0">1160</data>
+</edge>
+<edge source="NumPy" target="Drupal">
+  <data key="d0">292</data>
+</edge>
+<edge source="Pandas" target="TensorFlow">
+  <data key="d0">5329</data>
+</edge>
+<edge source="Pandas" target="Torch/PyTorch">
+  <data key="d0">3429</data>
+</edge>
+<edge source="Pandas" target="Apache Spark">
+  <data key="d0">1483</data>
+</edge>
+<edge source="Pandas" target="Hadoop">
+  <data key="d0">1204</data>
+</edge>
+<edge source="Pandas" target="Express">
+  <data key="d0">2428</data>
+</edge>
+<edge source="Pandas" target="jQuery">
+  <data key="d0">3175</data>
+</edge>
+<edge source="Pandas" target="React.js">
+  <data key="d0">4068</data>
+</edge>
+<edge source="Pandas" target="Keras">
+  <data key="d0">4023</data>
+</edge>
+<edge source="Pandas" target="Spring">
+  <data key="d0">1392</data>
+</edge>
+<edge source="Pandas" target="Django">
+  <data key="d0">3752</data>
+</edge>
+<edge source="Pandas" target=".NET Framework">
+  <data key="d0">1750</data>
+</edge>
+<edge source="Pandas" target=".NET Core / .NET 5">
+  <data key="d0">1576</data>
+</edge>
+<edge source="Pandas" target="Qt">
+  <data key="d0">1636</data>
+</edge>
+<edge source="Pandas" target="Angular.js">
+  <data key="d0">1017</data>
+</edge>
+<edge source="Pandas" target="FastAPI">
+  <data key="d0">1220</data>
+</edge>
+<edge source="Pandas" target="Svelte">
+  <data key="d0">302</data>
+</edge>
+<edge source="Pandas" target="ASP.NET">
+  <data key="d0">958</data>
+</edge>
+<edge source="Pandas" target="ASP.NET Core ">
+  <data key="d0">1037</data>
+</edge>
+<edge source="Pandas" target="Flutter">
+  <data key="d0">1402</data>
+</edge>
+<edge source="Pandas" target="React Native">
+  <data key="d0">1253</data>
+</edge>
+<edge source="Pandas" target="Gatsby">
+  <data key="d0">431</data>
+</edge>
+<edge source="Pandas" target="Ruby on Rails">
+  <data key="d0">582</data>
+</edge>
+<edge source="Pandas" target="Drupal">
+  <data key="d0">237</data>
+</edge>
+<edge source="TensorFlow" target="Torch/PyTorch">
+  <data key="d0">3370</data>
+</edge>
+<edge source="TensorFlow" target="Express">
+  <data key="d0">1755</data>
+</edge>
+<edge source="TensorFlow" target="jQuery">
+  <data key="d0">2164</data>
+</edge>
+<edge source="TensorFlow" target="React.js">
+  <data key="d0">2699</data>
+</edge>
+<edge source="TensorFlow" target="Keras">
+  <data key="d0">4173</data>
+</edge>
+<edge source="TensorFlow" target="Apache Spark">
+  <data key="d0">807</data>
+</edge>
+<edge source="TensorFlow" target="Django">
+  <data key="d0">2122</data>
+</edge>
+<edge source="TensorFlow" target="Angular.js">
+  <data key="d0">838</data>
+</edge>
+<edge source="TensorFlow" target=".NET Core / .NET 5">
+  <data key="d0">1217</data>
+</edge>
+<edge source="TensorFlow" target="Qt">
+  <data key="d0">1216</data>
+</edge>
+<edge source="TensorFlow" target="ASP.NET">
+  <data key="d0">785</data>
+</edge>
+<edge source="TensorFlow" target="ASP.NET Core ">
+  <data key="d0">776</data>
+</edge>
+<edge source="TensorFlow" target=".NET Framework">
+  <data key="d0">1408</data>
+</edge>
+<edge source="TensorFlow" target="React Native">
+  <data key="d0">1120</data>
+</edge>
+<edge source="TensorFlow" target="Hadoop">
+  <data key="d0">696</data>
+</edge>
+<edge source="TensorFlow" target="Flutter">
+  <data key="d0">1171</data>
+</edge>
+<edge source="TensorFlow" target="FastAPI">
+  <data key="d0">691</data>
+</edge>
+<edge source="TensorFlow" target="Spring">
+  <data key="d0">896</data>
+</edge>
+<edge source="TensorFlow" target="Ruby on Rails">
+  <data key="d0">406</data>
+</edge>
+<edge source="TensorFlow" target="Svelte">
+  <data key="d0">259</data>
+</edge>
+<edge source="TensorFlow" target="Gatsby">
+  <data key="d0">351</data>
+</edge>
+<edge source="TensorFlow" target="Drupal">
+  <data key="d0">178</data>
+</edge>
+<edge source="Torch/PyTorch" target="Express">
+  <data key="d0">885</data>
+</edge>
+<edge source="Torch/PyTorch" target="jQuery">
+  <data key="d0">1180</data>
+</edge>
+<edge source="Torch/PyTorch" target="React.js">
+  <data key="d0">1527</data>
+</edge>
+<edge source="Torch/PyTorch" target="Keras">
+  <data key="d0">2211</data>
+</edge>
+<edge source="Torch/PyTorch" target=".NET Core / .NET 5">
+  <data key="d0">698</data>
+</edge>
+<edge source="Torch/PyTorch" target="Apache Spark">
+  <data key="d0">575</data>
+</edge>
+<edge source="Torch/PyTorch" target="Django">
+  <data key="d0">1262</data>
+</edge>
+<edge source="Torch/PyTorch" target="FastAPI">
+  <data key="d0">548</data>
+</edge>
+<edge source="Torch/PyTorch" target="Qt">
+  <data key="d0">770</data>
+</edge>
+<edge source="Torch/PyTorch" target="ASP.NET">
+  <data key="d0">404</data>
+</edge>
+<edge source="Torch/PyTorch" target="ASP.NET Core ">
+  <data key="d0">431</data>
+</edge>
+<edge source="Torch/PyTorch" target=".NET Framework">
+  <data key="d0">755</data>
+</edge>
+<edge source="Torch/PyTorch" target="React Native">
+  <data key="d0">581</data>
+</edge>
+<edge source="Torch/PyTorch" target="Spring">
+  <data key="d0">509</data>
+</edge>
+<edge source="Torch/PyTorch" target="Angular.js">
+  <data key="d0">502</data>
+</edge>
+<edge source="Torch/PyTorch" target="Hadoop">
+  <data key="d0">489</data>
+</edge>
+<edge source="Torch/PyTorch" target="Ruby on Rails">
+  <data key="d0">264</data>
+</edge>
+<edge source="Torch/PyTorch" target="Flutter">
+  <data key="d0">577</data>
+</edge>
+<edge source="Torch/PyTorch" target="Drupal">
+  <data key="d0">127</data>
+</edge>
+<edge source="Torch/PyTorch" target="Gatsby">
+  <data key="d0">178</data>
+</edge>
+<edge source="Torch/PyTorch" target="Svelte">
+  <data key="d0">160</data>
+</edge>
+<edge source="jQuery" target="Express">
+  <data key="d0">5541</data>
+</edge>
+<edge source="jQuery" target="React.js">
+  <data key="d0">8329</data>
+</edge>
+<edge source="jQuery" target="Keras">
+  <data key="d0">1173</data>
+</edge>
+<edge source="jQuery" target="Angular.js">
+  <data key="d0">4162</data>
+</edge>
+<edge source="jQuery" target="Ruby on Rails">
+  <data key="d0">1666</data>
+</edge>
+<edge source="jQuery" target="Django">
+  <data key="d0">3248</data>
+</edge>
+<edge source="jQuery" target="Qt">
+  <data key="d0">1450</data>
+</edge>
+<edge source="jQuery" target=".NET Framework">
+  <data key="d0">6748</data>
+</edge>
+<edge source="jQuery" target=".NET Core / .NET 5">
+  <data key="d0">5518</data>
+</edge>
+<edge source="jQuery" target="ASP.NET Core ">
+  <data key="d0">4690</data>
+</edge>
+<edge source="jQuery" target="Spring">
+  <data key="d0">3001</data>
+</edge>
+<edge source="jQuery" target="Svelte">
+  <data key="d0">553</data>
+</edge>
+<edge source="jQuery" target="ASP.NET">
+  <data key="d0">5230</data>
+</edge>
+<edge source="jQuery" target="Apache Spark">
+  <data key="d0">776</data>
+</edge>
+<edge source="jQuery" target="Flutter">
+  <data key="d0">2141</data>
+</edge>
+<edge source="jQuery" target="React Native">
+  <data key="d0">2644</data>
+</edge>
+<edge source="jQuery" target="Hadoop">
+  <data key="d0">645</data>
+</edge>
+<edge source="jQuery" target="FastAPI">
+  <data key="d0">620</data>
+</edge>
+<edge source="jQuery" target="Gatsby">
+  <data key="d0">902</data>
+</edge>
+<edge source="jQuery" target="Drupal">
+  <data key="d0">1029</data>
+</edge>
+<edge source="Apache Spark" target="Hadoop">
+  <data key="d0">1193</data>
+</edge>
+<edge source="Apache Spark" target="Keras">
+  <data key="d0">635</data>
+</edge>
+<edge source="Apache Spark" target="Angular.js">
+  <data key="d0">428</data>
+</edge>
+<edge source="Apache Spark" target="React.js">
+  <data key="d0">851</data>
+</edge>
+<edge source="Apache Spark" target=".NET Core / .NET 5">
+  <data key="d0">466</data>
+</edge>
+<edge source="Apache Spark" target="Django">
+  <data key="d0">594</data>
+</edge>
+<edge source="Apache Spark" target="FastAPI">
+  <data key="d0">280</data>
+</edge>
+<edge source="Apache Spark" target="ASP.NET">
+  <data key="d0">349</data>
+</edge>
+<edge source="Apache Spark" target="ASP.NET Core ">
+  <data key="d0">357</data>
+</edge>
+<edge source="Apache Spark" target="Express">
+  <data key="d0">501</data>
+</edge>
+<edge source="Apache Spark" target="Spring">
+  <data key="d0">680</data>
+</edge>
+<edge source="Apache Spark" target=".NET Framework">
+  <data key="d0">521</data>
+</edge>
+<edge source="Apache Spark" target="Flutter">
+  <data key="d0">276</data>
+</edge>
+<edge source="Apache Spark" target="React Native">
+  <data key="d0">299</data>
+</edge>
+<edge source="Apache Spark" target="Qt">
+  <data key="d0">241</data>
+</edge>
+<edge source="Apache Spark" target="Ruby on Rails">
+  <data key="d0">199</data>
+</edge>
+<edge source="Apache Spark" target="Drupal">
+  <data key="d0">126</data>
+</edge>
+<edge source="Apache Spark" target="Svelte">
+  <data key="d0">107</data>
+</edge>
+<edge source="Apache Spark" target="Gatsby">
+  <data key="d0">124</data>
+</edge>
+<edge source="Hadoop" target="React.js">
+  <data key="d0">665</data>
+</edge>
+<edge source="Hadoop" target="Keras">
+  <data key="d0">597</data>
+</edge>
+<edge source="Hadoop" target="Django">
+  <data key="d0">539</data>
+</edge>
+<edge source="Hadoop" target="Flutter">
+  <data key="d0">268</data>
+</edge>
+<edge source="Hadoop" target="ASP.NET">
+  <data key="d0">291</data>
+</edge>
+<edge source="Hadoop" target="ASP.NET Core ">
+  <data key="d0">266</data>
+</edge>
+<edge source="Hadoop" target="FastAPI">
+  <data key="d0">210</data>
+</edge>
+<edge source="Hadoop" target=".NET Framework">
+  <data key="d0">387</data>
+</edge>
+<edge source="Hadoop" target=".NET Core / .NET 5">
+  <data key="d0">332</data>
+</edge>
+<edge source="Hadoop" target="Qt">
+  <data key="d0">240</data>
+</edge>
+<edge source="Hadoop" target="Express">
+  <data key="d0">428</data>
+</edge>
+<edge source="Hadoop" target="Ruby on Rails">
+  <data key="d0">173</data>
+</edge>
+<edge source="Hadoop" target="Spring">
+  <data key="d0">601</data>
+</edge>
+<edge source="Hadoop" target="Angular.js">
+  <data key="d0">357</data>
+</edge>
+<edge source="Hadoop" target="React Native">
+  <data key="d0">264</data>
+</edge>
+<edge source="Hadoop" target="Drupal">
+  <data key="d0">112</data>
+</edge>
+<edge source="Hadoop" target="Svelte">
+  <data key="d0">88</data>
+</edge>
+<edge source="Hadoop" target="Gatsby">
+  <data key="d0">98</data>
+</edge>
+<edge source="Express" target="React.js">
+  <data key="d0">9936</data>
+</edge>
+<edge source="Express" target="Keras">
+  <data key="d0">949</data>
+</edge>
+<edge source="Express" target="Svelte">
+  <data key="d0">807</data>
+</edge>
+<edge source="Express" target="Spring">
+  <data key="d0">2149</data>
+</edge>
+<edge source="Express" target="Django">
+  <data key="d0">2216</data>
+</edge>
+<edge source="Express" target="ASP.NET">
+  <data key="d0">1660</data>
+</edge>
+<edge source="Express" target="ASP.NET Core ">
+  <data key="d0">1961</data>
+</edge>
+<edge source="Express" target=".NET Framework">
+  <data key="d0">2513</data>
+</edge>
+<edge source="Express" target=".NET Core / .NET 5">
+  <data key="d0">2451</data>
+</edge>
+<edge source="Express" target="Gatsby">
+  <data key="d0">1367</data>
+</edge>
+<edge source="Express" target="React Native">
+  <data key="d0">3235</data>
+</edge>
+<edge source="Express" target="Angular.js">
+  <data key="d0">2460</data>
+</edge>
+<edge source="Express" target="Flutter">
+  <data key="d0">2094</data>
+</edge>
+<edge source="Express" target="Qt">
+  <data key="d0">867</data>
+</edge>
+<edge source="Express" target="FastAPI">
+  <data key="d0">642</data>
+</edge>
+<edge source="Express" target="Ruby on Rails">
+  <data key="d0">1008</data>
+</edge>
+<edge source="Express" target="Drupal">
+  <data key="d0">481</data>
+</edge>
+<edge source="React.js" target="Keras">
+  <data key="d0">1535</data>
+</edge>
+<edge source="React.js" target="Svelte">
+  <data key="d0">1067</data>
+</edge>
+<edge source="React.js" target="Flutter">
+  <data key="d0">2810</data>
+</edge>
+<edge source="React.js" target="Angular.js">
+  <data key="d0">3422</data>
+</edge>
+<edge source="React.js" target=".NET Core / .NET 5">
+  <data key="d0">4702</data>
+</edge>
+<edge source="React.js" target="Django">
+  <data key="d0">3906</data>
+</edge>
+<edge source="React.js" target="React Native">
+  <data key="d0">6044</data>
+</edge>
+<edge source="React.js" target="ASP.NET Core ">
+  <data key="d0">3838</data>
+</edge>
+<edge source="React.js" target="Spring">
+  <data key="d0">3411</data>
+</edge>
+<edge source="React.js" target="Gatsby">
+  <data key="d0">2224</data>
+</edge>
+<edge source="React.js" target="ASP.NET">
+  <data key="d0">3092</data>
+</edge>
+<edge source="React.js" target=".NET Framework">
+  <data key="d0">4487</data>
+</edge>
+<edge source="React.js" target="Qt">
+  <data key="d0">1282</data>
+</edge>
+<edge source="React.js" target="FastAPI">
+  <data key="d0">1063</data>
+</edge>
+<edge source="React.js" target="Ruby on Rails">
+  <data key="d0">2193</data>
+</edge>
+<edge source="React.js" target="Drupal">
+  <data key="d0">708</data>
+</edge>
+<edge source="Keras" target="Angular.js">
+  <data key="d0">427</data>
+</edge>
+<edge source="Keras" target=".NET Core / .NET 5">
+  <data key="d0">635</data>
+</edge>
+<edge source="Keras" target="Django">
+  <data key="d0">1404</data>
+</edge>
+<edge source="Keras" target="Qt">
+  <data key="d0">729</data>
+</edge>
+<edge source="Keras" target="ASP.NET">
+  <data key="d0">412</data>
+</edge>
+<edge source="Keras" target="ASP.NET Core ">
+  <data key="d0">425</data>
+</edge>
+<edge source="Keras" target="FastAPI">
+  <data key="d0">525</data>
+</edge>
+<edge source="Keras" target=".NET Framework">
+  <data key="d0">700</data>
+</edge>
+<edge source="Keras" target="Spring">
+  <data key="d0">547</data>
+</edge>
+<edge source="Keras" target="Ruby on Rails">
+  <data key="d0">221</data>
+</edge>
+<edge source="Keras" target="Flutter">
+  <data key="d0">702</data>
+</edge>
+<edge source="Keras" target="Svelte">
+  <data key="d0">153</data>
+</edge>
+<edge source="Keras" target="Drupal">
+  <data key="d0">117</data>
+</edge>
+<edge source="Keras" target="React Native">
+  <data key="d0">583</data>
+</edge>
+<edge source="Keras" target="Gatsby">
+  <data key="d0">200</data>
+</edge>
+<edge source="Angular.js" target="Ruby on Rails">
+  <data key="d0">620</data>
+</edge>
+<edge source="Angular.js" target="Qt">
+  <data key="d0">508</data>
+</edge>
+<edge source="Angular.js" target=".NET Core / .NET 5">
+  <data key="d0">2225</data>
+</edge>
+<edge source="Angular.js" target="ASP.NET">
+  <data key="d0">2219</data>
+</edge>
+<edge source="Angular.js" target="ASP.NET Core ">
+  <data key="d0">1976</data>
+</edge>
+<edge source="Angular.js" target="Django">
+  <data key="d0">1148</data>
+</edge>
+<edge source="Angular.js" target="Spring">
+  <data key="d0">1556</data>
+</edge>
+<edge source="Angular.js" target=".NET Framework">
+  <data key="d0">2662</data>
+</edge>
+<edge source="Angular.js" target="Flutter">
+  <data key="d0">915</data>
+</edge>
+<edge source="Angular.js" target="React Native">
+  <data key="d0">1322</data>
+</edge>
+<edge source="Angular.js" target="Drupal">
+  <data key="d0">462</data>
+</edge>
+<edge source="Angular.js" target="FastAPI">
+  <data key="d0">272</data>
+</edge>
+<edge source="Angular.js" target="Gatsby">
+  <data key="d0">430</data>
+</edge>
+<edge source="Angular.js" target="Svelte">
+  <data key="d0">270</data>
+</edge>
+<edge source="Ruby on Rails" target="Qt">
+  <data key="d0">258</data>
+</edge>
+<edge source="Ruby on Rails" target="Spring">
+  <data key="d0">525</data>
+</edge>
+<edge source="Ruby on Rails" target="FastAPI">
+  <data key="d0">188</data>
+</edge>
+<edge source="Ruby on Rails" target=".NET Core / .NET 5">
+  <data key="d0">483</data>
+</edge>
+<edge source="Ruby on Rails" target="Flutter">
+  <data key="d0">399</data>
+</edge>
+<edge source="Ruby on Rails" target="React Native">
+  <data key="d0">675</data>
+</edge>
+<edge source="Ruby on Rails" target="ASP.NET">
+  <data key="d0">386</data>
+</edge>
+<edge source="Ruby on Rails" target="ASP.NET Core ">
+  <data key="d0">412</data>
+</edge>
+<edge source="Ruby on Rails" target="Django">
+  <data key="d0">643</data>
+</edge>
+<edge source="Ruby on Rails" target=".NET Framework">
+  <data key="d0">518</data>
+</edge>
+<edge source="Ruby on Rails" target="Gatsby">
+  <data key="d0">345</data>
+</edge>
+<edge source="Ruby on Rails" target="Drupal">
+  <data key="d0">223</data>
+</edge>
+<edge source="Ruby on Rails" target="Svelte">
+  <data key="d0">182</data>
+</edge>
+<edge source="Django" target="FastAPI">
+  <data key="d0">990</data>
+</edge>
+<edge source="Django" target="React Native">
+  <data key="d0">1244</data>
+</edge>
+<edge source="Django" target="Qt">
+  <data key="d0">1152</data>
+</edge>
+<edge source="Django" target="ASP.NET">
+  <data key="d0">803</data>
+</edge>
+<edge source="Django" target="ASP.NET Core ">
+  <data key="d0">824</data>
+</edge>
+<edge source="Django" target="Spring">
+  <data key="d0">1042</data>
+</edge>
+<edge source="Django" target=".NET Framework">
+  <data key="d0">1252</data>
+</edge>
+<edge source="Django" target=".NET Core / .NET 5">
+  <data key="d0">1106</data>
+</edge>
+<edge source="Django" target="Flutter">
+  <data key="d0">1301</data>
+</edge>
+<edge source="Django" target="Gatsby">
+  <data key="d0">478</data>
+</edge>
+<edge source="Django" target="Drupal">
+  <data key="d0">357</data>
+</edge>
+<edge source="Django" target="Svelte">
+  <data key="d0">297</data>
+</edge>
+<edge source="FastAPI" target="Flutter">
+  <data key="d0">334</data>
+</edge>
+<edge source="FastAPI" target="Gatsby">
+  <data key="d0">197</data>
+</edge>
+<edge source="FastAPI" target="Qt">
+  <data key="d0">278</data>
+</edge>
+<edge source="FastAPI" target="React Native">
+  <data key="d0">322</data>
+</edge>
+<edge source="FastAPI" target="Svelte">
+  <data key="d0">186</data>
+</edge>
+<edge source="FastAPI" target="ASP.NET">
+  <data key="d0">223</data>
+</edge>
+<edge source="FastAPI" target="ASP.NET Core ">
+  <data key="d0">279</data>
+</edge>
+<edge source="FastAPI" target=".NET Framework">
+  <data key="d0">337</data>
+</edge>
+<edge source="FastAPI" target=".NET Core / .NET 5">
+  <data key="d0">334</data>
+</edge>
+<edge source="FastAPI" target="Drupal">
+  <data key="d0">103</data>
+</edge>
+<edge source="FastAPI" target="Spring">
+  <data key="d0">306</data>
+</edge>
+<edge source="ASP.NET Core " target=".NET Core / .NET 5">
+  <data key="d0">10396</data>
+</edge>
+<edge source="ASP.NET Core " target="Spring">
+  <data key="d0">962</data>
+</edge>
+<edge source="ASP.NET Core " target="Flutter">
+  <data key="d0">898</data>
+</edge>
+<edge source="ASP.NET Core " target="ASP.NET">
+  <data key="d0">7039</data>
+</edge>
+<edge source="ASP.NET Core " target="Svelte">
+  <data key="d0">299</data>
+</edge>
+<edge source="ASP.NET Core " target=".NET Framework">
+  <data key="d0">8242</data>
+</edge>
+<edge source="ASP.NET Core " target="React Native">
+  <data key="d0">1036</data>
+</edge>
+<edge source="ASP.NET Core " target="Qt">
+  <data key="d0">504</data>
+</edge>
+<edge source="ASP.NET Core " target="Drupal">
+  <data key="d0">266</data>
+</edge>
+<edge source="ASP.NET Core " target="Gatsby">
+  <data key="d0">351</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Spring">
+  <data key="d0">1206</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Flutter">
+  <data key="d0">1202</data>
+</edge>
+<edge source=".NET Core / .NET 5" target=".NET Framework">
+  <data key="d0">11440</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Qt">
+  <data key="d0">964</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="ASP.NET">
+  <data key="d0">7245</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Svelte">
+  <data key="d0">346</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="React Native">
+  <data key="d0">1296</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Drupal">
+  <data key="d0">307</data>
+</edge>
+<edge source=".NET Core / .NET 5" target="Gatsby">
+  <data key="d0">396</data>
+</edge>
+<edge source="Qt" target=".NET Framework">
+  <data key="d0">1188</data>
+</edge>
+<edge source="Qt" target="Spring">
+  <data key="d0">496</data>
+</edge>
+<edge source="Qt" target="Gatsby">
+  <data key="d0">146</data>
+</edge>
+<edge source="Qt" target="ASP.NET">
+  <data key="d0">511</data>
+</edge>
+<edge source="Qt" target="Drupal">
+  <data key="d0">164</data>
+</edge>
+<edge source="Qt" target="Flutter">
+  <data key="d0">567</data>
+</edge>
+<edge source="Qt" target="React Native">
+  <data key="d0">529</data>
+</edge>
+<edge source="Qt" target="Svelte">
+  <data key="d0">168</data>
+</edge>
+<edge source="Spring" target="Flutter">
+  <data key="d0">933</data>
+</edge>
+<edge source="Spring" target=".NET Framework">
+  <data key="d0">1291</data>
+</edge>
+<edge source="Spring" target="Gatsby">
+  <data key="d0">345</data>
+</edge>
+<edge source="Spring" target="React Native">
+  <data key="d0">1007</data>
+</edge>
+<edge source="Spring" target="ASP.NET">
+  <data key="d0">893</data>
+</edge>
+<edge source="Spring" target="Drupal">
+  <data key="d0">268</data>
+</edge>
+<edge source="Spring" target="Svelte">
+  <data key="d0">226</data>
+</edge>
+<edge source="Flutter" target="ASP.NET">
+  <data key="d0">821</data>
+</edge>
+<edge source="Flutter" target=".NET Framework">
+  <data key="d0">1264</data>
+</edge>
+<edge source="Flutter" target="React Native">
+  <data key="d0">1468</data>
+</edge>
+<edge source="Flutter" target="Drupal">
+  <data key="d0">213</data>
+</edge>
+<edge source="Flutter" target="Gatsby">
+  <data key="d0">381</data>
+</edge>
+<edge source="Flutter" target="Svelte">
+  <data key="d0">350</data>
+</edge>
+<edge source="Svelte" target="ASP.NET">
+  <data key="d0">213</data>
+</edge>
+<edge source="Svelte" target=".NET Framework">
+  <data key="d0">310</data>
+</edge>
+<edge source="Svelte" target="Gatsby">
+  <data key="d0">260</data>
+</edge>
+<edge source="Svelte" target="React Native">
+  <data key="d0">348</data>
+</edge>
+<edge source="Svelte" target="Drupal">
+  <data key="d0">105</data>
+</edge>
+<edge source=".NET Framework" target="ASP.NET">
+  <data key="d0">8878</data>
+</edge>
+<edge source=".NET Framework" target="React Native">
+  <data key="d0">1335</data>
+</edge>
+<edge source=".NET Framework" target="Drupal">
+  <data key="d0">402</data>
+</edge>
+<edge source=".NET Framework" target="Gatsby">
+  <data key="d0">371</data>
+</edge>
+<edge source="React Native" target="Gatsby">
+  <data key="d0">777</data>
+</edge>
+<edge source="React Native" target="ASP.NET">
+  <data key="d0">945</data>
+</edge>
+<edge source="React Native" target="Drupal">
+  <data key="d0">301</data>
+</edge>
+<edge source="ASP.NET" target="Drupal">
+  <data key="d0">332</data>
+</edge>
+<edge source="ASP.NET" target="Gatsby">
+  <data key="d0">301</data>
+</edge>
+<edge source="Gatsby" target="Drupal">
+  <data key="d0">183</data>
+</edge>
+</graph></graphml>

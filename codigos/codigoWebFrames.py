@@ -20,36 +20,59 @@ def inicial(): #solo es necesario si no se tiene guardado el grafo
     path='stack-overflow-developer-survey-2021'
     public=pd.read_csv(path+'/survey_results_public.csv')
     G = nx.Graph()
-    
+   
     for a in range(len(public)):
-        nodoLenguaje = public.to_numpy()[a][16]
-    
+        nodoLenguaje = public.to_numpy()[a][22]
+        nodoLenguaje2 = public.to_numpy()[a][24]
+
         if str(nodoLenguaje) != "nan":
-            listaLenguajes = nodoLenguaje.split(';')
+            if str(nodoLenguaje2) != "nan":
+                nodoLenguajesJunta = nodoLenguaje+";"+nodoLenguaje2
+                listaLenguajesJunta = nodoLenguajesJunta.split(';')
+               
+                for e in itertools.combinations(listaLenguajesJunta,2):
+                    if G.has_edge(e[0],e[1]):
+                        G.edges[e[0],e[1]]['weight']+=1
+                    else:
+                        G.add_edge(e[0],e[1],weight=1)
 
-            # Mejor utiizar itertools.combinations() para generar combinaciones de dos elementos de una lista
-            for e in itertools.combinations(listaLenguajes,2): # e es una tupla de dos lenguajes
-                if G.has_edge(e[0],e[1]):
-                    G.edges[e[0],e[1]]['weight']+=1 # Incrementamos peso
-                else:
-                    G.add_edge(e[0],e[1],weight=1) # Añadimos nuevo enlace y/o nodos
 
-    #Guardar grafo
-    nx.write_graphml(G, "grafoCompleto.graphml")
+            else:
+                listaLenguajes = nodoLenguaje.split(';')
+
+                for e in itertools.combinations(listaLenguajes,2):
+                    if G.has_edge(e[0],e[1]):
+                        G.edges[e[0],e[1]]['weight']+=1
+                    else:
+                        G.add_edge(e[0],e[1],weight=1)
+
+        else:
+            if str(nodoLenguaje2) != "nan":
+                listaLenguajes2 = nodoLenguaje2.split(';')
+
+                for e in itertools.combinations(listaLenguajes2,2):
+                    if G.has_edge(e[0],e[1]):
+                        G.edges[e[0],e[1]]['weight']+=1
+                    else:
+                        G.add_edge(e[0],e[1],weight=1)
+
+
+        #Guardar grafo
+        nx.write_graphml(G, "grafoWebframes.graphml")
     return G
 
 
 
 def leerGrafo():
     #Cargar grafo
-    G = nx.read_graphml("grafoCompleto.graphml")
+    G = nx.read_graphml("grafosTecnologias/grafoWebframes.graphml")
     return G
 
 
 
 def poda(G, umbral):
     H = nx.Graph()
-    for e in itertools.combinations(G.nodes(),2): # e es una tupla de dos lenguajes
+    for e in itertools.combinations(G.nodes(),2):
         peso = G.edges[e[0],e[1]]['weight']
         if peso >= umbral:
             H.add_edge(e[0],e[1],weight=peso)
@@ -80,9 +103,9 @@ def gradosNodos(G, umbral):
         lista.append(d[1])
     fig=plt.figure(figsize=(7,7))
     plt.pie(lista, labels=G.nodes(), autopct='%1.1f%%')
-    plt.title('Porcentaje de relación del lenguaje \n', fontsize = 20)
+    plt.title('Porcentaje de relación del marco de trabajo \n', fontsize = 20)
     plt.axis("equal")
-    plt.savefig("static/images/graficosSectores/GraficoSectoresLeng.jpg")
+    plt.savefig("static/images/graficosSectores/GraficoSectoresWf.jpg")
 
 
 
@@ -95,7 +118,7 @@ def propiedadesRed(G, umbral):
     for i in range(len(eje_y)):
         plt.annotate(eje_y[i], (i, eje_y[i]+1))
     
-    plt.savefig("static/images/histogramas/histogramaLeng.jpg")
+    plt.savefig("static/images/histogramas/histogramaWf.jpg")
 
 
 
@@ -187,11 +210,11 @@ def grafoInteractivo(G, umbral):
     color_by_this_attribute = 'community_color'
 
     #Choose a title!
-    title = 'Red de Relación de Lenguajes'
+    title = 'Red de Relación de Marcos de Trabajo'
 
     #Establish which categories will appear when hovering over each node
     HOVER_TOOLTIPS = [
-        ("Lenguaje", "@index"),
+        ("Marco de trabajo", "@index"),
         ("Enlaces", "@edge"),
         ("Modularidad", "@modularity"),
         ("Influencia", "@pagerank"),
@@ -242,7 +265,7 @@ def grafoInteractivo(G, umbral):
     
 
 def vecinos(G, umbral):
-    libro = xlsxwriter.Workbook('vecinos.xlsx')
+    libro = xlsxwriter.Workbook('excel/vecinos/vecinosWf.xlsx')
     hoja = libro.add_worksheet()
     lista = {}
 
@@ -275,7 +298,7 @@ def vecinos(G, umbral):
     
     i=1
     
-    hoja.write(0, 0, "Lenguaje")
+    hoja.write(0, 0, "Marco de trabajo")
     
     if ma > 3:
         ma = 3
@@ -287,18 +310,18 @@ def vecinos(G, umbral):
     #Cerramos el libro
     libro.close()
     if ma==3:
-        df = pd.read_excel("vecinos.xlsx", usecols=("A:D"))
+        df = pd.read_excel("excel/vecinos/vecinosWf.xlsx", usecols=("A:D"))
     elif ma==2:
-        df = pd.read_excel("vecinos.xlsx", usecols=("A:C"))
+        df = pd.read_excel("excel/vecinos/vecinosWf.xlsx", usecols=("A:C"))
     else:
-        df = pd.read_excel("vecinos.xlsx", usecols=("A:B"))
+        df = pd.read_excel("excel/vecinos/vecinosWf.xlsx", usecols=("A:B"))
 
     df.fillna('', inplace=True)
-    df.to_html('static/images/tablas/tablaVecinosLeng.html', justify='center', col_space=100, table_id="myTable")
+    df.to_html('static/images/tablas/tablaVecinosWf.html', justify='center', col_space=100, table_id="myTable")
 
 def crearTablaFiltro():
-    a = open('static/images/tablas/tablaVecinosLeng.html','r')
-    f = open('static/images/tablaFiltro/tablaConFiltroLeng.html','w')
+    a = open('static/images/tablas/tablaVecinosWf.html','r')
+    f = open('static/images/tablaFiltro/tablaConFiltroWf.html','w')
     mensaje1="""
     <html>
     <head>
@@ -351,9 +374,9 @@ def crearTablaFiltro():
     </head>
     <body>
 
-    <h2><b><center>RECOMENDADOR DE LENGUAJES</center></b></h2>
+    <h2><b><center>RECOMENDADOR DE MARCOS DE TRABAJO</center></b></h2>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por lenguaje..." title="Type in a name">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por marco de trabajo..." title="Type in a name">
     """
     f.write(mensaje1)
 
@@ -393,7 +416,7 @@ def crearTablaFiltro():
 
 def nodosRestantes(G, H):
     nF = G.nodes()-H.nodes()
-    libro = xlsxwriter.Workbook('faltantes.xlsx')
+    libro = xlsxwriter.Workbook('excel/faltantes/faltantesWf.xlsx')
     hoja = libro.add_worksheet()
     
     row = 1
@@ -402,19 +425,19 @@ def nodosRestantes(G, H):
         hoja.write(row, col, n)
         row+=1
     
-    hoja.write(0, 0, "Lenguajes No Conectados")
+    hoja.write(0, 0, "Marcos de trabajo No Conectados")
     
     #Cerramos el libro
     libro.close()
     
-    df = pd.read_excel("faltantes.xlsx")
+    df = pd.read_excel("excel/faltantes/faltantesWf.xlsx")
 
     df.fillna('', inplace=True)
-    df.to_html('static/images/tablas/tablaLengFaltantes.html', justify='center', col_space=100, table_id="myTable")
+    df.to_html('static/images/tablas/tablaWfFaltantes.html', justify='center', col_space=100, table_id="myTable")
 
 def crearTablaFiltroRestantes():
-    a = open('static/images/tablas/tablaLengFaltantes.html','r')
-    f = open('static/images/tablaFiltro/tablaConFiltroRestantesLeng.html','w')
+    a = open('static/images/tablas/tablaWfFaltantes.html','r')
+    f = open('static/images/tablaFiltro/tablaConFiltroRestantesWf.html','w')
     mensaje1="""
     <html>
     <head>
@@ -463,7 +486,7 @@ def crearTablaFiltroRestantes():
     </head>
     <body>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por lenguaje..." title="Type in a name">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filtrar por marco de trabajo..." title="Type in a name">
     """
     f.write(mensaje1)
 
@@ -510,12 +533,12 @@ def ejecutar(umbral):
     
     peso = 0
     maxi = 0
-    for e in itertools.combinations(G.nodes(),2): # e es una tupla de dos lenguajes
+    for e in itertools.combinations(G.nodes(),2):
         peso = G.edges[e[0],e[1]]['weight']
         if peso > maxi:
             maxi = peso
     
-    H = poda(G, maxi * (umbral/100)) #el umbral se calcula como el porcentaje * maximo peso que tiene una pareja de enlaces (en este caso si ponemos 100% saldría todo el grafo)
+    H = poda(G, maxi * (umbral/100))
     gradosNodos(H,umbral)
     propiedadesRed(H,umbral)
     grafoInteractivo(H, umbral)
