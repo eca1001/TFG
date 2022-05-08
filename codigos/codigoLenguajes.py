@@ -74,7 +74,7 @@ def comunidades(G):
 
 
 
-def gradosNodos(G, umbral):
+def gradosNodos(G):
     lista = list()
     for d in G.degree():
         lista.append(d[1])
@@ -86,7 +86,7 @@ def gradosNodos(G, umbral):
 
 
 
-def propiedadesRed(G, umbral):
+def propiedadesRed(G):
     eje_x = ['Densidad', 'Transitividad', 'Promedio de agrupación']
     eje_y = [round(nx.density(G)*100,2), round(nx.transitivity(G)*100,2), round(nx.average_clustering(G)*100,2)]
     fig=plt.figure()
@@ -139,7 +139,7 @@ def calculaModularidad(G, particion):
 
 
 
-def grafoInteractivo(G, umbral):
+def grafoInteractivo(G):
     edges = dict(nx.degree(G))
     nx.set_node_attributes(G, name='edge', values=edges)
 
@@ -241,7 +241,7 @@ def grafoInteractivo(G, umbral):
     save(grafo, filename=f"static/images/grafos/{title}.html")
     
 
-def vecinos(G, umbral):
+def vecinos(G):
     libro = xlsxwriter.Workbook('excel/vecinos/vecinosLen.xlsx')
     hoja = libro.add_worksheet()
     lista = {}
@@ -516,10 +516,10 @@ def ejecutar(umbral):
             maxi = peso
     
     H = poda(G, maxi * (umbral/100)) #el umbral se calcula como el porcentaje * maximo peso que tiene una pareja de enlaces (en este caso si ponemos 100% saldría todo el grafo)
-    gradosNodos(H,umbral)
-    propiedadesRed(H,umbral)
-    grafoInteractivo(H, umbral)
-    vecinos(H, umbral)
+    gradosNodos(H)
+    propiedadesRed(H)
+    grafoInteractivo(H)
+    vecinos(H)
     crearTablaFiltro()
     nodosRestantes(G,H)
     crearTablaFiltroRestantes()
