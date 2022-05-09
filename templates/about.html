@@ -3,12 +3,19 @@
 {% block title %}Trabajo de Fin de Grado{% endblock %}
 {% block pagecontent %}
     <p>
-        <p>{{ name }}</p>
-        <p>Autor:
-            {{ list(True, autor) }}
+        <p><h2>{{ name }}</h2></p>
+        <p><h4>Autor:</h4>
+            {{ list(False, autor) }}
         </p>
-        <p>Profesores:
+        <p><h4>Tutores:</h4>
             {{ list(False, profesores) }}
         </p>
+        <p>
+            <h4>Objetivo:</h4>
+        </p>
+        <p>
+            {{ list(True, objetivo) }}
+        </p>
     </p>
+
 {% endblock %}

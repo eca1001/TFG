@@ -15,12 +15,15 @@ DEBUG = False
 def not_found(error):
     return "Not Found."
 
+@app.route('/', methods=["GET"])
+def index():
+    return render_template("inicio.html")
 
-@app.route('/', methods=["GET", "POST"])
+@app.route('/lenguajes', methods=["GET", "POST"])
 def indexL():
     if "user_umbral" not in session:
         session["user_umbral"] = 30
-    
+
     if request.method == "GET":
         user_umbral = request.args.get("user_umbral")
     elif request.method == "POST":
@@ -30,7 +33,7 @@ def indexL():
     ejecutarLen(session["user_umbral"])
     return render_template("lenguajes.html", name=session["user_umbral"])
 
-@app.route('/db', methods=["GET", "POST"])
+@app.route('/databases', methods=["GET", "POST"])
 def indexD():
     if "user_umbral" not in session:
         session["user_umbral"] = 30
@@ -103,7 +106,7 @@ def indexW():
 
 @app.route('/about', methods=["GET"])
 def about():
-    return render_template("about.html", name="Trabajo de Fin de Grado", autor=["Enrique Camarero Alonso"], profesores=["José Ignacio Santos Martín", "Virginia Ahedo García"])
+    return render_template("about.html", name="Trabajo de Fin de Grado - Grado Ingeniería Informática", autor=["Enrique Camarero Alonso"], profesores=["José Ignacio Santos Martín", "Virginia Ahedo García"], objetivo=["Diseñar e implementar un sistema de recomendación de tecnologías para desarrolladores (lenguaje de programación, base de datos, plataformas, etc) utilizando la información recogida en la encuesta que Stack Overflow realiza todos los años entre desarrolladores.)"])
 
 
 if __name__ == '__main__':
