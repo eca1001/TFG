@@ -106,7 +106,14 @@ def indexW():
 
 @app.route('/about', methods=["GET"])
 def about():
-    return render_template("about.html", name="Trabajo de Fin de Grado - Grado Ingeniería Informática", autor=["Enrique Camarero Alonso"], profesores=["José Ignacio Santos Martín", "Virginia Ahedo García"], objetivo=["Diseñar e implementar un sistema de recomendación de tecnologías para desarrolladores (lenguaje de programación, base de datos, plataformas, etc) utilizando la información recogida en la encuesta que Stack Overflow realiza todos los años entre desarrolladores.)"])
+    return render_template(
+        "about.html", 
+        name="Trabajo de Fin de Grado - Grado Ingeniería Informática", 
+        autor=["Enrique Camarero Alonso"], 
+        profesores=["José Ignacio Santos Martín", "Virginia Ahedo García"], 
+        objetivo=["Diseñar e implementar un sistema de recomendación de tecnologías para desarrolladores (lenguaje de programación, base de datos, plataformas, etc) utilizando la información recogida en la encuesta que Stack Overflow realiza todos los años entre desarrolladores.)"],
+        manual=["Seleccionar la tecnología deseada.", "Indicar el umbral que más se adapte a sus necesidades en el formulario de la esquina superior izquierda.", "En caso de querer cambiar el umbral repetir el paso anterior.", "Visualizar los resultados. Se puede filtrar cada una de las tecnologías a través del filtro ofrecido en el sistema de recomendación (tabla que se encuentra con el nombre de 'RECOMENDADOR DE' + el nombre de la tecnología), para una búsqueda más rápida de los resultdos."]
+    )
 
 
 if __name__ == '__main__':
