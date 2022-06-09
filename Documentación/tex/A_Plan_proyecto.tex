@@ -1,0 +1,270 @@
+\apendice{Plan de Proyecto Software}
+
+\section{Introducción}
+En esta sección se va a comentar la evolución temporal del proyecto, la cual ha sido controlado mediante metodología ágil, y las viabilidades económicas y legales del proyecto.
+
+\section{Planificación temporal}
+El proyecto se divide en sprints y a la vez estos en tareas individuales. Todo esto es controlado desde un \href{https://github.com/eca1001/TFG}{repositorio creado específicamente para este proyecto en GitHub}. 
+
+Se mostraran gráficas que muestren la duración de los sprints más relevantes. Esto se realizará a través de:
+
+\begin{itemize}
+    \item \textbf{Control chart}: esta gráfica muestra la duración de las tareas hasta su cierre y la media de estas durante todo el proyecto.
+    \item \textbf{Cumulative flow}: esta gráfica muestra la evolución del estado de las tareas en cada momento, si están abiertas, se crean o se cierran.
+\end{itemize}
+
+\subsection{Sprint 0: Recogida de información (27/12/21 - 16/01/22)}
+Este sprint consistía en familiarizarse con la encuesta de Stack Overflow y las herramientas que se iban a utilizar.
+
+Las tareas que comprenden el sprint 0 son:
+\begin{itemize}
+    \item \textit{Networkx}: En esta tarea se iba a buscar información sobre Networkx, la creación de grafos y las posibilidades que nos ofrece al juntarlo con otras librerías como pandas.
+    \item \textit{Generador HTML en Python}: Se empezaría a buscar como crear una página web desde Python para ejecutarlo en modo local.
+    \item \textit{Sistema de evaluación del TFG}: Esta tarea se basa en la búsqueda de información acerca de todo lo que había que hacer y presentar (proyecto, memoria y anexos, en que se basaba la presentación, etc) al centro y al tribunal para poderme ir organizando y controlarlo.
+    \item \textit{GitHub Desktop}: Se clonaría el proyecto en local con el fin de subir todos los cambios que se fueran realizando del proyecto al repositorio de GitHub.
+\end{itemize}
+
+\subsection{Sprint 1: Primeros pasos (17/1/22 - 29/1/22)}
+En este sprint se va a iniciar el proyecto de Python y se va a tener el primer contacto con la encuesta a trabajar.
+
+Las tareas correspondientes a este sprint son:
+\begin{itemize}
+    \item \textit{Importación de paquetes}: Se importaron todos aquellos paquetes con los que se iba a trabajar en las primeras semanas del proyecto.
+    \item \textit{Descarga del CSV}: Se descargaría el archivo .csv que contiene los resultados de la encuesta de Stack Overflow.
+    \item \textit{Primeros vistazos del CSV}: Se importó el archivo al código Python y se miraron los índices de las columnas con el fin de decidir con cual de ellas trabajar.
+    \item \textit{Primeras redes}: Una vez se decidieron las columnas y con cual empezar (lenguajes con los que habían trabajado los encuestados), se crearon distintas redes sencillas, formadas por unos pocos encuestados, para ver su contenido . Una vez dado el visto bueno, se creó el primer grafo completo.
+\end{itemize}
+
+\subsection{Sprint 2: Primeros pasos (30/1/22 - 12/3/22)}
+Se calculan las distintas métricas del grafo y sus nodos y se empieza a buscar una alternativa a Networkx para el mostrado del grafo, ya que este no permitía la interacción con el usuario.
+
+Las tareas correspondientes a este sprint son:
+\begin{itemize}
+    \item \textit{Calculo de métricas}: Se calcularon métricas de los nodos como su influencia, su centralidad e importancia, cuales eran los vecinos más importantes de estos, y métricas de la red como la densidad del grafo.
+    \item \textit{Búsqueda de mejores resultados}: Hasta ahora se había trabajado con el grafo al completo y los resultados no eran útiles, por lo que se empezó a buscar alternativas en busca de mejores resultados.
+    \item \textit{Búsqueda de alternativas a Networkx para la generación de grafos}: Se empezó a investigar acerca de librerías que permitieran crear grafos interactivos y visualmente atractivos para el cliente.
+\end{itemize}
+
+La siguiente figura muestra el desarrollo de las issues en este sprint. \ref{fig:Sprint2}.
+
+\imagen{Sprint2}{Gráfica control chart - Sprint 2}
+
+\subsection{Sprint 3: Mejora de código 1/3/22 - 21/3/22}
+Este sprint comenzaría antes de finalizar el anterior ya que se seguía buscando librerías alternativas a Networkx y no quería dejar parado el proyecto, ya que quería empezar a mejorar el código.
+
+Este sprint esta formado por las siguientes tareas:
+\begin{itemize}
+    \item \textit{Comunidades}: Se creó un método que permite calcular las comunidades de nodos del grafo.
+    \item \textit{Mejora de código}: Esta mejora se basó en crear un método que poda el grafo dependiendo de un umbral dictaminado por el usuario. De esta forma se cumpliría el requisito de que el cliente pudiera interactuar con el grafo adaptándolo a sus necesidades.
+    \item \textit{Cursos básicos de HTML}: Empecé una serie de cursos para aprender el lenguaje y así poder utilizarlo.
+    \item \textit{Estudio de Bokeh}: Me decidí por utilizar la librería Bokeh para sustituir a Networkx. De esta forma se cerraría el sprint anterior.
+\end{itemize}
+
+La siguiente imagen muestra la evolución de la apertura y cierre de las issues que componen los sprints hasta este momento. \ref{fig:Sprint0-3}.
+
+\imagen{Sprint0-3}{Gráfica evolución - Sprint 0-3}
+
+
+
+\subsection{Sprint 4: Creación página web 21/3/22 - 4/4/22}
+Durante este tiempo se buscaron distintas maneras de crear una página web desde Python. A tavés de la librería webbrowser se encontró una solución. 
+Este sprint está formado por el estudio, las pruebas y su posterior implementación de la librería en el proyecto, creando de esta forma una página web a la que podría añadir el grafo interactivo de Bokeh.
+
+Una vez creada la página web en local, se desplegó en Visual Studio con el fin de conseguir una página editable gráficamente y fuera más profesional.
+
+\subsection{Sprint 5: Despliegue en Heroku (21/3/22 - 6/4/22)}
+Mientras se iba creando la aplicación web en Visual Studio, se estaba buscando la manera de desplegarla en un servidor web. El elegido fue Heroku.
+
+Además, se añadieron cambios al código Python, añadiendo el método que crea el sistema de recomendación de tecnologías.
+
+Las tareas de este sprint son:
+\begin{itemize}
+    \item \textit{Búsqueda de servidores web}: Se buscaron diferentes plataformas en la que desplegar la aplicación. Se buscó información sobre Plotly y Heroku, decantándome por la segunda. 
+    
+    \item \textit{Desplegar la aplicación en Heroku}: Inicialmente se desplegó el HTML que creaba Python ya que no se había finalizado la aplicación de Visual Studio para comprobar su funcionamiento.
+    
+    \item \textit{Opción de cambio de umbral en la aplicación}: Se ha añadido la opción al usuario de poder cambiar el umbral desde una pestaña en la aplicación.
+    
+    \item \textit{Creación del sistema de recomendación}: En el código Python, añadí un método que creará una tabla con los lenguajes y sus recomendaciones según el umbral seleccionado por el usuario.
+    
+    \item \textit{Guardar imágenes y grafos necesarios}: Creé en aquellos métodos que creaban imágenes para añadir al proyecto el comando que permite guardarlo en el sistema.
+    
+    \item \textit{Mejora de la presentación web}: Con la ayuda de CSS se mejoró el diseño de la página web.
+\end{itemize}
+
+La siguiente figura muestra el desarrollo de las issues en este sprint. \ref{fig:Sprint5}.
+
+\imagen{Sprint5}{Gráfica control chart - Sprint 5}
+
+\subsection{Sprint 6: Finalización página de lenguajes (15/4/22 - 29/4/22)}
+Es este sprint se finalizó la página al completo de lenguajes.
+
+Este sprint está formado por las siguientes tareas:
+\begin{itemize}
+    \item \textit{Rediseño del sistema de recomendación}: Tras una tutoría con los tutores se acordó la idea de cambiar el diseño, ya que se mostraba una tabla con todas las recomendaciones. En el nuevo diseño solo se muestran como máximo las 3 mejores.
+    
+    \item \textit{Creación de un filtro de búsqueda}: Al poder haber múltiples tecnologías que dificultaban la búsqueda de la buscada, creé un método que permite buscar la tecnología que se desea rápidamente.
+    
+    \item \textit{Creación tabla de tecnologías restantes}: Con la posibilidad de cambiar el umbral nos dimos cuenta que muchas tecnologías se perdían, por lo que decidí crear una tabla en la que aparecieran estas tecnologías junto un filtro de búsqueda.
+    
+    \item \textit{Unión de la página de lenguajes y el cambio de umbral}: Ya que el cambio de umbral se realizaba desde una pestaña aparte, decidí aumentar la usabilidad de la aplicación añadiendo el cambio de umbral en la misma página y acotándolo entre números enteros de 0 a 100.
+    
+    \item \textit{Cambio de nombres en la página}: El uso de nombres técnicos tanto en los gráficos como en el grafo podían dificultar a usuarios principiantes, por lo que estos nombres se cambiaron por unos menos complejos.
+    
+    \item \textit{Cambio de implementación en Heroku}: Con la página ya creada ya se podía cambiar la forma de desplegar la aplicación en Heroku a la versión creada en Visual Studio.
+\end{itemize}
+
+La siguiente figura muestra el desarrollo de las issues en este sprint. \ref{fig:Sprint6}.
+
+\imagen{Sprint6}{Gráfica control chart - Sprint 6}
+
+
+\subsection{Sprint 7: Crear resto de páginas de las tecnologías (24/4/22 - 3/5/22)}
+Este sprint se basó en la creación del resto de las pestañas, las cuales estarían formadas por las distintas tecnologías.
+
+Este sprint está compuesto por 7 tareas, siendo 6 de la creación de pestañas con cada una de las tareas:
+\begin{itemize}
+    \item \textit{Creación de pestañas}: Como se ha comentado, se crearon para cada tecnología una pestañas completa al igual que la de lenguajes creada en los anteriores sprints. Esto se ha realizado copiando el código que se tenía y adaptando los nombres del código a cada una de las tecnologías, creando en la template "base.html" cada una de las pestañas y en "main.py" el código para que redirecciones la pestaña a la página de esa tecnología.
+    
+    \item \textit{Juntar las pestañas de marcos de trabajo y otros marcos de trabajo en solo una pestaña}: Al implementar todas las tecnologías decidí que a pesar que en la encuesta los marcos de trabajo los separe en 2 apartados diferentes sería mejor si en el recomendador de lenguajes apareciesen todos juntos, ya que todos ellos forman parte de la misma tecnología. Se borró la página de otros marcos de trabajo y sus opciones de "base.html" y "main.py" y se creó una modificación en el código de marcos de trabajo para que relacionara cada uno de los marcos de trabajo tanto con los de su columna como con la otra.
+\end{itemize}
+
+La siguiente imagen muestra la evolución de la apertura y cierre de las issues que compone el sprint. \ref{fig:Sprint7}.
+
+\imagen{Sprint7}{Gráfica evolución - Sprint 7}
+
+\subsection{Sprint 8: Crear página de Inicio y finalización de la aplicación (4/5/22 - 11/5/22)}
+En este último sprint se realizan 4 tareas muy diferenciadas que van a tener un fin común, la finalización de la aplicación:
+\begin{itemize}
+    \item \textit{Mejora del código de las tecnologías}: Se corrigió diferentes fallos que se encontraron en la creación de cada una de las páginas, como nombres mal escritos, llamadas a la red equivocada en las imágenes o grafos, variables, así como la eliminación de la variable umbral en ciertos métodos la cual no se utilizaba desde la versión de Jupyter Notebook.
+    \item \textit{Finalización de la página de "Acerca de"}: Se finalizó la página que ayuda y explica fácilmente el proyecto y cómo se utiliza.
+    \item \textit{No permitir no seleccionar ningún valor en el umbral}: Se producía un error si un usuario no rellenaba el formulario del umbral y ejecutaba la aplicación para ver los resultados. Esto se ha corregido obligando siempre al usuario a no dejar ese campo vacío si quiere ejecutar la página.
+    \item \textit{Crear página de Inicio}: Se ha creado una página de inicio y que de esta forma sirva a modo de presentación del trabajo.
+\end{itemize}
+
+La siguiente figura muestra el desarrollo de las issues en este sprint. \ref{fig:Sprint8}.
+
+\imagen{Sprint8}{Gráfica control chart - Sprint 8}
+
+\section{Estudio de viabilidad}
+Antes de empezar con el proyecto se va a estudiar la viabilidad tanto económica como legal que tendría el proyecto en el mercado, estimar sus costes y beneficios.
+
+\subsection{Viabilidad económica}
+En este apartado se realizará un estudio de los costes y beneficios del proyecto.
+
+\subsubsection{Costes personales}
+Se va a calcular el gasto que le supondría a la empresa de manera mensual y anual el llevar a cabo este proyecto.
+
+El desarrollo del proyecto ha sido realizado solo por un alumno y dos profesores.
+
+Se estima que se ha trabajado unas 600 horas durante 5 meses, es decir, unas 120 horas/mes aproximadamente. Por hora el alumno cobra 15€ brutos, lo que significa que cobraría 1800€/mes.
+
+\tablaSmallSinColores{Costes salario alumno}{p{7cm} p{2cm} p{5cm}}{costes salario alumno}{
+  \multicolumn{1}{p{2cm}}{\textbf{Concepto}} & \textbf{Coste (€)}\\
+ }{
+Salario mensual neto  & \multicolumn{1}{r}{1458}\\
+Retención IRPF (12\%) & \multicolumn{1}{r}{216}\\
+Seguridad social  (7\%) & \multicolumn{1}{r}{126}\\\hline
+Salario mensual bruto  & \multicolumn{1}{r}{1800}\\\hline
+\textbf{Salario total bruto(5 meses)}  & \multicolumn{1}{r}{9000}\\
+}
+
+En cuanto a los profesores digamos que tienen un salario de 30€/hora y trabajan 1 hora/semana, lo que supone 120€/mes brutos por profesor, a los cuales hay que sumar los impuestos.
+
+\tablaSmallSinColores{Costes salario profesor}{p{7cm} p{2cm} p{5cm}}{costes salario profesor}{
+  \multicolumn{1}{p{2cm}}{\textbf{Concepto}} & \textbf{Coste (€)}\\
+ }{
+Salario mensual neto  & \multicolumn{1}{r}{97.2}\\
+Retención IRPF (12\%) & \multicolumn{1}{r}{14.4}\\
+Seguridad social  (7\%) & \multicolumn{1}{r}{8.4}\\\hline
+Salario mensual bruto  & \multicolumn{1}{r}{120}\\\hline
+\textbf{Salario total bruto por profesor(5 meses)}  & \multicolumn{1}{r}{600}\\
+}
+
+Estos cálculos corresponden con el salario del alumno y los profesores, pero no con el coste que le supone a la empresa. A este valor hay que sumarle los impuestos que paga la empresa por él. Esto se puede consultar en \href{https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537}{la página oficial de la seguridad social.} \cite{wiki:cotizacionSS}
+
+Estos impuestos son los siguientes:
+\begin{itemize}
+    \item 23.6\% de contingencias
+    \item 5.5\% de desempleo
+    \item 0.2\% de FOGASA
+    \item 0.6\% de formación profesional
+\end{itemize}
+
+\imagennormal{impuestosSS}{Régimen General de la Seguridad Social}
+
+\newpage
+Esto supone unos costes a la empresa de:
+\tablaSmallSinColores{Costes del alumno a la empresa}{p{7cm} p{2cm} p{5cm}}{Costes del alumno a la empresa}{
+  \multicolumn{1}{p{2cm}}{\textbf{Concepto}} & \textbf{Coste (€)}\\
+ }{
+Salario mensual bruto  & \multicolumn{1}{r}{1800}\\
+Contingencias (23.6\%) & \multicolumn{1}{r}{424.8}\\
+Desempleo  (5.5\%) & \multicolumn{1}{r}{99}\\
+FOGASA  (0.2\%) & \multicolumn{1}{r}{3.6}\\
+Formación  (0.6\%)  & \multicolumn{1}{r}{10.8}\\\hline
+Coste total mensual  & \multicolumn{1}{r}{2338.2}\\\hline
+\textbf{Coste total (5 meses)}  & \multicolumn{1}{r}{11691}\\
+}
+
+\tablaSmallSinColores{Costes de los profesores a la empresa}{p{7cm} p{2cm} p{5cm}}{Costes de los profesores a la empresa}{
+  \multicolumn{1}{p{2cm}}{\textbf{Concepto}} & \textbf{Coste (€)}\\
+ }{
+Salario mensual bruto  & \multicolumn{1}{r}{120}\\
+Contingencias (23.6\%) & \multicolumn{1}{r}{28.32}\\
+Desempleo  (5.5\%) & \multicolumn{1}{r}{6.6}\\
+FOGASA  (0.2\%) & \multicolumn{1}{r}{0.24}\\
+Formación  (0.6\%)  & \multicolumn{1}{r}{0.72}\\\hline
+Coste total mensual por profesor & \multicolumn{1}{r}{155.88}\\\hline
+\textbf{Coste total por profesor(5 meses)}  & \multicolumn{1}{r}{779.4}\\
+\textbf{Coste total ambos profesores(5 meses)}  & \multicolumn{1}{r}{1558.8}\\
+}
+
+\subsubsection{Costes hardware}
+Se ha empleado un ordenador de sobremesa que se compró al principio del proyecto para la realización del mismo. Se supone que la amortización del mismo es de 5 años.
+
+\tablaSmallSinColores{Costes hardware}{p{4cm} p{1.15cm} p{2.7cm}}{costes hardware}{
+  \multicolumn{1}{p{4.5cm}}{\textbf{Concepto}} & \textbf{Coste} & \textbf{Amortización}\\
+}{
+Ordenador  & \multicolumn{1}{r}{800 €} & \multicolumn{1}{r}{67 €}\\
+}
+
+\subsubsection{Costes software}
+Estos costes están compuestos por los costes asociados a las licencias software no gratuitas, en este caso la única licencia no gratuita es la del sistema operativo Windows 10 Home. Se supone que la amortización del mismo es de 5 años.
+
+\tablaSmallSinColores{Costes software}{p{4cm} p{1.15cm} p{2.7cm}}{costes software}{
+  \multicolumn{1}{p{4.5cm}}{\textbf{Concepto}} & \textbf{Coste} & \textbf{Amortización}\\
+}{
+Windows 10 Home  & \multicolumn{1}{r}{145 €} & \multicolumn{1}{r}{12 €}\\
+}
+
+El resto de las herramientas utilizadas para la realización el proyecto, como GitHub, Heroku o Visual Studio son de software libre y por tanto gratuitas. Se ha priorizado este tipo de herramientas sobre las de pago. 
+
+\subsubsection{Costes totales}
+
+\tablaSmallSinColores{Costes totales}{p{4cm} p{1.15cm} p{2.7cm}}{costes totales}{
+  \multicolumn{1}{p{4.5cm}}{\textbf{Concepto}} & \textbf{Coste} & \textbf{Amortización}\\
+}{
+Alumno & \multicolumn{1}{r}{11691 €} & \multicolumn{1}{r}{-}\\
+Profesores & \multicolumn{1}{r}{1558.8 €} & \multicolumn{1}{r}{-}\\
+Ordenador  & \multicolumn{1}{r}{800 €} & \multicolumn{1}{r}{67 €}\\
+Windows 10 Home  & \multicolumn{1}{r}{145 €} & \multicolumn{1}{r}{12 €}\\\hline
+Total & \multicolumn{1}{r}{14194.8 €} & \multicolumn{1}{r}{79 €} \\
+}
+
+\subsubsection{Beneficios}
+Este proyecto al ser un trabajo final de grado no está pensado para su comercialización, por lo que no se recibirían beneficios.
+
+\subsection{Viabilidad legal}
+Todo proyecto debe cumplir una serie de obligaciones legales. En este caso son las licencias software.
+
+\tablaSmallSinColores{Viabilidad legal}{p{7cm} p{2cm} p{5cm}}{viabilidad legal}{
+  \multicolumn{1}{p{2cm}}{\textbf{Software}} & \textbf{Licencia}\\
+ }{
+VirtualBox  & \multicolumn{1}{r}{Privativa / GPLv2}\\
+Git  & \multicolumn{1}{r}{Privativa / GPLv2}\\
+Heroku & \multicolumn{1}{r}{ISC}\\
+}
+
+Además, el proyecto ha utilizado la licencia MIT, que permite el uso comercial, modificación, distribución y uso privado.
+

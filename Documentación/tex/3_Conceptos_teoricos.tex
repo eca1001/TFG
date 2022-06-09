@@ -1,0 +1,140 @@
+\capitulo{3}{Conceptos teóricos}
+
+Se van a explicar una serie de conceptos los cuales ayudarán a los usuarios a comprender mejor el proyecto.
+
+\section{Sistema de recomendación}
+Un sistema de recomendación ~\cite{wiki:sistemas_recomendacion} es una herramienta que ofrece al usuario recomendaciones sobre algún tipo de información (en este proyecto tecnologías de desarrollo) construidas como predicciones basadas generalmente en los datos ofrecidos por otros usuarios.
+
+\subsubsection{Tipos de sistemas de recomendación \cite{wiki:filtroModelos}} 
+\begin{itemize}
+    \item \textit{Sistemas de popularidad}: se basan en tomar como referencia el prestigio de un objeto a estudiar por una variable principal, la cual puede ser cualquier característica del objeto. Las recomendaciones son las mismas para todos los usuarios, ya que se trata de recomendar aquellos productos que tienen más visitas, mejores valoraciones, más compras, etc.
+    
+    \item \textit{Sistemas de contenido}: se basan en sugerir a los usuarios productos acordes a sus gustos y sus búsquedas. Esto es posible tras encontrar patrones al analizar las características de los usuarios y el contenido de los productos. 
+    Este tipo de recomendación no tiene en cuenta las opiniones y valoraciones que otros usuarios puedan tener sobre el producto. Además, al crear perfiles para los distintos usuarios no se va a producir ningún problema con los nuevos productos, ya que tan solo se deberá comprobar si encaja con el perfil del usuario para de esta forma poder recomendárselo. Por otro lado, así como con los nuevos productos no hay problemas, sí se produce si se crea un nuevo usuario, ya que al no tener un perfil definido no se le podrán realizar recomendaciones.
+    
+    \item \textit{Filtrado colaborativo}: se basan en identificar y agrupar perfiles similares dependiendo de la información del perfil del usuario. Resuelve los problemas que puede crear el uso de información en grandes cantidades a los usuarios. Se incrementa la calidad de las recomendaciones. Pueden ser de 2 tipos:
+    \begin{itemize}
+        \item Basados en memoria: utilizan la información para definir similitudes entre usuarios y productos que serán utilizados para construir las recomendaciones. Si estas similitudes se realizan entre usuarios, se van a hacer recomendaciones a partir de los gustos y compras de otros usuarios con perfiles similares, mientras que si las similitudes se realizan entre productos, las recomendaciones se realizarán entre productos similares a los previamente buscados. Estas técnicas de recomendación se llaman técnicas de los k-vecinos.
+        
+        \item Basados en modelos: utilizan la información para ajustar modelos que permitan en un futuro proponer recomendaciones. Esto se realiza creando distintos modelos a través de algoritmos de \textit{machine learning}.
+    \end{itemize}
+    
+    \item \textit{Basados en redes}: se apoya en la teoría de redes \cite{wiki:sistRecomBasadosEnRedes}. Podemos encontrar 3 tipos de redes para generar recomendaciones:
+    \begin{itemize}
+        \item De productos: los nodos corresponden con los productos y los enlaces muestran la relación que tienen los nodos. 
+        \item De usuarios: los nodos corresponden con los usuarios y los enlaces muestran la relación que tienen los nodos. 
+        \item De productos-usuarios: hay dos tipos de nodos: productos y usuarios. Los enlaces muestran que un usuario se ha relacionado con ese producto, ya sea porque lo ha buscado, visitado, comprado, etc.
+    \end{itemize}
+    
+    En este tipo de sistemas de recomendación se pueden hacer recomendaciones de múltiples maneras como pueden ser los vecinos más cercanos o en comunidades en las que se encuentran los nodos.
+    
+\end{itemize}
+
+\section{Teoría de redes}
+Esta teoría se origina en el siglo XVIII con el problema de los puentes de Königsberg, en donde se quería demostrar que no era posible cruzar los 7 puentes de la ciudad de Prusia sin cruzar uno de ellos en 2 ocasiones.
+
+La teoría de redes ~\cite{wiki:teoriaRedes} se basa en el estudio de redes complejas, las cuales se encuentran formadas por nodos y se relacionan a través de enlaces. 
+
+Los nodos pueden ser de una única clase (grafos unimodales), de dos clases (grafos bimodales), o de muchas clases (grafos multimodales).
+
+Los enlaces pueden formar redes dirigidas o no dirigidas, dependiendo si estos tienen dirección o no. También pueden ser binarias (solo se informa de la existencia del enlace) o pesadas (el enlace tiene un valor) y pueden formar ciclos (red cíclica).
+
+Dado una red binaria (N,E) formada por un conjunto de nodos N y un conjunto de enlaces E, se define la matriz nxn de adyacencia como el conjunto de 1 o 0, siendo 1 si hay un enlace entre los nodos i,j y 0 sino.
+
+\subsubsection{Propiedades de la red}
+Existen múltiples métricas con las que se pueden describir las redes. Entre todas estas las más importantes son las siguientes:  
+\begin{itemize}
+    \item \textit{Tamaño}: se calcula como el número de nodos (N) o de enlaces (E) que contiene la red. Si la red contiene menos de 10 nodos se considera como una red pequeña, mientras que si tiene más de 1000 nodos se considera una red grande.
+    
+    \item \textit{Densidad}: se calcula como el número de enlaces que tiene la red sobre el número máximo de enlaces que pueden existir para el número de nodos que forman la red. Se dice que la red es poco densa (la matriz de adyacencia es dispersa) si el número de enlaces E es del mismo orden que el número de nodos N (E=N). Por el contrario si L>>N se dice que es densa.
+    
+    \item \textit{Grado}: en redes no dirigidas, se conoce como el grado de un nodo al número de enlaces que este tiene con otros nodos. En redes dirigidas el grado se puede calcular como el número de enlaces que entran en el nodo (\textit{in-degree}), el número de enlaces que salen del nodo (\textit{out-degree}) o como la suma de ambos (\textit{total-degree}).
+    
+    \item \textit{Coeficiente de clustering}: es la probabilidad que tienen los nodos que se enlazan con otro de conectarse entre ellos. \[ C_{i}= \frac{E_{i}}{k_{i}(k_{i}−1)/2} \]
+    
+    \item \textit{Distribución de grado}: se refiere a la probabilidad de que un al escoger aleatoriamente un nodo N, este tenga k enlaces. \[ p_{k} = N_{k}/N \]
+    
+\end{itemize}
+
+\subsection{Detección de comunidades}
+Una comunidad de nodos está formada por grupos de nodos densamente conectados entre sí. Para detectar todas estás comunidades, las cuales ayudan a identificar y describir la estructura de la red, existen diferentes algoritmos:
+\begin{itemize}
+    \item \textit{Girvan-Newman} \cite{wiki:girvanNewman}: detecta las distintas comunidades tras ir eliminando los enlaces que forman la red original. Esto se realiza siguiendo los siguientes pasos:
+    \begin{enumerate}
+        \item Lo primero que se calcula es la intermediación de todos los bordes existentes en la red.
+        \item Se eliminan los bordes con la mayor distinción.
+        \item Se recalcula la intermediación de todos los bordes afectados por la eliminación.
+        \item Los pasos 2 y 3 se repiten hasta que no quedan bordes.
+    \end{enumerate}
+    
+    \item \textit{Louvain} \cite{wiki:louvain}: estudia y evalúa los conjuntos de datos para determinar la relación de contraste con la densidad de las aristas que se encuentra en el conjunto de datos, tanto en el interior como en el exterior.
+    
+    \item \textit{Leiden} \cite{wiki:leiden}: este algoritmo mejora el de Louvain, ya que puede detectar comunidades mal conectadas. Para garantizar esto, este algoritmo se basa en el algoritmo de movimiento local inteligente. El algoritmo se ejecuta siguiendo los siguientes pasos:
+    \begin{enumerate}
+        \item Movimiento local de los nodos.
+        \item Depuración de la partición.
+        \item Adición de la red basada en la depuración del paso anterior, usando la partición no depurada para crear una partición inicial para la red añadida.
+    \end{enumerate}
+    
+    \item \textit{Kernighan-Lin} \cite{wiki:kernighan}: trata de mejorar una partición inicial utilizando otros métodos como el de la bisección. Se trata de optimizar la distinción de los enlaces dentro de las particiones y entre particiones.
+\end{itemize}
+
+\subsection{k-vecinos más próximos}
+Este algoritmo \cite{wiki:knn} de clasificación es uno de los más básicos y esenciales que existen. A pesar de que existan muchos otros algoritmos más complejos como los basados en comunidades, este ha sido el elegido para la realización de las recomendaciones que se realizan en el proyecto.
+
+Este método tiene como objetivo clasificar los nodos dependiendo de la proximidad con el resto o predecir sobre la agrupación de los nodos.
+
+Por ello, este algoritmo ha sido utilizado en la realización del proyecto, ya que para recomendar tecnologías se va a tener en cuenta la proximidad que tienen unas tecnologías con otras, así como el número de enlaces que tiene cada una.
+
+Este algoritmo funciona de manera que:
+
+\begin{enumerate}
+    \item Se calcula la distancia que tiene el nodo escogido con los nodos a recomendar. Todos ellos forman la red.
+    \item Se escogen las tecnologías que tengan distancia igual a 1 con nodo escogido.
+    \item Entre las tecnologías escogidas, se recomiendan las 3 que posean mayor número de enlaces.
+\end{enumerate}
+
+El valor de \textit{k} va a tomar un valor muy importante en el algoritmo, ya que dependiendo de este un nodo puede ser escogido por una clase u otra.
+
+\section{Frontend}
+Front End ~\cite{wiki:frontend} es la parte de una aplicación, conocida como el lado de los clientes, ya que es la que interactúa con los usuarios. Podría decirse que es aquello que somos capaces de ver en la pantalla al acceder a una aplicación o sitio web. Todo este conjunto crea la experiencia del usuario.
+
+Los principales lenguajes que se utilizan son:
+\begin{itemize}
+    \item HTML
+    \item CSS
+    \item JavaScript
+\end{itemize}
+
+Los dos primeros son lenguajes de etiquetas, mientras que JavaSrcipt es un lenguaje de programación.
+
+\section{Framework}
+Un framework o marco de trabajo ~\cite{wiki:framework} es una estructura a modo de plantilla, que sirve de punto de partida a los desarrolladores para elaborar un proyecto con ciertos objetivos y simplificar la elaboración de éste.
+
+El uso de frameworks pueden ayudar a los programadores simplificando las tareas y sus procesos, acelerando el trabajo, reduciendo fallos y obteniendo mejores resultados.
+
+\section{Metodologías ágiles}
+Las metodologías ágiles ~\cite{wiki:metodologias_agiles} son aquellas que adaptan los proyectos a sus condiciones y las del entorno consiguiendo flexibilidad de esta forma.
+
+Ventajas de la utilización de metodologías ágiles en los proyectos:
+\begin{itemize}
+    \item Mayor calidad del proyecto.
+    \item Mejora la satisfacción del cliente.
+    \item Trabajo cooperativo.
+    \item Aumento de la productividad.
+    \item Mejora el control del proyecto.
+    \item Menores costes.
+\end{itemize}
+
+\section{SCRUM}
+SCRUM ~\cite{wiki:scrum} se trata de un framework utilizado dentro de los proyectos que tratan una metodología ágil. Su finalidad es la de realizar a través de \textit{sprints}\footnote{Intervalo de tiempo corto en el que se lleva a cabo una parte del proyecto para incrementar el valor del producto el cual se está construyendo. ~\cite{wiki:sprint}} entregas parciales del producto final para así agilizar el proceso de entrega del proyecto.
+
+Eventos de SCRUM:
+\begin{itemize}
+    \item \textit{Planificación del sprint}: determina las tareas que se desarrollaran a lo largo del sprint. Además, se asigna cada tarea a una persona.
+    \item \textit{Seguimiento del sprint}: a través de una reunión cada persona explica el trabajo que está realizando y si necesita algo para poder llevarla a cabo.
+    \item \textit{Revisión del sprint}: se muestra el avance que se ha conseguido tras la realización del sprint a todas las personas implicadas en el proyecto.
+\end{itemize}
+
+\section{Dataframe}
+Un DataFrame ~\cite{wiki:dataframe} es una estructura de datos similar a una hoja de cálculo, en la cual podemos guardar información de distintos tipos en filas y columnas. Todas las filas del dataframe están numeradas empezando en 0.

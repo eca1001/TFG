@@ -1,0 +1,23 @@
+\capitulo{1}{Introducción}
+
+El proyecto se basa en diseñar e implementar en una aplicación web, un sistema de recomendación de tecnologías para desarrolladores (lenguajes de programación, bases de datos, plataformas, etc.) a partir de la información proporcionada en la encuesta que Stack Overflow realiza todos los años entre desarrolladores, la cual podemos \href{https://insights.stackoverflow.com/survey?_ga=2.180894375.1414322478.1650917351-879700619.1650917351}{descargar} y \href{https://insights.stackoverflow.com/survey/2021}{consultar los resultados} en su página oficial.
+
+Para su realización, de entre los distintos sistemas de recomendación que se pueden emplear (filtros colaborativos basados en usuarios, en productos, etc.), se ha optado por el enfoque de redes.
+
+La encuesta está formada por las respuestas a preguntas de diversos tipos con el fin de  mejorar la comunidad y la plataforma que los atiende. Los datos se dividen en 5 bloques:
+
+\begin{itemize}
+    \item \textit{Perfil de los desarrolladores}: está formado por la media de la localización geográfica, años de experiencia de trabajo, tipo de trabajo, educación y  edad de los encuestados.
+    \item \textit{Tecnologías}: compuesto por los lenguajes, entornos de desarrollo, marcos de trabajo, bases de datos, herramientas y plataformas utilizadas por los encuestados en el último año y las tecnologías que quieren utilizar en el siguiente año.
+    \item \textit{Trabajo}: este bloque se basa en conocer información relacionada con el trabajo de cada encuestad como si es a tiempo parcial o completo, si es estudiante, autónomo, jubilado, etc. También se pregunta acerca del salario de cada uno y el tamaño de las empresas en las que trabajan.
+    \item \textit{Comunidad}: es el apartado más importante. Se basa en conocer el uso que le da cada usuario a Stack Overflow, la participación en la página, las visitas diarias, semanales y mensuales aproximadas a la plataforma, si se sienten parte de Stack Overflow, entre otras preguntas. 
+    \item \textit{Metodología}: es el resumen y la valoración que dan los encargados de la encuesta a los resultados obtenidos.
+\end{itemize}
+
+De estos apartados para el proyecto se ha utilizado el de tecnologías.
+
+Este proyecto en términos de visualización y presentación de los datos, contiene una red en la que las tecnologías representan los nodos y los enlaces el número de desarrolladores que las utilizan simultáneamente, un histograma que muestra las propiedades de la red y un gráfico de sectores creado a partir del porcentaje de relaciones de cada nodo. 
+
+En cada pestaña se han añadido elementos de interacción para el usuario como la posibilidad de cambiar el umbral de poda del grafo, para que cada usuario adapte la recomendación de tecnologías a su gusto, la búsqueda manual de las tecnologías en las distintas tablas ofrecidas y un grafo que ofrece información al posicionarse en los distintos nodos.
+
+Para la creación de la aplicación web se ha desplegado en la plataforma Heroku el código Python junto a su correspondiente frontend, el cual está formado por códigos en Python, HTML, CSS y el material necesario para la presentación, como imágenes, grafos y tablas proporcionados a partir de la ejecución del código.

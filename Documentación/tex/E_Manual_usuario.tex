@@ -1,0 +1,89 @@
+\apendice{Documentación de usuario}
+
+\section{Introducción}
+En este apéndice se va a describir tanto los requisitos que deberán tener los usuarios para acceder a la aplicación como el manual de usuario de ésta.
+
+\section{Requisitos de usuarios}
+El único requisito que dispone la aplicación es la conexión a Internet, ya que se encuentra en un servidor web de Heroku y se accede mediante el siguiente enlace: \href{https://tfg-enriquecamareroalonso.herokuapp.com/}{tfg-enriquecamareroalonso.herokuapp.com/}
+
+\section{Instalación}
+No será necesario la instalación de ningún tipo para su uso.
+
+\section{Manual del usuario}
+En este apartado se detallará la utilización de la aplicación.
+
+La aplicación tiene 3 partes diferenciadas: barra de navegación, contenido y pie de página. La primera y la última es común en todo el proyecto pero el contenido varia entre las distintas páginas.
+
+\subsection{Barra de navegación}
+La barra de navegación muestra las 8 pestañas por las que el usuario se puede mover en la página. Estas pestañas son: inicio, las 6 páginas de tecnologías (bases de datos, entornos de desarrollos, lenguajes, marcos de trabajo, herramientas, plataformas) y acerca de. \ref{fig:barraNavegacion}
+
+Para desplazarse basta con pinchar sobre el nombre de la pestaña a la que se quiere ir.
+
+\imagennormal{barraNavegacion}{Barra de navegación de la aplicación}
+
+\subsubsection{Pie de página}
+El pie de página muestra el nombre de la entidad en donde se ha realizado el proyecto (Universidad de Burgos), el tipo de proyecto (Trabajo Final de Grado) y el año (2022). \ref{fig:footer}
+
+\imagennormal{footer}{Pie de página de la aplicación}
+
+\subsection{Contenido}
+Como antes se ha mencionado, el contenido depende de la pestaña en la que se encuentra el usuario.
+
+\subsubsection{Página de Inicio}
+El contenido de la página de inicio muestra el nombre del proyecto junto a los escudos de la Universidad de Burgos, la Escuela Politécnica Superior y el grado en ingeniería informática. \ref{fig:inicioPage}
+
+\imagennormal{inicioPage}{Contenido de la página de inicio}
+
+\subsubsection{Tecnologías}
+Las páginas de tecnologías contienen el sistema de recomendación, además de una red interactiva de nodos y gráficas.
+
+En el proyecto podemos ver que existen 6 páginas diferentes, una para cada tecnología con umbral a 30 por defecto:
+
+\newpage
+\textbf{Página de bases de datos}
+\imagennormal{bbddPagina}{Página de bases de datos}
+
+\newpage
+\textbf{Entornos de desarrollo}
+\imagennormal{entornosPagina}{Página de entornos de desarrollo}
+
+\newpage
+\textbf{Lenguajes}
+\imagennormal{lenguajesPagina}{Página de lenguajes}
+
+\newpage
+\textbf{Marcos de trabajo}
+\imagennormal{marcosPagina}{Página de marcos de trabajo}
+
+\newpage
+\textbf{Herramientas}
+\imagennormal{herramientasPagina}{Página de herramientas}
+
+\newpage
+\textbf{Plataformas}
+\imagennormal{plataformasPagina}{Página de plataformas}
+
+\newpage
+Si nos posicionamos encima de cada uno de los nodos en cualquiera de cada una de las pestañas, podemos observar como aparece un cuadro en el que aparece diferente información del nodo seleccionado.
+
+\imagennormal{datosNodo30}{Datos nodo JavaScript con umbral a 30}
+
+\newpage
+Por otro lado, si introducimos información en el filtro del recomendador de tecnologías podemos observar como tan solo aparecen aquellas que contienen la cadena introducida en su nombre.
+
+\imagennormal{recomendador}{Recomendador de lenguuajes}
+
+Toda esta información que aparece en cada una de las páginas es variable, es decir, se puede modificar la información que aparece haciendo uso del umbral que se encuentra en la parte superior izquierda. Para modificarlo basta con introducir un número entero comprendido entre 0 y 100, inclusive. Se va a cambiar el umbral de 30 (por defecto) a 10.
+
+\newpage
+Como se puede observar en las siguientes imágenes, se han producido cambios respecto a la página de lenguajes previamente mostrada.
+
+\imagennormal{lenguajesPagina10}{Página de lenguajes con umbral a 10}
+
+Del mismo modo, la información de los nodos ha sido actualizada.
+\imagennormal{datosNodo10}{Datos nodo JavaScript con umbral a 10}
+
+\newpage
+\subsubsection{Acerca de}
+Muestra información como el nombre del autor, los tutores, el objetivo del proyecto y un pequeño manual de uso.
+\imagennormal{AcercaDePage}{Página de información}

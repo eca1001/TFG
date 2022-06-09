@@ -1,0 +1,127 @@
+\apendice{Documentación técnica de programación}
+
+\section{Introducción}
+En este apéndice se va a describir la documentación técnica del proyecto, es decir, como está estructurado, como instalarlo y configurarlo correctamente, así como desplegarlo en Heroku y las pruebas que se han realizado.
+
+\section{Estructura de directorios}
+Esta estructura se puede encontrar en el código fuente de la aplicación, el cual se encuentra en GitHub.
+
+\begin{itemize}
+    \item \textbf{/}: es el directorio raíz. Aquí se encuentran aquellos ficheros necesarios para el despliegue de la aplicación en Heroku, la licencia, el archivo \textit{README} y el archivo \textit{main.py} desde el cual se ejecuta el proyecto.
+    
+    \item \textbf{/documentacion}: contiene la memoria y los anexos del proyecto.
+    
+    \item \textbf{/codigos}: en este directorio se guardan cada uno de los códigos de las tecnologías. Estos códigos se ejecutan desde el archivo \textit{main.py}.
+    
+    \item \textbf{/excel}: contiene dos carpetas:
+    \begin{itemize}
+        \item \textbf{vecinos}: son los archivos excel que se utilizaran para crear la tabla del sistema de recomendación.
+        \item \textbf{faltantes}: son los archivos excel que se utilizaran para crear la tabla de los nodos eliminados tras la poda, los cuáles no aparecen ni en la red ni en los gráficos ni en el sistema de recomendación.
+    \end{itemize}
+    
+    \item \textbf{/grafosTecnologias}: en este directorio se encuentran los grafos completos con los que se crearan las redes de cada una de las tecnologías.
+    
+    \item \textbf{/stack-overflow-developer-survey-2021}: contiene los archivos resultantes de la encuesta de Stack Overflow. En caso de que una tecnología no tenga grafo, se usarán estos resultados para crearlo.
+    
+    \item \textbf{/static}: contiene el archivo \textit{style.css} con el que se da estilo a la página web y las imágenes, gráficos, redes y tablas que se utilizan tanto para la página de inicio como en cada una de las páginas de las tecnologías.
+    
+    \item \textbf{/templates}: está compuesto por todas las páginas que se encargan del diseño gráfico de la página web.
+    
+\end{itemize}
+
+\section{Manual del programador}
+En este apartado se va a explicar qué programas han sido utilizados y cómo se han instalado para el desarrollo del proyecto.
+
+El proyecto ha sido desarrollado en una máquina virtual Ubuntu de VirtualBox.
+
+\subsection{Instalación de VirtualBox}
+Para descargar VirtualBox tan solo hace falta ir a \href{https://www.virtualbox.org/wiki/Downloads}{su página web de descargas}. En esta página además de descargar el ejecutable para el sistema operativo en el que se va a ejecutar el programa (Windows e mi caso), será necesario descargar e instalar el paquete de extensión.\ref{fig:DescargaVBox}
+
+\imagen{DescargaVBox}{Descarga de VirtualBox}
+
+Una vez descargado, primero debemos instalar VirtualBox y después el paquete de expansión.
+
+\subsection{Instalación máquina virtual Ubuntu}
+Una vez descargado el sistema operativo en Windows, se procede a crear una nueva máquina virtual. Para ello se elige la opción dentro de VirtualBox. Se elige un nombre para esta nueva máquina, seleccionando la ubicación de la máquina, el tipo de sistema operativo y su versión, en este caso Linux Ubuntu versión 64 bits.
+
+A continuación, hay que elegir la cantidad de memoria RAM que se reserva a esta máquina virtual, en este caso se ha elegido una de 8192 MB, sin embargo, lo recomendado para un correcto funcionamiento es 1024 MB. Después se elige la opción de crear un nuevo disco duro virtual para la nueva máquina. En este caso se elige crear un VDI que es una imagen de disco de VirtualBox para la máquina virtual. Se prefiere usar la opción de reservado dinámico de memoria ya que nos va a permitir usar la misma memoria, pero solo cuando se necesite y de esta forma la creación del disco es más rápida.
+
+Posteriormente se escribe la ubicación dónde se almacenará el disco duro de la máquina 
+virtual. Se selecciona el tamaño que tendrá el disco duro para el almacenamiento de los datos, 
+en este caso 20 GB.
+
+Este es el último paso, y como se puede ver en la siguiente imagen \ref{fig:VBoxConMaqVirt}, ya estaría lista la máquina virtual para ser ejecutada.
+
+\imagen{VBoxConMaqVirt}{Máquina virtual creada}
+
+\subsection{Configuración de la máquina virtual}
+Antes de configurar la máquina virtual se debe instalar la imagen .iso del sistema operativo deseado, Ubuntu en este caso. Para ello nos dirigimos a \href{https://ubuntu.com/download/desktop}{su página oficial} y pinchamos en Download. \ref{fig:DescargaUbuntu}
+
+\imagen{DescargaUbuntu}{Descarga de Ubuntu}
+
+Una vez instalada la imagen .iso se ejecuta la máquina virtual anteriormente creada. A continuación, se selecciona la imagen de disco que previamente se había descargado de la página oficial de Ubuntu y se pincha en iniciar para que empiece la instalación.
+
+\subsection{Instalación Visual Studio}
+Para descargar Visual Studio nos dirigimos a \href{https://code.visualstudio.com/download}{su página oficial} y lo descargamos para el sistema operativo deseado. \ref{fig:DescargaVS}
+
+\imagen{DescargaVS}{Descarga Visual Studio}
+
+
+\section{Compilación, instalación y ejecución del proyecto}
+
+\subsection{Descarga del proyecto}
+El código fuente del proyecto se encuentra en el \href{https://github.com/eca1001/TFG}{repositorio de GitHub}.
+
+Para descargarlo se debe pinchar en el botón verde con el combre \textit{Code} y seleccionar la opción de \textit{Download ZIP}. \ref{fig:DescargaRepositorio} Tras extraer el contenido del ZIP en la ruta deseada, vincularemos esta carpeta con el repositorio a través de GitHub Desktop, lo que va a permitir subir todos los cambios que se realicen en el proyecto a GitHub. 
+
+\imagen{DescargaRepositorio}{Descarga del respositorio}
+
+\subsection{Compilación y ejecución del proyecto}
+Para compilar el proyecto se debe hacer mediante la terminal de Ubuntu. La primera vez que se vaya a compilar el proyecto se debe ejecutar los comandos para crear un entorno virtual:
+\begin{itemize}
+    \item \textit{sudo apt-get install python3-venv}
+    \item \textit{python3 -m venv deploy}
+\end{itemize}
+
+Además, se deben tener instaladas las librerías que forman el archivo \textit{requirements.txt}, que son las que se utilizan en lo códigos de cada una de las tecnologías.
+
+Una vez ya se ha instalado el entorno virtual para compilar el proyecto debemos acceder a la carpeta que contiene el proyecto y ejecutar los comandos: \ref{fig:CompilarProyecto}
+
+\begin{itemize}
+    \item \textit{. deploy/bin/activate}
+    \item \textit{ cd deploy}
+    \item \textit{ cd proyecto}
+    \item \textit{python main.py}
+\end{itemize}
+
+\imagen{CompilarProyecto}{Comandos de compilación del proyecto}
+
+Si no aparecen errores se puede ejecutar la aplicación en la dirección web \textit{http://127.0.0.1:5000}
+
+\subsection{Despliegue en Heroku}
+Para despleagar el proyecto en Heroku, lo primero que debemos hacer es registrarnos en \href{https://www.heroku.com/home}{su página web} y crear una aplicación desde el botón \textit{New}. Para crear la aplicación, como se ve en la siguiente imagen \ref{fig:CrearAppHeroku}, tan solo debemos darla un nombre y elegir una región entre Europa y Estados Unidos.
+
+\imagen{CrearAppHeroku}{Crear aplicación en Heroku}
+
+Una vez creada se entra en la aplicación y hay que dirigirse a la pestaña \textit{deploy}, donde veremos las opciones y los pasos a seguir para ejecutar el proyecto como se ve en la siguiente imahen \ref{fig:deployHeroku}.
+
+\imagen{deployHeroku}{Desplegar la aplicación en Heroku}
+
+En este momento la opción de desplegar a través de GitHub se encuentra desactivada, por lo que se ha realizado a través de Heroku CLI. Para ello primero se debe descargar, en caso de no tenerla, la herramienta Heroku CLI, la cuál podemos encontrar en \href{https://devcenter.heroku.com/articles/heroku-cli}{su página oficial}. Tras ello, basta con seguir los siguientes pasos:
+
+\begin{itemize}
+    \item \textit{heroku login} donde iniciamos sesión con nuestra cuenta.
+    \item \textit{heroku git:remote -a nombreAplicación} donde nombreAplicación en mi caso es tfg-enriquecamareroalonso. Este comando sirve para conectarse con la aplicación en Heroku y así poder realizar commits con los cambios realizados.
+    \item \textit{git add .}
+    \item \textit{git commit -am "nombreDelCommit"}
+    \item \textit{git push heroku main}
+    \item 
+\end{itemize}
+
+Si no se ha producido ningún problema aparecerá un código parecido al siguiente en el cual se encuentra el enlace para ver la aplicación desde cualquier parte \ref{fig:ejecucionHeroku}.
+
+\imagen{ejecucionHeroku}{Ejecución de comandos para despliegue en Heroku}
+
+
+\section{Pruebas del sistema}
+Para comprobar el correcto funcionamiento del proyecto se ha comprobado tanto por mi parte como la de los tutores, que todas las páginas funcionan correctamente, así como la opción del cambio del umbral.

@@ -1,0 +1,94 @@
+\capitulo{4}{Técnicas y herramientas}
+
+Se van a explicar una serie de técnicas y herramientas las cuales han sido utilizadas para realizar el proyecto y el por qué se han escogido.
+
+\section{Lenguajes de programación}
+\subsection{Python}
+Python \cite{wiki:python} es un lenguaje de programación de alto nivel el cual no necesita de proceso de compilación para ejecutar las aplicaciones puesto que se ejecutan directamente utilizando un programa denominado interpretador.
+
+Es el lenguaje en el que se ha programado el proyecto.
+
+Se ha elegido Python porque es el lenguaje con el que me siento más cómodo y familiarizado. Además, Python ofrece diferentes librerías para la programación de redes y sistemas de recomendación con las cuales he trabajado en diferentes asignaturas del grado, lo cual me ha permitido aplicar todos mis conocimientos acerca del uso de estas librerías para el desarrollo del proyecto. 
+
+\subsection{HTML}
+El lenguaje de marcado de hipertexto (HTML) \cite{wiki:html} es un lenguaje con el que se codifican las aplicaciones y las páginas web.
+
+Es el lenguaje que se ha utilizado para crear la aplicación web en el proyecto.
+
+A pesar de no tener mucho conocimiento sobre este lenguaje, he trabajado con HTML en alguna ocasión, lo que me ha permitido aprender más rápido el lenguaje y su uso. El haber trabajado con el lenguaje sumado al potencial que ofrece HTML a la hora de crear páginas y aplicaciones web es lo que me ha llevado a elegir el uso de este lenguaje.
+
+\subsection{CSS}
+CSS \cite{wiki:css} es el lenguaje que usamos para diseñar un documento HTML.
+
+Es el editor de estilos que se ha utilizado para diseñar las distintas pestañas del proyecto.
+
+Al igual que con HTML, he trabajado con CSS en alguna ocasión, ya que normalmente se suele utilizar la combinación de ambos lenguajes para la creación de páginas web. He elegido este lenguaje no solo por su anterior uso y la posibilidad de poder diseñar las distintas pestañas del proyecto libremente, sino por su buena comunicación con HTML.
+
+\section{Entornos de desarrollo}
+\subsection{Jupyter Notebook}
+Jupyter Notebook \cite{wiki:jupyter} es una aplicación web interactiva que permite crear docuementos en diferentes lenguajes como Julia, Python y R.
+
+En el proyecto se ha utilizado para programar el código Python antes de introducirlo en la aplicación web.
+
+He elegido Jupyter Notebook porque es el entorno más utilizado por mi parte cuando necesito programar en Python. Además, ofrece la posibilidad de guardar los códigos con la extensión .py lo cual es lo que necesitaba para la realización del proyecto.
+
+\subsection{Visual Studio}
+Visual Studio \cite{wiki:visualStudio} es un entorno de desarrollo integrado o IDE (Integrated Development Environment) que proporciona diferentes servicios que facilitan a los desarrolladores la creación de software como aplicaciones web eficaces y de alto rendimiento.
+
+Es el entorno en el que se ha creado la página web a partir de los lenguajes antes mencionados.
+
+Elegí utilizar Visual Studio por ser el entorno de desarrollo que utilicé cuando aprendí a programar páginas web con HTML y CSS.
+
+\section{Herramientas de documentación}
+\subsection{LaTex}
+LaTex \cite{wiki:latex} es un procesador gratuito de textos el cual se utiliza para la creación de documentos con una alta calidad tipográfica como tesis, artículos o libros científicos.
+
+En el proyecto se ha utilizado para realizar la memoria y los anexos.
+
+La documentación se ha llevado a cabo con este procesador ya que era una de las opciones que se ofrecían junto a OpenOffice para realizar la documentación. Entre estas herramientas escogí LaTex ya que es la que menos conocía y quería aprender más acerca de ella.
+
+\subsection{Overleaf}
+Overleaf \cite{wiki:overleaf} es un software que permite redactar, editar y publicar fácilmente textos de manera online. Overleaf contiene un editor de textos en LaTex fácil de usar y permite en tiempo real ver la salida perfectamente compilada.
+
+Se ha utilizado el editor de textos en LaTex de Overleaf para realizar la memoria y los anexos.
+
+Se ha escogido este editor ya que es el mejor editor de LaTex de manera online. Además, permite ver en formato PDF el resultado del documento en tiempo real, lo que permite realizar cambios si el resultado no era de mi agrado.
+
+\section{Plataformas}
+\subsection{GitHub}
+GitHub \cite{wiki:github} es una plataforma de organización y gestión de repositorios gratuito online. Es decir, permite a los usuarios editar, gestionar y guardar sus proyectos en la nube de manera pública o privada. También permite descargar a los usuarios proyectos almacenados en la plataforma que sean públicos.
+
+En este caso, GitHub almacena el proyecto desde su creación y lo gestiona mediante sprints.
+
+Personalmente pienso que GitHub es la mejor plataforma para gestionar proyectos de manera ágil. Es por esta razón que la he escogido.
+
+\subsection{GitHub Desktop}
+GitHub Desktop es la versión escritorio de GitHub.
+
+En el proyecto se ha utilizado para ir subiendo al repositorio de GitHub del proyecto todas aquellas actualizaciones que se han ido realizando.
+
+\subsection{Heroku}
+Heroku \cite{wiki:heroku} es una Plataforma como Servicio (PaaS) en la nube la cual permite a través de contenedores mantener y ejecutar aplicaciones. Estos contenedores son escalables bajo demanda de los usuarios.
+
+Heroku soporta distintos lenguajes entre los que destacan Clojure, Go, Java, Node.js, PHP, Python, Ruby y Scala.
+
+Esta plataforma es la encargada de almacenar y ejecutar el proyecto de manera online.
+
+A pesar de no tener conocimiento sobre la plataforma al comienzo del proyecto, se escogió ya que además de ser gratuita, permite cargar la aplicación web en sus servidores y que cualquier persona pueda acceder mediante un enlace. Además, Heroku tiene la posibilidad de cargar el código del proyecto directamente desde GitHub lo que facilita su despliegue.
+
+\section{Forma de presentación}
+Para la presentación de este proyecto se barajaron 2 opciones diferentes: una aplicación local o web.
+\subsection{Aplicación local}
+Podía ser de dos maneras diferentes:
+\begin{itemize}
+    \item La primera se trataría de un Jupyter Notebook en el cual se crearía una página web programada en HTML al ejecutar el código. 
+    \item En la segunda el código Python se ejecutaría junto con código HTML y CSS desde el frontend de una aplicación. Para ver la página web se necesitaría ejecutar la aplicación desde el terminal e ir a la página http://127.0.0.1:5000.
+\end{itemize}
+
+\subsection{Aplicación web}
+A partir del frontend creado para la aplicación local, el proyecto se subiría a la plataforma Heroku, en donde se podría acceder al proyecto a través de un enlace.
+
+\subsection{Aplicación local vs Aplicación web}
+Desde el principio del proyecto se pensó en la realización de una aplicación  ejecutándola desde el terminal desarrollada por frontend ya que tanto HTML como CSS permiten un mejor diseño web.
+
+Una vez creada, los tutores propusieron ejecutar el programa en Heroku para que de esta forma, los usuarios tuvieran acceso al proyecto sin necesidad de instalar ningún programa, por lo que me decidí por la aplicación web.

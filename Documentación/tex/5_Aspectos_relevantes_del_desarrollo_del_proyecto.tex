@@ -1,0 +1,113 @@
+\capitulo{5}{Aspectos relevantes del desarrollo del proyecto}
+
+En este apartado se va a comentar el desarrollo del proyecto, el cual ha sido gestionado mediante metodología ágil a través de SCRUM.
+
+\section{Primeros pasos}
+Antes de empezar con el proyecto se creó un repositorio en \href{https://github.com/eca1001/TFG}{GitHub}. De esta forma a través de sprints se iría elaborando el proyecto y se podría realizar un seguimiento del mismo.
+
+La creación del código Python fue lo primero con lo que se empezó en el proyecto. Se comenzó con la creación de un notebook de Jupyter y la visualización del archivo csv, en el que se encuentran los resultados de la encuesta, y la creación de redes sencillas para de esta manera irme familiarizando con los datos con los que se trabaja en este proyecto. De las diferentes columnas que forman la encuesta se decidió usar las siguientes:
+
+\begin{itemize}
+    \item Lenguajes
+    \item Bases de datos
+    \item Plataformas en la nube
+    \item Marcos de trabajo web
+    \item Herramientas
+    \item Entornos de desarrollo
+    \item Otros marcos de trabajo
+\end{itemize}
+
+Aunque la columna de marcos de trabajo y otros marcos de trabajo se juntaron en una sola.
+
+Se empezó por la programación de la página de lenguajes, mostrando diferentes características de los nodos que formaban parte del grafo y creando histogramas. 
+
+Se quería crear un grafo interactivo en el que se mostrara los datos de cada nodo en ese instante, pero esto no podía realizarse con las librerías que conocía. Es por ello que se tuvo que buscar y probar diferentes librerías que permitieran mostrar información en tiempo real al posicionarse encima de los nodos. Este problema se solventó al encontrar Bokeh.
+
+Tras informarme sobre ella se creó la red, la cual es un grafo de relaciones que está creado de la siguiente manera:
+\begin{itemize}
+    \item Se recorre los resultados de la encuesta.
+    \item En los lenguajes con los que dice haber trabajado se relacionan todos entre ellos de manera que si esa pareja de lenguajes ya está en el grafo se aumenta en 1 su peso, sino se crea la relación con un peso igual a 1.
+\end{itemize}
+
+Además, se crearon diferentes gráficos que representaban distintas propiedades de la red.
+
+\section{Primeros objetivos}
+Uno de los objetivos que se tenía desde el principio era el de poder variar los datos de la red al gusto del usuario. Se crearon e implementaron distintas funciones:
+\begin{itemize}
+    \item poda(G, umbral): permite podar la red G a partir de un umbral interpuesto por el usuario. Devuelve una nueva red H con el nuevo grafo.
+    \item comunidades(G): divide los nodos del grafo en distintas comunidades.
+    \item gradosNodos(G): crea y guarda un gráfico de sectores a partir de los grados de los nodos del grafo G.
+    \item propiedadesRed(G): crea y guarda un histograma que contiene el porcentaje de densidad, transitividad y promedio de agrupación de los nodos del grafo G.
+    \item calculaModularidad(G): calcula la modularidad de cada nodo del grafo G.
+    \item grafoInteractivo(G): crea a través de la herramienta Bokeh un grafo interactivo que muestra distintos datos de los nodos al posicionarse encima de cada uno.
+    \item crearHTML(G): crea una página web programada en HTML.
+    \item ejecutar(umbral): ejecuta la aplicación creando un grafo correspondiente al umbral introducido por el usuario. 
+\end{itemize}
+
+La primera versión de la aplicación consistía en una función en el propio código Python que construía una página web en HTML con los datos creados anteriormente. A pesar de que esto permitía crear la aplicación web, no cumplía todos los objetivos ya que no permitía cambiar el diseño de la página ni añadir nuevas pestañas ni variar el umbral de la poda.
+
+El principal problema que se encontró fue el de cómo poder crear un HTML desde Python, al cual se pudieran pasar los datos del grafo y lo creara. Se encontró primero una solución parcial que consistía en utilizar los métodos que ofrece la librería \textit{webbrowser}. Esta solución permitía crear páginas web desde Python utilizando HTML, pero por otro lado no permitía que se le pudieran pasar datos por parámetros para crear la red. Esto se solventó guardando la red como un archivo HTML y cargando este archivo en la página web.
+
+Por otro lado, la página no permitía cambiar el umbral de la poda desde la propia página sino que había que hacerlo desde el código. Esto no se pudo solventar hasta el cambio a Visual Studio.
+
+\section{Creación frontend}
+Tras la creación de una versión poco práctica y estática de la aplicación web, se empezó a desarrollar una nueva versión en el entorno de Visual Studio ayudado de los lenguajes HTML y CSS para crear el diseño. Esto hizo que se eliminara el método \textit{crearHTML(G)} del código Python.
+
+Se empezó creando una página web sencilla en HTML a partir de la aplicación anterior pero con la diferencia que esta nueva se ejecutaba desde el terminal y sí iba a poder ser diseñada gracias a CSS. Una vez se probó su correcto funcionamiento se empezó a añadir diseños a la página y se le añadió una pestaña de información del proyecto, la cual solo contenía el nombre de la aplicación, el del autor (\nombre) y el de los tutores (\nombreTutores).
+
+El principal problema ocurrió a la hora de comprobar si funcionaba la aplicación, ya que aunque tenía Python3 instalado no disponía del entorno virtual de este lenguaje, el cual es necesario para ejecutarlo en local. Tras diversas búsquedas por Internet, se descubrió la forma de poder ejecutarlo.
+
+\section{Creación opción de cambio de umbral}
+El umbral es el resultado que se obtiene de multiplicar el valor dado por el usuario en tanto por ciento y el máximo peso que tiene una pareja de enlaces en una tecnología. Una vez se tiene este valor se poda el grafo, en donde se eliminan todas aquellas relaciones que tengan menos peso que el del umbral.
+
+Con el frontend ya creado se buscó la posibilidad de que se pudiera añadir una opción que permitiera cambiar el umbral de la poda, el cual era un objetivo principal del proyecto. Para ello se creó una nueva pestaña con un formulario en su interior que permitía añadir números enteros entre 0 y 100 inclusive. Este valor se guardaría en una variable de sesión y sería esta la variable que se pasaría al método ejecutar del código Python.
+
+Una vez se probó la total funcionalidad del cambio de umbral desde una pestaña nueva se quiso juntar la pestaña principal y la del cambio de umbral en una, ya que de esta forma se ganaría en usabilidad al poder cambiar el umbral en la misma página en la que te encuentras. Además, se añadió un letrero informativo con el umbral que está ejecutado en ese momento.
+
+Se encontraron diversos problemas a la hora de programar el cambio de umbral los cuales originaban errores internos del sistema. Estos errores se originaban cuando: 
+\begin{itemize}
+    \item Se introducía un valor no numérico.
+    \item Se introducía un número menor que 0.
+    \item Se introducía un número mayor que 100.
+    \item Se introducía un número con decimales.
+\end{itemize}
+
+Estos errores se solucionaron haciendo que el formulario solo aceptara números enteros comprendidos entre 0 y 100, ambos inclusive.
+
+\section{Creación del sistema de recomendación de lenguajes}
+Creada ya una página funcional se empezó la programación del sistema de recomendación de lenguajes. Éste está formado por los lenguajes que hay en el grafo y sus recomendaciones, los cuales son los enlaces con los que se relaciona. Estas relaciones se van a ordenar de mayor a menor recomendación dependiendo del porcentaje de relación que tengan entre ellos esos lenguajes. Esto se calcula de forma que cuanto mayor sea el peso de la relación entre 2 lenguajes mejor recomendado estará.
+
+La tabla de recomendaciones se exportó a una hoja de cálculo y ésta a un dataframe. De todas las columnas tan sólo nos quedaríamos con el lenguaje y un máximo de 3 recomendados dependiendo el número de columnas de la tabla. Este dataframe resultante lo convertiríamos a un HTML para poder utilizarlo en la aplicación y permitir así que se le añadieran estilos.
+
+Como al podar la red habría nodos que no aparecerían en el grafo ni en el sistema de recomendaciones decidí crear una tabla, de la misma forma que la del sistema de recomendación, que estuviera formada por esos lenguajes que desaparecen tras la poda.
+
+Además, para facilitar el trabajo de búsqueda se añadió una barra buscadora para encontrar rápidamente el lenguaje que estamos buscando.
+
+Para que funcionara debía de estar tanto el código del buscador como la tabla en el mismo HTML, por lo que me encontré con un problema, el cual conseguí resolver rescatando y modificando el método \textit{crearHTML(G)}. El código de la tabla-buscador está formado por 3 partes de las cuales la primera y la tercera parte son estáticas, por lo cual eso se escribiría como código HTML directamente. La segunda parte, la de la tabla, se introdujo leyendo línea por línea el código HTML creado del dataframe y escribiéndolo en el HTML de la tabla-buscador. De esta forma conseguiríamos tener todas partes juntas y que funcionara exitosamente.
+
+\section{Heroku}
+Con la primera página y tecnología acabada se creó una aplicación en los servidores de Heroku, tras darme de alta en la plataforma, y se enlazó con el proyecto. Este enlace se puede realizar o bien a través de GitHub o bien a través de un del terminal del ordenador.
+
+El problema llegó en este momento, ya que al no tener conocimiento previo sobre Heroku, tuve que informarme acerca de la manera de desplegar la aplicación y cuál debía ser el contenido de los archivos necesarios para su correcto funcionamiento.
+
+Para que la aplicación funcione correctamente en Heroku se necesitan los siguientes archivos:
+\begin{itemize}
+    \item \underline{Archivo Procfile}: en este archivo se especifica el tipo de servidor a crear y el nombre del archivo ejecutable.
+    \item \underline{Archivo ejecutable}: este archivo principal del proyecto ya que es el que contiene la ejecución de la aplicación.
+    \item \underline{requirements.txt}: este archivo de texto está formado por todas las librerías que necesita el proyecto para su correcta ejecución.
+\end{itemize}
+
+Una vez creado todo se despliega el proyecto en Heroku, y si no ha surgido ningún problema podemos ejecutarlo y utilizar la aplicación de manera web a través de un enlace que nos facilita la plataforma. 
+
+\section{Creación de las nuevas páginas con las tecnologías restantes}
+Para la creación del resto de tecnologías se ha creado una pestaña para cada una y se ha replicado el código de la pestaña de lenguajes y su código Python, modificando la columna a utilizar para esa tecnología en el código para que funcione correctamente para cada una, salvo para los marcos de trabajo, los cuales se encontraban divididos en dos columnas y se tenían que relacionar entre ambas.
+
+\section{Mejoras del código}
+Una vez se tenía una versión completa de la aplicación se corrigieron ciertos fallos que se encontraron al utilizar la aplicación Python y al revisar el código Python. Entre estos errores podemos encontrar:
+\begin{itemize}
+    \item Parámetros en las variables de los métodos innecesarios ya que no se necesitan usar tras el despliegue de la aplicación en Visual Studio y la posibilidad de cambiar el umbral.
+    \item Un fallo que hacía que la página diera error si no se escribe un umbral y ejecutas la aplicación.
+    \item Creación de una página de \textit{Inicio}.
+    \item Finalización de la página \textit{Acerca de}.
+\end{itemize}
+ 

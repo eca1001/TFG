@@ -1,0 +1,190 @@
+\apendice{Especificación de Requisitos}
+
+\section{Introducción}
+La especificación de requisitos del software  ~\cite{wiki:ers} se basa en describir completamente el comportamiento del sistema a desarrollar, la interacción de los usuarios con el software a través de casos de uso y las necesidades tanto de clientes como usuarios. 
+
+Su principal objetivo ~\cite{wiki:ersobjetivo} es funcionar como intermediario entre los usuarios, clientes y desarrolladores.
+
+\section{Objetivos generales}
+El objetivo principal del proyecto es la creación de un sistema de recomendación de tecnologías \cite{ekstrand2011} centrándose en los siguientes puntos:
+
+\begin{itemize}
+    \item Explotar los datos de la encuesta de de Stack Overflow mediante un sistema de recomendación basado en redes \cite{aggarwal2016}. Se va a recomendar distintas tecnologías entre las que se encuentras bases de datos, entornos de desarrollo, herramientas, lenguajes, marcos de trabajo y plataformas.
+    \item Crear y diseñar una aplicación web que sea visualmente atractiva y fácil de comprender por todos los usuarios. Esta además debe ejecutarse en un servidor web para que se pueda acceder en cualquier momento y sin necesidad de descargarse nada.
+    \item Cada una de las tecnologías deben tener su propia página web y deben tener un mismo patrón. Además, debe tener una página de inicio y otra de información en la que aparezca la información del alumno, tutores y una pequeña guía de uso.
+    \item La aplicación debe ser interactiva, es decir, el usuario debe sentir que no está viendo una página web con información, sino que esa información se va cambiando a través de un valor introducido por el mismo usuario. Además, debe haber una red que muestre distintos datos de los nodos al colocarnos encima de cada uno de ellos.
+\end{itemize}
+
+
+\section{Catálogo de requisitos}
+Se describirán los requisitos funcionales y los no funcionales del proyecto.
+
+\subsection{Requisitos funcionales}
+Son aquellos requisitos que el proyecto debe cumplir al finalizar su desarrollo.
+
+
+  \begin{itemize}  
+    \item \textbf{RF-1 Visualización de la información}: los datos deben ser claros y presentados de una manera atractiva para el usuario.
+    \begin{itemize}
+        \item \textbf{RF-1.1 Tabla de recomendaciones}: se añadirá una tabla con todos los nodos de la red junto con sus mejores recomendaciones por cada uno de éstos.
+        \item \textbf{RF-1.2 Red interactiva}: se creará una red interactiva en la que, además de mostrar información de cada uno de los nodos al posicionarse encima de ellos, se deberán diferenciar las comunidades de nodos por colores.
+        \item \textbf{RF-1.3 Histogramas y gráficas}: se añadirán histogramas y gráficas que muestren información acerca de la red de nodos.
+    \end{itemize}
+    
+    \item \textbf{RF-2 Páginas independientes por tecnología}: cada tecnología deberá tener su propia pestaña con sus datos.
+    
+    \item \textbf{RF-3 Modificar umbral de poda}: la aplicación debe contener la posibilidad de variar el umbral de poda de la red.
+    \begin{itemize}
+        \item \textbf{RF-3.1 Modificación}: permitir al usuario cambiar el valor del umbral en cualquier momento.
+        \item \textbf{RF-3.2 Verificación}: verificar que el campo no está vacío y el valor es un número entero entre 0 y 100.
+    \end{itemize}
+    
+    \item \textbf{RF-4 Filtro de tecnologías}: cada una de las tablas de recomendaciones deberá tener un filtro de búsqueda.
+    
+    \item \textbf{RF-5 Página de inicio}: contendrá el título del proyecto, el escudo de la Universidad de Burgos, la Escuela Politécnica Superior y el del grado en ingeniería informática.
+    
+    \item \textbf{RF-6 Página de información}: la página contendrá tanto el nombre del autor como el de los tutores, así como un breve manual
+    de uso de la aplicación.
+    
+\end{itemize}
+
+\subsection{Requisitos no funcionales}
+Son aquellos requisitos que no están relacionados con el uso del proyecto a través del usuario y los cuales se deben cumplir.
+
+\begin{itemize}
+    \item \textbf{RNF-1 Seguridad}: la aplicación no debe permitir modificaciones de código a ningún usuario que no sea el autor del proyecto.
+    \item \textbf{RNF-2 Mantenibilidad}: el proyecto debe permitir modificaciones en el futuro de forma sencilla.
+    \item \textbf{RNF-3 Portabilidad}: se debe permitir ejecutar la aplicación en cualquier plataforma y sistema operativo.
+\end{itemize}
+
+\section{Especificación de requisitos}
+
+\subsection{Especificación de actores}
+Existen 2 actores diferenciados:
+
+\tablaSmallSinColores{Actores de la aplicación}{p{0.2\textwidth} | p{0.8\textwidth}}{Actores_aplicación}
+{\textbf{Actor} & \textbf{Funcionalidad} \\}{
+	Desarrollador & Se trata de la persona que ha desarrollado la aplicación. En este caso es \nombre. \\
+	& El desarrollador estará ayudado por los tutores \nombreTutores para el desarrollo del proyecto. \\ \hline
+	
+	Cliente & Utilizan la aplicación. \\
+}
+
+\subsection{Diagramas de casos de uso}
+En este apartado se mostrarán el diagrama de casos de uso. \ref{fig:CasoUso} \cite{wiki:casosDeUso}.
+
+\imagen{CasoUso}{Diagrama de casos de uso}
+
+\subsection{Especificación de casos de uso}
+
+\tablaSmallSinColores{Caso de uso 1: Visualización de la información.}{p{3cm} p{.75cm} p{10cm}}{tablaCU1}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 1: Visualización de la información.} \\
+}
+{   
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Visualizar el sistema de recomendación de las tecnologías.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Acceder a la aplicación} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-1.1, RF-1.2, RF-1.3} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Acceder a la aplicación desde el navegador. \\\cline{2-3}
+	& 2    & Navegar en las distintas pestañas que ofrece la aplicación. \\\hline
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{No tener acceso a internet.}\\\hline
+	Frecuencia                             & Alta \\\hline
+	Importancia                            & Alta \\\hline
+	Urgencia                               & Alta \\
+}
+
+\tablaSmallSinColores{Caso de uso 2: Páginas independientes por tecnología.}{p{3cm} p{.75cm} p{10cm}}{tablaCU2}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 2: Páginas independientes por tecnología.} \\
+}
+{
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Crear pestañas para cada una de las tecnologías.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-2} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Crear una pestaña completa para una de las tecnologías. \\\cline{2-3}
+	& 2    & Replicar la pestaña creada para el resto de las tecnologías. \\\hline 
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{Ninguna}\\\hline
+	Frecuencia                             & Alta \\\hline
+	Importancia                            & Alta \\\hline
+	Urgencia                               & Alta \\
+}
+
+\tablaSmallSinColores{Caso de uso 3: Modificar umbral de poda.}{p{3cm} p{.75cm} p{9cm}}{tablaCU3}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 3: Modificar umbral de poda.} \\
+}
+{
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Modificar el valor del umbral con el que se poda la red.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-3.1, RF-3.2} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Cambiar el valor del umbral. \\\cline{2-3}
+	& 2    & Pulsar la tecla \textit{Enter} o pinchar en \textit{Enviar}. \\\hline
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{Ninguna}\\\hline
+	Frecuencia                             & Media \\\hline
+	Importancia                            & Media \\\hline
+	Urgencia                               & Baja \\
+}
+
+\tablaSmallSinColores{Caso de uso 4: Filtro de tecnologías.}{p{3cm} p{.75cm} p{9cm}}{tablaCU4}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 4: Filtro de tecnologías.} \\
+}
+{
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Permite a los usuarios buscar rápidamente cada una de las tecnologías dentro de cada página.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-4} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Seleccionar la barra de escritura. \\\cline{2-3}
+	& 2    & Escribir el nombre de la tecnología que se desea. \\\hline
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{Ninguna}\\\hline
+	Frecuencia                             & Media \\\hline
+	Importancia                            & Media \\\hline
+	Urgencia                               & Baja \\
+}
+
+\tablaSmallSinColores{Caso de uso 5: Página de inicio.}{p{3cm} p{.75cm} p{9cm}}{tablaCU5}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 5: Página de inicio.} \\
+}
+{
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Creación de una página de inicio de la aplicación.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-5} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Crear una página de inicio de la aplicación. \\\hline
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{Ninguna}\\\hline
+	Frecuencia                             & Baja \\\hline
+	Importancia                            & Baja \\\hline
+	Urgencia                               & Baja \\
+}
+
+\tablaSmallSinColores{Caso de uso 6: Página de información.}{p{3cm} p{.75cm} p{9cm}}{tablaCU6}{
+	\multicolumn{3}{p{10.25cm}}{Caso de uso 6: Página de información.} \\
+}
+{
+    Autor                                  & \multicolumn{2}{p{10.25cm}}{\nombre} \\\hline
+    Versión                                & \multicolumn{2}{p{10.25cm}}{1.0} \\\hline
+	Descripción                            & \multicolumn{2}{p{10.25cm}}{Creación de una página de información de la aplicación.} \\\hline
+	Precondiciones                         & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Requisitos                         	   & \multicolumn{2}{p{10.25cm}}{RF-6} \\\hline
+	\multirow{3}{3.5cm}{Secuencia normal}  & Paso & Acción \\\cline{2-3}
+	& 1    & Crear una página de información de la aplicación. \\\hline
+	Postcondiciones                        & \multicolumn{2}{p{10.25cm}}{Ninguna} \\\hline
+	Excepciones                            & \multicolumn{2}{p{10.25cm}}{Ninguna}\\\hline
+	Frecuencia                             & Baja \\\hline
+	Importancia                            & Baja \\\hline
+	Urgencia                               & Baja \\
+}

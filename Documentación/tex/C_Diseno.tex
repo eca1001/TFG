@@ -1,0 +1,77 @@
+\apendice{Especificación de diseño}
+
+\section{Introducción}
+En este apéndice se van a detallar todos los aspectos relacionados con el diseño del proyecto.
+
+\section{Diseño de datos}
+Se ha utilizado la base de datos que Satck Overflow ofrece como resultado de la encuesta. La base de datos consta de 83440 filas y 48 columnas. Cada fila representa cada uno de las personas entrevistadas para la encuesta, y cada columna cada una de las preguntas.
+
+De todas estas columnas se han elegido las siguientes:
+\begin{itemize}
+    \item Lenguajes con los que el usuario ha trabajado el último año.
+    \item Bases de datos con las que el usuario ha trabajado el último año.
+    \item Plataformas en la nube con las que el usuario ha trabajado el último año.
+    \item Marcos de trabajo web con los que el usuario ha trabajado el último año.
+    \item Herramientas con las que el usuario ha trabajado el último año.
+    \item Entornos de desarrollo con los que el usuario ha trabajado el último año.
+    \item Otros marcos de trabajo con los que el usuario ha trabajado el último año.
+\end{itemize}
+
+
+\section{Diseño procedimental}
+En este apartado se va a describir el funcionamiento interno del proyecto mediante un diagrma de secuencias. \ref{fig:DiagramaSecuencias}.
+
+\imagen{DiagramaSecuencias}{Diagrama de secuencias del funcionamiento interno}
+
+
+\section{Diseño arquitectónico}
+En este apartado se va describir los patrones que se han utilizado para el diseño del proyecto. \cite{wiki:patrones}
+
+\subsection{Patrones estructurales}
+
+\subsubsection{Fachada}
+Este patrón pretende ofrecer al cliente una interfaz sencilla y disminuir el acoplamiento entre el subsistema y los clientes.
+
+Se utiliza a la hora de presentar la aplicación y la comunicación de las páginas entre sí, ya que ofrece una interfaz sencilla que permite al usuario cambiar de pestañas y mantener el mismo umbral en todas ellas.
+
+Su estructura es la siguiente: \ref{fig:Fachada}
+
+\imagen{Fachada}{Patrón fachada}
+
+\subsection{Patrones de comportamiento}
+\subsubsection{Estado}
+Este patrón permite a un objeto modificar su comportamiento cuando lo haga su estado interno.
+
+En el proyecto se utiliza para crear nuevas redes en tiempo de ejecución una vez el usuario cambie el valor del umbral.
+
+Su estructura es la siguiente: \ref{fig:Estado}
+
+\imagen{Estado}{Patrón Estado}
+
+\subsubsection{Observador}
+Este patrón define una dependencia uno a varios para así en cuanto se modifique un estado todos sus dependientes sean notificados y actualizados automáticamente.
+
+En el proyecto esto se utiliza para modificar las tablas, gráficos y redes que aparecen en cada una de las páginas. Una vez se modifica el umbral, se crea una nueva red y se notifica y actualiza en ese momento los objetos que aparecen en cada una de las páginas de las tecnologías. 
+
+Su estructura es la siguiente: \ref{fig:Observador}
+
+\imagen{Observador}{Patrón observador}
+
+\subsubsection{Método plantilla}
+Este patrón define el esqueleto de un algoritmo permitiendo a las subclases redefinir ciertos pasos del algoritmo sin cambiar su estructura general.
+
+En el proyecto se utiliza para crear las páginas de las tecnologías. Las páginas heredan de una plantilla cambiando solamente en cada una de las tecnologías los datos a utilizar.
+
+Su estructura es la siguiente: \ref{fig:Método plantilla}
+
+\imagen{Método plantilla}{Patrón método plantilla}
+
+\subsection{Patrones creacionales}
+\subsubsection{Singleton}
+Este patrón garantiza que una clase tenga tan solo una instancia, y que el acceso a la misma sea global. 
+
+De esta forma al cliente tan solo le llega sólo un objeto (página web en este caso), y es este el que se modifica en cuanto se produce un cambio, no creando nuevas instancias.
+
+Su estructura es la siguiente: \ref{fig:Singleton}
+
+\imagen{Singleton}{Patrón singleton}
